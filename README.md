@@ -1,4 +1,4 @@
-Portal de dashboards TRF3
+Portal de dashboards Twitter
 ===
 
 Esse repositório contém tanto o dashboard, quanto uma parte de backend para carregar uma base PostgreSQL.
