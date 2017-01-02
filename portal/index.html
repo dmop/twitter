@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="neApp">
+
+<head>
+    <title>TRF3 - An&aacute;lises</title>
+    <script language="javascript" type="text/javascript" src="/pentaho/plugin/pentaho-cdf-dd/api/renderer/cde-embed.js"></script>
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0" />
+</head>
+
+<body layout="column" ng-controller="portalController as ctrl" id="bodyCtrl">
+  <md-content>
+  <page-header class="ne-no-print"></page-header>
+  <div class="ne-general-body" layout-fill layout="row">
+    <md-sidenav
+      ng-class="ctrl.getPrimaryBgClass()"
+       class="md-sidenav-left ne-side-menu"
+       md-component-id="left"
+       md-is-locked-open="false"
+       md-disable-backdrop
+       md-whiteframe="4">
+       <side-menu class="ne-white ne-no-print" ></side-menu>
+     </md-sidenav>
+
+     <md-sidenav
+       ng-class="ctrl.getPrimaryBgClass()"
+        class="md-sidenav-right ne-side-map"
+        md-component-id="right"
+        md-is-locked-open="false"
+        md-disable-backdrop
+        md-whiteframe="4">
+        <side-map class="ne-white"></side-map>
+      </md-sidenav>
+
+    <dashboard-content class="ne-dash-content" layout="column" layout-fill flex></dashboard-content>
+  </div>
+  </md-content>
+
+</body>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="bower_components/v-accordion/dist/v-accordion.css">
+<link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+<link rel="stylesheet" href="assets/css/global.css">
+<link rel="icon" href="assets/img/favicon.png" sizes="16x16 32x32 64x64 128x128 256x256 512x512" type="image/png"/>
+
+<script src="main.js"></script>
+</html>

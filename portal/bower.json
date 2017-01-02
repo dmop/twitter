@@ -1,0 +1,27 @@
+{
+  "name": "twitter",
+  "description": "Twitter",
+  "repository": "https://github.com/dmop/twitter",
+  "authors": [
+    "@dmop"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+      "angular": "~1.5.7",
+      "angular-aria": "~1.5.7",
+      "angular-animate": "~1.5.7",
+      "angular-touch": "~1.5.7",
+      "angular-sanitize" : "~1.5.7",
+      "angular-material": "~1.0.9",
+      "v-accordion": "~1.6.0"
+    }
+}

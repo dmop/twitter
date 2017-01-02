@@ -1,0 +1,13 @@
+<v-pane id="{{group.id}}">
+  <v-pane-header>
+     <div layout="row">
+       <span flex>{{group.label}}</span>
+       <md-icon class="material-icons ne-white md-title" ng-class="{'ne-open': linksGrpCtrl.getExpandedClass($pane.isExpanded())}">expand_more</md-icon>
+    </div>
+  </v-pane-header>
+  <v-pane-content>
+      <md-list class="ne-bullet-list">
+        <md-list-item ng-if="link.isAuthorized" ng-repeat="link in group.children" ng-class="linksGrpCtrl.getBorderClass(link)" class="ne-bullet-item ne-small-list-item md-caption " ng-click="linksGrpCtrl.loadDashboard(link)">{{link.label}}</md-list-item>
+      </md-list>
+  </v-pane-content>
+</v-pane>

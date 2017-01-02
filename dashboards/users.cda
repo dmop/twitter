@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="BottomUserQry" type="mondrian.jndi">
+         <Catalog>mondrian:/slack</Catalog>
+         <Jndi>slack</Jndi>
+      </Connection>
+      <Connection id="AvgUserQry" type="mondrian.jndi">
+         <Catalog>mondrian:/slack</Catalog>
+         <Jndi>slack</Jndi>
+      </Connection>
+      <Connection id="TopUserQry" type="mondrian.jndi">
+         <Catalog>mondrian:/slack</Catalog>
+         <Jndi>slack</Jndi>
+      </Connection>
+      <Connection id="ContextDrillQry" type="mondrian.jndi">
+         <Catalog>mondrian:/slack</Catalog>
+         <Jndi>slack</Jndi>
+      </Connection>
+      <Connection id="TopicsDrillQry" type="mondrian.jndi">
+         <Catalog>mondrian:/slack</Catalog>
+         <Jndi>slack</Jndi>
+      </Connection>
+      <Connection id="UsersListQry" type="mondrian.jndi">
+         <Catalog>mondrian:/slack</Catalog>
+         <Jndi>slack</Jndi>
+      </Connection>
+      <Connection id="UtilizationAreaQry" type="mondrian.jndi">
+         <Catalog>mondrian:/slack</Catalog>
+         <Jndi>slack</Jndi>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" connection="BottomUserQry" id="BottomUserQry" type="mdx">
+      <Name>BottomUserQry</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter access="private" default="${[security:principalName]}" name="principalName"
+                    type="String"/>
+         <Parameter default="" name="team" type="String"/>
+      </Parameters>
+      <Query><![CDATA[SELECT
+
+filter(
+        head(order(
+            {[User], [User].children},
+            [Measures].[Qtd],
+            Asc
+        ),2),
+        [Measures].currentmember.name <> "${principalName}"
+        
+)
+        ON COLUMNS,
+  [Measures].[Qtd] ON ROWS
+FROM [slackmetrics]
+where [Team].[${team}]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="AvgUserQry" id="AvgUserQry" type="mdx">
+      <Name>AvgUserQry</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter access="private" default="${[security:principalName]}" name="principalName"
+                    type="String"/>
+         <Parameter default="" name="team" type="String"/>
+      </Parameters>
+      <Query><![CDATA[with 
+
+member [Measures].[Avg] as avg( [User].[User].members, [Measures].[Qtd]  )
+
+member [Measures].[max] as max( [User].[User].members, [Measures].[Qtd]  )
+
+SELECT
+    {[Measures].[Avg],[Measures].[max]}
+
+        ON COLUMNS,
+NON EMPTY [Sentiment] ON ROWS
+FROM [slackmetrics]
+
+where 
+[Team].[${team}]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="TopUserQry" id="TopUserQry" type="mdx">
+      <Name>TopUserQry</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter access="private" default="${[security:principalName]}" name="principalName"
+                    type="String"/>
+         <Parameter default="" name="team" type="String"/>
+      </Parameters>
+      <Query><![CDATA[SELECT
+NON EMPTY
+filter(
+        head(order(
+            {[User], [User].children},
+            [Measures].[Qtd],
+            DESC
+        ),2),
+        [Measures].currentmember.name <> "${principalName}"
+        
+)
+        ON COLUMNS,
+NON EMPTY [Measures].[Qtd] ON ROWS
+FROM [slackmetrics]
+where [Team].[${team}]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="ContextDrillQry" id="ContextDrillQry" type="mdx">
+      <Name>ContextDrillQry</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Output indexes="1,0,2" mode="include"/>
+      <Parameters>
+         <Parameter access="private" default="${[security:principalName]}" name="principalName"
+                    type="String"/>
+         <Parameter default="" name="team" type="String"/>
+         <Parameter default="" name="username" type="String"/>
+      </Parameters>
+      <Query><![CDATA[// Request ID: 6fbb6dc0-65d2-11e5-aea9-7a7919713fa4 - RUN_REPORT
+WITH
+SET [*NATIVE_CJ_SET] AS 'NONEMPTYCROSSJOIN([*BASE_MEMBERS__Sentiment_],NONEMPTYCROSSJOIN([*BASE_MEMBERS__Context_],NONEMPTYCROSSJOIN([*BASE_MEMBERS__User_],[*BASE_MEMBERS__Team_])))'
+SET [*BASE_MEMBERS__Team_] AS '{[Team].[${team}]}'
+SET [*BASE_MEMBERS__Context_] AS '[Context].[Context].MEMBERS'
+SET [*BASE_MEMBERS__Measures_] AS '{[Measures].[Qtd]}'
+SET [*BASE_MEMBERS__Sentiment_] AS '[Sentiment].[Sentiment].MEMBERS'
+SET [*CJ_SLICER_AXIS] AS 'GENERATE([*NATIVE_CJ_SET], {([User].CURRENTMEMBER,[Team].CURRENTMEMBER)})'
+SET [*CJ_ROW_AXIS] AS 'GENERATE([*NATIVE_CJ_SET], {([Sentiment].CURRENTMEMBER,[Context].CURRENTMEMBER)})'
+SET [*SORTED_ROW_AXIS] AS 'ORDER([*CJ_ROW_AXIS],[Sentiment].CURRENTMEMBER.ORDERKEY,BASC,[Context].CURRENTMEMBER.ORDERKEY,BASC)'
+SET [*BASE_MEMBERS__User_] AS '{[User].[${username}]}'
+SELECT
+[*BASE_MEMBERS__Measures_] ON COLUMNS
+,NON EMPTY
+[*SORTED_ROW_AXIS] ON ROWS
+FROM [slackmetrics]
+WHERE ([*CJ_SLICER_AXIS])]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="TopicsDrillQry" id="TopicsDrillQry" type="mdx">
+      <Name>TopicsDrillQry</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Output indexes="0,1,2" mode="include"/>
+      <Parameters>
+         <Parameter access="private" default="${[security:principalName]}" name="principalName"
+                    type="String"/>
+         <Parameter default="" name="team" type="String"/>
+         <Parameter default="" name="username" type="String"/>
+      </Parameters>
+      <Query><![CDATA[// Request ID: 39ad158a-65d2-11e5-aea9-7a7919713fa4 - RUN_REPORT
+WITH
+SET [*NATIVE_CJ_SET] AS 'NONEMPTYCROSSJOIN([*BASE_MEMBERS__Topics_],NONEMPTYCROSSJOIN([*BASE_MEMBERS__Sentiment_],NONEMPTYCROSSJOIN([*BASE_MEMBERS__User_],[*BASE_MEMBERS__Team_])))'
+SET [*BASE_MEMBERS__Team_] AS '{[Team].[${team}]}'
+SET [*BASE_MEMBERS__Measures_] AS '{[Measures].[Qtd]}'
+SET [*BASE_MEMBERS__Sentiment_] AS '[Sentiment].[Sentiment].MEMBERS'
+SET [*CJ_SLICER_AXIS] AS 'GENERATE([*NATIVE_CJ_SET], {([User].CURRENTMEMBER,[Team].CURRENTMEMBER)})'
+SET [*CJ_ROW_AXIS] AS 'GENERATE([*NATIVE_CJ_SET], {([Topics].CURRENTMEMBER,[Sentiment].CURRENTMEMBER)})'
+SET [*SORTED_ROW_AXIS] AS 'ORDER([*CJ_ROW_AXIS],[Topics].CURRENTMEMBER.ORDERKEY,BASC,[Sentiment].CURRENTMEMBER.ORDERKEY,BASC)'
+SET [*BASE_MEMBERS__Topics_] AS '[Topics].[Topics].MEMBERS'
+SET [*BASE_MEMBERS__User_] AS '{[User].[${username}]}'
+SELECT
+[*BASE_MEMBERS__Measures_] ON COLUMNS
+,NON EMPTY
+[*SORTED_ROW_AXIS] ON ROWS
+FROM [slackmetrics]
+WHERE ([*CJ_SLICER_AXIS])]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="UsersListQry" id="UsersListQry" type="mdx">
+      <Name>UsersListQry</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Output indexes="3,0,4,1,2" mode="include"/>
+      <Parameters>
+         <Parameter access="private" default="${[security:principalName]}" name="principalName"
+                    type="String"/>
+         <Parameter default="" name="team" type="String"/>
+      </Parameters>
+      <Query><![CDATA[// Request ID: 36cbeffe-65e1-11e5-aea9-7a7919713fa4 - RUN_REPORT
+WITH
+SET [*NATIVE_CJ_SET] AS 'FILTER(NONEMPTYCROSSJOIN([*BASE_MEMBERS__User_],[*BASE_MEMBERS__Team_]), NOT ISEMPTY ([Measures].[Qtd]))'
+SET [*BASE_MEMBERS__Team_] AS '{[Team].[${team}]}'
+SET [*BASE_MEMBERS__Measures_] AS '{[Measures].[Qtd],[Measures].[*CALCULATED_MEASURE_1],[Measures].[*SUMMARY_MEASURE_0],[Measures].[*CALCULATED_MEASURE_2]}'
+SET [*CJ_SLICER_AXIS] AS 'GENERATE([*NATIVE_CJ_SET], {([Team].CURRENTMEMBER)})'
+SET [*CJ_ROW_AXIS] AS 'GENERATE([*NATIVE_CJ_SET], {([User].CURRENTMEMBER)})'
+SET [*SORTED_ROW_AXIS] AS 'ORDER([*CJ_ROW_AXIS],[Measures].[*SORTED_MEASURE],BDESC)'
+SET [*NATIVE_MEMBERS__Team_] AS 'GENERATE([*NATIVE_CJ_SET], {[Team].CURRENTMEMBER})'
+SET [*BASE_MEMBERS__User_] AS '[User].[User].MEMBERS'
+MEMBER [Measures].[*CALCULATED_MEASURE_1] AS 'abs([Measures].[Qtd]/( [User].currentmember.parent, [Measures].[Qtd])) ', FORMAT_STRING = '###0.00%', SOLVE_ORDER=0
+MEMBER [Measures].[*CALCULATED_MEASURE_2] AS 'order( crossjoin([Channel].[Channel].members,[User].currentMember) ,[Measures].[Qtd], DESC ).item(0).item(0).name', SOLVE_ORDER=0
+MEMBER [Measures].[*SORTED_MEASURE] AS '([Measures].[Qtd],[Team].[*CTX_MEMBER_SEL~AGG])', SOLVE_ORDER=400
+MEMBER [Measures].[*SUMMARY_MEASURE_0] AS 'Rank(([User].CURRENTMEMBER),[*CJ_ROW_AXIS],[Measures].[Qtd])', FORMAT_STRING = '#,##0', SOLVE_ORDER=200
+MEMBER [Team].[*CTX_MEMBER_SEL~AGG] AS 'AGGREGATE([*NATIVE_MEMBERS__Team_])', SOLVE_ORDER=-301
+SELECT
+[*BASE_MEMBERS__Measures_] ON COLUMNS
+,NON EMPTY
+[*SORTED_ROW_AXIS] ON ROWS
+FROM [slackmetrics]
+WHERE ([*CJ_SLICER_AXIS])]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="UtilizationAreaQry" id="UtilizationAreaQry"
+               type="mdx">
+      <Name>UtilizationAreaQry</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Output indexes="3,1" mode="include"/>
+      <Parameters>
+         <Parameter access="private" default="${[security:principalName]}" name="principalName"
+                    type="String"/>
+         <Parameter default="" name="team" type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+SET [*NATIVE_CJ_SET] AS 'FILTER(NONEMPTYCROSSJOIN([*BASE_MEMBERS__User_],[*BASE_MEMBERS__Team_]), NOT ISEMPTY ([Measures].[Qtd]))'
+SET [*BASE_MEMBERS__Team_] AS '{[Team].[${team}]}'
+SET [*BASE_MEMBERS__Measures_] AS '{[Measures].[Qtd],[Measures].[*CALCULATED_MEASURE_0],[Measures].[*SUMMARY_MEASURE_1]}'
+SET [*CJ_SLICER_AXIS] AS 'GENERATE([*NATIVE_CJ_SET], {([Team].CURRENTMEMBER)})'
+SET [*CJ_ROW_AXIS] AS 'GENERATE([*NATIVE_CJ_SET], {([User].CURRENTMEMBER)})'
+SET [*SORTED_ROW_AXIS] AS 'ORDER([*CJ_ROW_AXIS],[Measures].[*SORTED_MEASURE],BASC)'
+SET [*NATIVE_MEMBERS__Team_] AS 'GENERATE([*NATIVE_CJ_SET], {[Team].CURRENTMEMBER})'
+SET [*BASE_MEMBERS__User_] AS '[User].[User].MEMBERS'
+MEMBER [Measures].[*CALCULATED_MEASURE_0] AS '1', SOLVE_ORDER=0
+MEMBER [Measures].[*SORTED_MEASURE] AS '([Measures].[Qtd],[Team].[*CTX_MEMBER_SEL~AGG])', SOLVE_ORDER=400
+MEMBER [Measures].[*SUMMARY_MEASURE_1] AS 'SUM(HEAD([*SORTED_ROW_AXIS],RANK(([User].CURRENTMEMBER),[*SORTED_ROW_AXIS])),[Measures].[*CALCULATED_MEASURE_0])', SOLVE_ORDER=200
+MEMBER [Team].[*CTX_MEMBER_SEL~AGG] AS 'AGGREGATE([*NATIVE_MEMBERS__Team_])', SOLVE_ORDER=-301
+SELECT
+[*BASE_MEMBERS__Measures_] ON COLUMNS
+,NON EMPTY
+[*SORTED_ROW_AXIS] ON ROWS
+FROM [slackmetrics]
+WHERE ([*CJ_SLICER_AXIS])]]></Query>
+   </DataAccess>
+</CDADescriptor>

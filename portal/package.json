@@ -1,0 +1,25 @@
+{
+  "name": "twitter",
+  "version": "0.1.0",
+  "description": "Twitter",
+  "author": "@dmop",
+  "repository": "https://github.com/dmop/twitter",
+  "license": "MIT"  ,
+  "devDependencies": {
+      "bower": "^1.7.9"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+
+    "prestart": "npm install",
+
+    "pretest": "npm install",
+    "test": "karma start karma.conf.js",
+    "test-single-run": "karma start karma.conf.js  --single-run",
+
+    "preupdate-webdriver": "npm install",
+    "update-webdriver": "webdriver-manager update"
+
+  }
+
+}

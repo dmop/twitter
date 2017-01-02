@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="GabineteQRY" type="mondrian.jndi">
+         <Catalog>mondrian:/TRF3</Catalog>
+         <Jndi>trf3</Jndi>
+      </Connection>
+      <Connection id="EntradasQRY" type="mondrian.jndi">
+         <Catalog>mondrian:/TRF3</Catalog>
+         <Jndi>trf3</Jndi>
+      </Connection>
+      <Connection id="EntradasRecursosQRY" type="mondrian.jndi">
+         <Catalog>mondrian:/TRF3</Catalog>
+         <Jndi>trf3</Jndi>
+      </Connection>
+      <Connection id="PrimJulgamentoQTY" type="mondrian.jndi">
+         <Catalog>mondrian:/TRF3</Catalog>
+         <Jndi>trf3</Jndi>
+      </Connection>
+      <Connection id="AgravosEmbargosQRY" type="mondrian.jndi">
+         <Catalog>mondrian:/TRF3</Catalog>
+         <Jndi>trf3</Jndi>
+      </Connection>
+      <Connection id="ReconsideracoesQRY" type="mondrian.jndi">
+         <Catalog>mondrian:/TRF3</Catalog>
+         <Jndi>trf3</Jndi>
+      </Connection>
+      <Connection id="OutrasDecisoesQRY" type="mondrian.jndi">
+         <Catalog>mondrian:/TRF3</Catalog>
+         <Jndi>trf3</Jndi>
+      </Connection>
+      <Connection id="SaidasQRY" type="mondrian.jndi">
+         <Catalog>mondrian:/TRF3</Catalog>
+         <Jndi>trf3</Jndi>
+      </Connection>
+      <Connection id="EmTramitacaoQRY" type="mondrian.jndi">
+         <Catalog>mondrian:/TRF3</Catalog>
+         <Jndi>trf3</Jndi>
+      </Connection>
+      <Connection id="PendentesQRY" type="mondrian.jndi">
+         <Catalog>mondrian:/TRF3</Catalog>
+         <Jndi>trf3</Jndi>
+      </Connection>
+      <Connection id="LocalizacaoQRY" type="mondrian.jndi">
+         <Catalog>mondrian:/TRF3</Catalog>
+         <Jndi>trf3</Jndi>
+      </Connection>
+      <Connection id="MetasQRY" type="mondrian.jndi">
+         <Catalog>mondrian:/TRF3</Catalog>
+         <Jndi>trf3</Jndi>
+      </Connection>
+      <Connection id="anoQRY" type="scripting.scripting">
+         <Initscript/>
+         <Language>beanshell</Language>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" connection="GabineteQRY" id="GabineteQRY" type="mdx">
+      <Name>GabineteQRY</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Output indexes="1,0" mode="include"/>
+      <Parameters>
+         <Parameter default="Fora rota" name="dimensao" type="String"/>
+         <Parameter default="Quantidade" name="medida" type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+SET [*NATIVE_CJ_SET_WITH_SLICER] AS '[*BASE_MEMBERS__Gabinete_]'
+SET [*NATIVE_CJ_SET] AS '[*NATIVE_CJ_SET_WITH_SLICER]'
+SET [*BASE_MEMBERS__Gabinete_] AS '[Gabinete].[Gabinete].MEMBERS'
+SET [*SORTED_ROW_AXIS] AS 'ORDER([*CJ_ROW_AXIS],[Gabinete].CURRENTMEMBER.ORDERKEY,BASC)'
+SET [*BASE_MEMBERS__Measures_] AS '{[Measures].[*ZERO]}'
+SET [*CJ_ROW_AXIS] AS 'GENERATE([*NATIVE_CJ_SET], {([Gabinete].CURRENTMEMBER)})'
+MEMBER [Measures].[*ZERO] AS '[Gabinete].CURRENTMEMBER.UNIQUENAME'
+SELECT
+[*BASE_MEMBERS__Measures_] ON COLUMNS
+,[*SORTED_ROW_AXIS] ON ROWS
+FROM [Movimentacao Gabinete]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="EntradasQRY" id="EntradasQRY" type="mdx">
+      <Name>EntradasQRY</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="[Gabinete].[All Gabinetes].[GAB.DES.FED. HÉLIO NOGUEIRA]"
+                    name="gabinete"
+                    type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+SET [GABINETE] AS {${gabinete}}
+SET [MEASURES] AS {
+                    [Measures].[Qtd Distribuidos],
+                    [Measures].[Qtd Redistribuidos],
+                    [Measures].[Qtd Retratacao],
+                    [Measures].[Qtd Outras Entradas]
+                }
+MEMBER [Grupo].[Total] as [Grupo].[Tudo]
+SELECT
+{[Grupo].[Total]} on columns,
+[MEASURES] ON rows
+FROM [Movimentacao Gabinete]
+WHERE [GABINETE]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="EntradasRecursosQRY" id="EntradasRecursosQRY"
+               type="mdx">
+      <Name>EntradasRecursosQRY</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="[Gabinete].[All Gabinetes].[GAB.DES.FED. HÉLIO NOGUEIRA]"
+                    name="gabinete"
+                    type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+SET [GABINETE] AS {${gabinete}}
+SET [MEASURES] AS {
+                    [Measures].[Qtd Agravos],
+                    [Measures].[Qtd Embargos Declaracao]
+                }
+MEMBER [Grupo].[Total] as [Grupo].[Tudo]
+SELECT
+{[Grupo].[Total]} on columns,
+[MEASURES] ON rows
+FROM [Movimentacao Gabinete]
+WHERE [GABINETE]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="PrimJulgamentoQTY" id="PrimJulgamentoQTY"
+               type="mdx">
+      <Name>PrimJulgamentoQTY</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="[Gabinete].[All Gabinetes].[GAB.DES.FED. HÉLIO NOGUEIRA]"
+                    name="gabinete"
+                    type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+SET [GABINETE] AS {${gabinete}}
+SET [MEASURES] AS  {
+    [Measures].[Qtd Julgamento Sessao],
+    [Measures].[Qtd Decisao Terminativa],
+    [Measures].[Qtd Julgamento Questao incidente],
+    [Measures].[Qtd Decisao Questao Incidente],
+    [Measures].[Qtd Homologacao Acordo]
+}
+MEMBER [Grupo].[Total] as [Grupo].[Tudo]
+SELECT
+{[Grupo].[Total]} on columns,
+[MEASURES] ON rows
+FROM [Movimentacao Gabinete]
+WHERE [GABINETE]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="AgravosEmbargosQRY" id="AgravosEmbargosQRY"
+               type="mdx">
+      <Name>AgravosEmbargosQRY</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="[Gabinete].[All Gabinetes].[GAB.DES.FED. HÉLIO NOGUEIRA]"
+                    name="gabinete"
+                    type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+SET [GABINETE] AS {${gabinete}}
+SET [MEASURES] AS  {
+    [Measures].[Qtd Decisao Agravos Embargos],
+    [Measures].[Qtd Julgamento Agravos Embargos]
+}
+MEMBER [Grupo].[Total] as [Grupo].[Tudo]
+SELECT
+{[Grupo].[Total]} on columns,
+[MEASURES] ON rows
+FROM [Movimentacao Gabinete]
+WHERE [GABINETE]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="ReconsideracoesQRY" id="ReconsideracoesQRY"
+               type="mdx">
+      <Name>ReconsideracoesQRY</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="[Gabinete].[All Gabinetes].[GAB.DES.FED. HÉLIO NOGUEIRA]"
+                    name="gabinete"
+                    type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+SET [GABINETE] AS {${gabinete}}
+SET [MEASURES] AS  {
+    [Measures].[Qtd Julgamento Retratacao],
+    [Measures].[Qtd Decisao Retratacao]
+}
+MEMBER [Grupo].[Total] as [Grupo].[Tudo]
+SELECT
+{[Grupo].[Total]} on columns,
+[MEASURES] ON rows
+FROM [Movimentacao Gabinete]
+WHERE [GABINETE]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="OutrasDecisoesQRY" id="OutrasDecisoesQRY"
+               type="mdx">
+      <Name>OutrasDecisoesQRY</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="[Gabinete].[All Gabinetes].[GAB.DES.FED. HÉLIO NOGUEIRA]"
+                    name="gabinete"
+                    type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+SET [GABINETE] AS {${gabinete}}
+SET [MEASURES] AS  {
+    [Measures].[Qtd Questao Ordem],
+    [Measures].[Qtd Decisao Interlocutoria],
+    [Measures].[Qtd Despacho]
+}
+MEMBER [Grupo].[Total] as [Grupo].[Tudo]
+SELECT
+{[Grupo].[Total]} on columns,
+[MEASURES] ON rows
+FROM [Movimentacao Gabinete]
+WHERE [GABINETE]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="SaidasQRY" id="SaidasQRY" type="mdx">
+      <Name>SaidasQRY</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="[Gabinete].[All Gabinetes].[GAB.DES.FED. HÉLIO NOGUEIRA]"
+                    name="gabinete"
+                    type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+SET [GABINETE] AS {${gabinete}}
+SET [MEASURES] AS  {
+    [Measures].[Qtd Baixados Arquivados],
+    [Measures].[Qtd Processamento Recurso],
+    [Measures].[Qtd Redistribuidos Saidas],
+    [Measures].[Qtd Outras Saidas]
+}
+MEMBER [Grupo].[Total] as [Grupo].[Tudo]
+SELECT
+{[Grupo].[Total]} on columns,
+[MEASURES] ON rows
+FROM [Movimentacao Gabinete]
+WHERE [GABINETE]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="EmTramitacaoQRY" id="EmTramitacaoQRY" type="mdx">
+      <Name>EmTramitacaoQRY</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="[Gabinete].[All Gabinetes].[GAB.DES.FED. HÉLIO NOGUEIRA]"
+                    name="gabinete"
+                    type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+SET [GABINETE] AS {${gabinete}}
+SET [MEASURES] AS  {
+    [Measures].[Qtd Tramitacao Sem Sobrestados],
+    [Measures].[Qtd Sobrestados]
+}
+MEMBER [Grupo].[Total] as [Grupo].[Tudo]
+SELECT
+{[Grupo].[Total]} on columns,
+[MEASURES] ON rows
+FROM [Movimentacao Gabinete]
+WHERE [GABINETE]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="PendentesQRY" id="PendentesQRY" type="mdx">
+      <Name>PendentesQRY</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="[Gabinete].[All Gabinetes].[GAB.DES.FED. HÉLIO NOGUEIRA]"
+                    name="gabinete"
+                    type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+SET [GABINETE] AS {${gabinete}}
+SET [MEASURES] AS  {
+    [Measures].[Qtd Pendentes 1 Julgamento],
+    [Measures].[Qtd Agravo Legal Regimental],
+    [Measures].[Qtd Embargos Declaracao],
+    [Measures].[Qtd Retratacao Pendentes]
+}
+MEMBER [Grupo].[Total] as [Grupo].[Tudo]
+SELECT
+{[Grupo].[Total]} on columns,
+[MEASURES] ON rows
+FROM [Movimentacao Gabinete]
+WHERE [GABINETE]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="LocalizacaoQRY" id="LocalizacaoQRY" type="mdx">
+      <Name>LocalizacaoQRY</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="[Gabinete].[All Gabinetes].[GAB.DES.FED. HÉLIO NOGUEIRA]"
+                    name="gabinete"
+                    type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+SET [GABINETE] AS {${gabinete}}
+SET [MEASURES] AS  {
+    [Measures].[Qtd Conclusos],
+    [Measures].[Qtd em Secretaria],
+    [Measures].[Qtd em Diligencia],
+    [Measures].[Qtd Outras Diligencias],
+    [Measures].[Qtd Recebidos Outros Gabinetes],
+    [Measures].[Qtd Remetidos Outros Gabinetes]
+}
+MEMBER [Grupo].[Total] as [Grupo].[Tudo]
+SELECT
+{[Grupo].[Total]} on columns,
+[MEASURES] ON rows
+FROM [Movimentacao Gabinete]
+WHERE [GABINETE]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="MetasQRY" id="MetasQRY" type="mdx">
+      <Name>MetasQRY</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="[Gabinete].[All Gabinetes].[GAB.DES.FED. HÉLIO NOGUEIRA]"
+                    name="gabinete"
+                    type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+SET [GABINETE] AS {${gabinete}}
+SET [MEASURES] AS  {
+    [Measures].[Meta 2],
+    [Measures].[Meta 4],
+    [Measures].[Meta 6],
+    [Measures].[Meta 8]
+}
+MEMBER [Grupo].[Total] as [Grupo].[Tudo]
+SELECT
+{[Grupo].[Total]} on columns,
+[MEASURES] ON rows
+FROM [Movimentacao Gabinete]
+WHERE [GABINETE]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="anoQRY" id="anoQRY" type="jsonScriptable">
+      <Name>anoQRY</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[{
+   "resultset":[
+      ["2016"]
+   ],
+
+   "metadata":[
+      {"colIndex":0,"colType":"String","colName":"Ano"}
+   ]
+}]]></Query>
+   </DataAccess>
+</CDADescriptor>

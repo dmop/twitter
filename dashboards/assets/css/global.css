@@ -1,0 +1,608 @@
+
+/*
+ 'ned-' prefixo para classes de dashboard
+*/
+
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ /*
+    Gen purpose
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+.ned-main-row {
+  padding-left:30px;
+  padding-right:30px;
+}
+
+.ned-accent-row{
+  background-color: #f6f6f6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.ned-border-bottom {
+  border-bottom:solid 1px #ccc;
+}
+.ned-border-top {
+  border-top:solid 1px #ccc;
+}
+
+.ned-margin-bottom{ margin-bottom:30px; }
+.ned-margin-top{ margin-top:30px; }
+.ned-margin-bottom-md{margin-bottom:20px;}
+.ned-margin-bottom-sm{margin-bottom:10px;}
+
+.ned-light-gray{
+  color:#777;
+}
+
+
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ /*
+    Tabelas [TableComponent]
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+/* Fundo branco */
+.ned-table-no-alternate .table-striped > tbody > tr:nth-child(odd) > td,
+.ned-table-no-alternate .table-striped > tbody > tr:nth-child(even) > td{
+  background-color:transparent;
+}
+
+
+/* Bordas discretas */
+.ned-table-soft-borders .table-bordered > thead > tr > th,
+.ned-table-soft-borders .table-bordered > tbody > tr > th,
+.ned-table-soft-borders .table-bordered > tfoot > tr > th,
+.ned-table-soft-borders .table-bordered > thead > tr > td,
+.ned-table-soft-borders .table-bordered > tbody > tr > td,
+.ned-table-soft-borders .table-bordered > tfoot > tr > td{
+  border:0;
+  border-right:dotted 1px #ddd;
+  border-bottom:solid 1px #eee;
+  padding-left:6px;
+  padding-right:6px;
+}
+
+/* Bordas discretas */
+.ned-table-soft-borders .table-bordered > thead > tr > th:last-child,
+.ned-table-soft-borders .table-bordered > tbody > tr > th:last-child,
+.ned-table-soft-borders .table-bordered > tfoot > tr > th:last-child,
+.ned-table-soft-borders .table-bordered > thead > tr > td:last-child,
+.ned-table-soft-borders .table-bordered > tbody > tr > td:last-child,
+.ned-table-soft-borders .table-bordered > tfoot > tr > td:last-child{
+  border-right:0;
+}
+
+/* Bordas discretas */
+.ned-table-soft-borders .table-bordered > thead > tr:last-child > th,
+.ned-table-soft-borders .table-bordered > tbody > tr:last-child > th,
+.ned-table-soft-borders .table-bordered > tfoot > tr:last-child > th,
+.ned-table-soft-borders .table-bordered > thead > tr:last-child > td,
+.ned-table-soft-borders .table-bordered > tbody > tr:last-child > td,
+.ned-table-soft-borders .table-bordered > tfoot > tr:last-child > td{
+  border-bottom:0;
+}
+
+/* Bordas verticais escondidas */
+.ned-table-soft-borders.ned-no-vertical .table-bordered > thead > tr > th,
+.ned-table-soft-borders.ned-no-vertical .table-bordered > tbody > tr > th,
+.ned-table-soft-borders.ned-no-vertical .table-bordered > tfoot > tr > th,
+.ned-table-soft-borders.ned-no-vertical .table-bordered > thead > tr > td,
+.ned-table-soft-borders.ned-no-vertical .table-bordered > tbody > tr > td,
+.ned-table-soft-borders.ned-no-vertical .table-bordered > tfoot > tr > td{
+  border-right:0;
+}
+
+/* Bordas horizontais escondidas */
+.ned-table-soft-borders.ned-no-vertical.no-horizontal .table-bordered > thead > tr > th,
+.ned-table-soft-borders.ned-no-vertical.no-horizontal .table-bordered > tbody > tr > th,
+.ned-table-soft-borders.ned-no-vertical.no-horizontal .table-bordered > tfoot > tr > th,
+.ned-table-soft-borders.ned-no-vertical.no-horizontal .table-bordered > thead > tr > td,
+.ned-table-soft-borders.ned-no-vertical.no-horizontal .table-bordered > tbody > tr > td,
+.ned-table-soft-borders.ned-no-vertical.no-horizontal .table-bordered > tfoot > tr > td{
+  border-bottom:0;
+}
+
+.ned-no-vertical table.table-striped.table-bordered.form-inline.table-responsive.dataTable{
+  border:0;
+}
+
+/* Fixed table possibilita text-overflow:hidden para a primeira coluna */
+.ned-fixed-table .table-bordered > thead > tr > th,
+.ned-fixed-table .table-bordered > tbody > tr > th,
+.ned-fixed-table .table-bordered > tfoot > tr > th,
+.ned-fixed-table .table-bordered > thead > tr > td,
+.ned-fixed-table .table-bordered > tbody > tr > td,
+.ned-fixed-table .table-bordered > tfoot > tr > td{
+  white-space: nowrap;
+}
+.ned-fixed-table .table-bordered.dataTable{
+  table-layout: fixed;
+}
+/* Fixed table possibilita text-overflow:hidden para a primeira coluna */
+.ned-fixed-table .table-bordered > thead > tr > th.column0,
+.ned-fixed-table .table-bordered > tbody > tr > th.column0,
+.ned-fixed-table .table-bordered > tfoot > tr > th.column0,
+.ned-fixed-table .table-bordered > thead > tr > td.column0,
+.ned-fixed-table .table-bordered > tbody > tr > td.column0,
+.ned-fixed-table .table-bordered > tfoot > tr > td.column0{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ned-dark-header  thead > tr,
+.ned-dark-header table.dataTable thead th{
+  background-color:#f3f3f3;
+  
+  /*color:#fff;*/
+  font-weight: 800;
+  line-height: 12px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  letter-spacing:-0.01em;
+
+}
+
+
+.ned-table-vertical-middle .table-bordered > thead > tr > th,
+.ned-table-vertical-middle .table-bordered > tbody > tr > th,
+.ned-table-vertical-middle .table-bordered > tfoot > tr > th,
+.ned-table-vertical-middle .table-bordered > thead > tr > td,
+.ned-table-vertical-middle .table-bordered > tbody > tr > td,
+.ned-table-vertical-middle .table-bordered > tfoot > tr > td{
+  vertical-align: middle;
+}
+
+
+.dataTables_wrapper > table tbody tr.ned-total-row{
+  background-color:#ddd;
+}
+
+.dataTables_wrapper > table tbody tr.ned-total-row >td{
+  border-top:dotted 2px #ccc;
+}
+
+.dataTables_wrapper > table tbody tr.ned-total-row td.ned-total-row-description{
+  font-weight:800;
+}
+
+table .ned-rank {
+    width: 20px;
+    clear: none;
+    float: left;
+    text-align: center;
+    font-size: 11px;
+    line-height: 20px;
+    margin-right: 6px;
+}
+
+.ned-rank {
+    background-color: #777;
+    color: #fff;
+    border-radius: 20px;
+}
+
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ /*
+    AddIn - numPercentIcon
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+th.numPercentIcon,
+td.numPercentIcon{
+  text-align:right;
+}
+
+
+/* Tipo de coluna ink - mostra percentuais com fundo pintado */
+td.numPercentIcon span.perc.ink{
+  padding: 0px 4px;
+  border-radius:3px;
+  color:#fff;
+  font-weight: normal;
+}
+
+td.numPercentIcon span.perc.ink.stop{
+  background-color:#777;
+}
+
+td.numPercentIcon span.perc.ink.arrow_upward{
+  background-color:#22b573;
+}
+td.numPercentIcon span.perc.ink.arrow_downward{
+  background-color:#b73d46;
+}
+
+/* Tipo de coluna arrow - mostra percentuais com setas up/down */
+td.numPercentIcon span.perc.arrow{
+}
+td.numPercentIcon span.material-icons{
+  font-size:16px;
+  font-weight: bold;
+  margin-left:5px;
+}
+td.numPercentIcon span.material-icons.stop{
+  color:#777;
+}
+td.numPercentIcon span.material-icons.arrow_upward{
+  color:#22b573;
+}
+td.numPercentIcon span.material-icons.arrow_downward{
+  color:#b73d46;
+}
+
+/* Estilos do numero principal */
+td.numPercentIcon .num{
+  font-size:16px;
+  font-weight: bold;
+  letter-spacing: -.05em;
+}
+
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ /*
+    Title Row
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+.ned-title-row{
+  height:64px;
+  line-height:64px;
+  color:#555555;
+  font-size:14px;
+}
+
+.ned-title-row > div{
+  height:64px;
+}
+
+.ned-title-row i.material-icons{
+  color:#777777;
+  font-size: 16px;
+  vertical-align: -2px;
+}
+
+.ned-title-row .ned-label{
+  color:#777777;
+}
+
+.ned-title-row .ned-title-icon.material-icons{
+  font-size: 32px;
+  vertical-align: -8px;
+  margin-right: 12px;
+}
+
+.ned-title-row.ned-title-sm,
+.ned-title-row.ned-title-sm > div{
+    height:54px;
+    line-height:54px;
+}
+.ned-title-row.ned-title-xs,
+.ned-title-row.ned-title-xs > div{
+    height:36px;
+    line-height:36px;
+}
+.ned-title-row.ned-title-sm .ned-title-2l,
+.ned-title-row.ned-title-xs .ned-title-2l{
+    line-height:16px;
+    padding-top: 5px;
+}
+
+.ned-title-row.ned-title-sm .ned-title-2l .md-caption
+.ned-title-row.ned-title-xs .ned-title-2l .md-caption{
+  text-transform: uppercase;
+}
+
+.ned-title-row .ned-rank{
+  padding:4px;
+  padding-left:5px;
+}
+
+.ned-title-ranking{
+  min-width: 120px;
+}
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ /*
+  Charts
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+
+.ned-analyzer-component{
+  /*height:450px;*/
+}
+
+.ned-analyzer-component > iframe{
+  min-height:230px;
+}
+
+.ned-chart-toggle.material-icons{
+  vertical-align: -4px;
+  padding: 1px;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.ned-blockchart-container-boxed{
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  letter-spacing: normal;
+  margin: 0 10px 10px 0;
+  vertical-align: top;
+}
+
+.ned-blockchart-container-boxed .ned-chart-title {
+  text-align: left;
+  padding-bottom: 14px;
+  border-bottom: solid 1px #ddd;
+  margin-bottom: 0px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.ned-blockchart-container{
+  padding: 20px;
+  /*border: solid 8px #f6f6f6;*/
+  margin: -9px;
+  padding-bottom:10px;
+}
+
+.ned-chart-title{
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.ned-dashed-title-bottom{
+  border-top: dashed 1px #bbb;
+  padding-top: 7px;
+  margin-top: 7px;
+}
+.ned-dashed-title-top{
+  border-bottom: dashed 1px #bbb;
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+}
+
+  .ned-legend{
+  font-weight: 100;
+  font-size: 11px;
+}
+.ned-legend-square {
+  padding-left: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 6px;
+  vertical-align: 2px;
+}
+.ned-legend-square:after{
+  content:" ";
+}
+
+
+.ned-legend-realizado{
+  background-color:rgb(69, 90, 100);
+}
+.ned-legend-cadastrado{
+  background-color:#bbb;
+}
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ /*
+  Box Titles
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+
+.ned-box-title-container{
+   text-transform:uppercase;
+   color:#555555;
+}
+
+
+.ned-box-title{
+   font-weight:700;
+   font-size:16px;
+}
+
+/* Subtitulos de graficos */
+.ned-box-subtitle{
+   font-size:11px;
+   font-weight:300;
+}
+
+
+.ned-select2{
+  vertical-align: 3px;
+  padding-right: 20px;
+}
+
+
+/* Override do estilo do select2 - tirando papagaiadas */
+.ned-clean-select2 .select2-container a.select2-choice{
+    border:solid 1px #ddd;
+    border-radius:0;
+    background:none;
+    background-color:transparent;
+}
+/* Override do estilo do select2 caixa da setinha - tirando papagaiadas */
+.ned-clean-select2 .select2-container a.select2-choice span.select2-arrow{
+    background:transparent;
+    background-image:none;
+    border-radius:0;
+    border-left:none;
+}
+
+
+.ned-clean-select2.ned-clean-select2-chart{
+  font-weight: 500;
+  font-size: 12px;
+  padding-right: 0px;
+  margin-left:20px;
+}
+
+.ned-clean-select2.ned-clean-select2-chart .ned-select2{
+}
+
+
+.select2-container-active .select2-choice,
+.select2-container-multi.select2-container-active .select2-choices,
+.select2-drop.select2-drop-active,
+.select2-container-active .select2-choice,
+.select2-container-multi.select2-container-active .select2-choices {
+  box-shadow: none !important ;
+  outline:none !important;
+}
+
+/*
+  Overrides hynds multiselect style
+ */
+
+ul.ui-multiselect-checkboxes li label span {
+    margin-left: 8px;
+}
+.ui-multiselect-checkboxes label {
+    font-weight: normal;
+}
+
+.ned-tree-filter-container{
+  max-height: 200px;
+  overflow-y: scroll;
+  background-color: #f6f6f6;
+  border: solid 1px #ccc;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.dateFilterDestination{
+  padding: 6px;
+  border-radius: 3px;
+  background-color: #f7f7f7;
+  border-top: solid 3px #f7f7f7;
+  padding-left: 14px;
+  padding-right: 0;
+}
+
+
+.ui-multiselect-filter > input{
+  width: 95%;
+  margin-bottom: 10px;
+}
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ /*
+  Filters Panel [hideable]
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+
+
+.ned-hideable-filter-panel {
+  padding-top:20px;
+  padding-bottom:20px;
+  background-color:#f6f6f6;
+  border-bottom:solid 1px #ccc;
+  max-height:500px;
+  overflow: hidden;
+
+  -webkit-transition: max-height 400ms,
+                      padding-top 400ms,
+                      padding-bottom 400ms,
+                      border 400ms;
+          transition: max-height 400ms,
+                      padding-top 400ms,
+                      padding-bottom 400ms,
+                      border 400ms;
+}
+
+.ned-hideable-filter-panel.ned-hidden{
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border:0px;
+}
+
+.ned-filters-actions{
+  margin-top:-20px;
+}
+
+.ned-filters-actions .md-button.md-fab{
+  z-index:0;
+}
+
+.ned-3l-label{
+  line-height: 13px;
+  margin-top: 32px;
+  margin-bottom: -32px;
+}
+
+/*
+  Date Filters
+ */
+.dateFilterDestination input.date-input{
+  height: 24px;
+  width: 94px;
+  text-align: center;
+}
+
+
+
+.ned-export-button .md-button.md-icon-button{
+  margin:0;
+  margin-right:-4px;
+}
+.ned-line-40{
+  line-height:40px;
+}
+
+
+
+
+/* 
+      DATA BAR
+ */
+
+div.ned-databars td.dataBar{
+  position:relative;
+}
+
+div.ned-databars  div.dataBarContainer{
+	position: absolute;
+    height: 1px;
+    background: #CCC;
+    left: -5px;
+    
+}
+
+
+div.ned-databars  div.dataBarContainer svg{
+	margin-top:-2px;
+  max-width: 95%;
+  position: absolute !important;
+  right: 0;
+  left:auto !important;
+}
+
+div.ned-databars div.dataBarContainer .value {
+    padding-top: 2px;
+}
+
+
+
+.column1.dataBar {
+  text-align:right;
+}
+
+
+
+tr > td.ned-total-label.column0.string,
+tr > td.ned-total-value.column1.text-right{   
+    font-weight: 800;
+    padding-top: 15px;
+}
+
+
+.dataTables_wrapper td.numeric,
+.dataTables_wrapper th.numeric{
+  text-align: right;
+}
+
+@media print{
+* ,
+span.perc.ink.arrow_downward{
+    color: currentColor !important;
+    background-color: currentColor !important;
+}
+}
+

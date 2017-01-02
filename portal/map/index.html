@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>TRF3 - An&aacute;lise de visitas</title>
+
+    <!-- jQuery - for ajax and UI -->
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <!-- Numeral.js -->
+    <script src="//cdn.jsdelivr.net/numeraljs/1.5.0/numeral.min.js" ></script>
+    <script src="//cdn.jsdelivr.net/numeraljs/1.5.0/languages/pt-br.min.js" ></script>
+
+    <!-- History.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/history.js/1.8/bundled-uncompressed/html4+html5/jquery.history.js"></script>
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.js"></script>
+
+    <!-- Leaflet Marker Cluster -->
+    <link rel="stylesheet" href="assets/css/MarkerCluster.css" />
+    <link rel="stylesheet" href="assets/css/MarkerCluster.Default.css" />
+    <script src="assets/js/leaflet.markercluster-src.js"></script>
+
+    <!-- MATERIALIZE Compiled and minified -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+
+    <!--     T E R R I T O R Y   \,,/  -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+</head>
+
+<body>
+
+		<!-- SideNav - Filters -->
+    <div id="slide-out" class="ul-side-menu side-nav fixed">
+
+			<!-- Blue sidenav header-->
+			<div class="userView ul-hello">
+	      <img class="circle" src="https://cdn.rawgit.com/googlemaps/js-marker-clusterer/gh-pages/images/m5.png">
+	      <span class="white-text name">An&aacute;lise GEO</span>
+	      <span id="regional" class="white-text ul-thin"></span>
+	    </div>
+
+			<div class="ul-content">
+
+				<!-- Regionais Filter -->
+				<div class="input-field col s12">
+			    <select id="regionais">
+			    </select>
+			    <label>Regionais</label>
+			  </div>
+
+
+				<!-- Medidas Filter -->
+				<div class="input-field col s12">
+			    <select id="medidas">
+			    </select>
+			    <label>Medida</label>
+			  </div>
+			</div>
+
+        </div>
+
+    </div>
+    <!-- The end of the rainbow - where the magic happens -->
+    <div id="map" style="padding-left: 290px;"></div>
+
+    <!-- Rainbow canon - where I pull the trigger -->
+    <script src="assets/js/map.js"></script>
+    <script src="assets/js/cluster.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/states.js"></script>
+
+</body>
+
+</html>

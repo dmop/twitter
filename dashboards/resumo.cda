@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="dataCargaQRY" type="sql.jndi">
+         <Jndi>NovaEraVertica</Jndi>
+      </Connection>
+      <Connection id="CategoriaTreeMockQRY" type="scripting.scripting">
+         <Initscript/>
+         <Language>beanshell</Language>
+      </Connection>
+      <Connection id="CategoriaMockQRY" type="scripting.scripting">
+         <Initscript/>
+         <Language>beanshell</Language>
+      </Connection>
+      <Connection id="LojasSelectorQRY" type="mondrian.jndi">
+         <Catalog>mondrian:/Mercantil+NovaEra</Catalog>
+         <Jndi>NovaEraVertica</Jndi>
+      </Connection>
+      <Connection id="LojasQRY" type="mondrian.jndi">
+         <Catalog>mondrian:/Mercantil+NovaEra</Catalog>
+         <Jndi>NovaEraVertica</Jndi>
+      </Connection>
+      <Connection id="CategoriaTreeQRY" type="mondrian.jndi">
+         <Catalog>mondrian:/Mercantil+NovaEra</Catalog>
+         <Jndi>NovaEraVertica</Jndi>
+      </Connection>
+      <Connection id="SegmentoQRY" type="mondrian.jndi">
+         <Catalog>mondrian:/Mercantil+NovaEra</Catalog>
+         <Jndi>NovaEraVertica</Jndi>
+      </Connection>
+      <Connection id="Forn10MaisQRY" type="mondrian.jndi">
+         <Catalog>mondrian:/Mercantil+NovaEra</Catalog>
+         <Jndi>NovaEraVertica</Jndi>
+      </Connection>
+      <Connection id="Forn10MenosQRY" type="mondrian.jndi">
+         <Catalog>mondrian:/Mercantil+NovaEra</Catalog>
+         <Jndi>NovaEraVertica</Jndi>
+      </Connection>
+      <Connection id="Prod50MaisQRY" type="mondrian.jndi">
+         <Catalog>mondrian:/Mercantil+NovaEra</Catalog>
+         <Jndi>NovaEraVertica</Jndi>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" connection="dataCargaQRY" id="dataCargaQRY" type="sql">
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[select max(data_carga) as data_carga from(
+        select max(data_carga) as data_carga from fato_meta
+        union all
+        select max(data_carga) as data_carga from fato_faturamento
+        union all
+        select max(data_carga) as data_carga from fact_estoque
+)temps]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="CategoriaTreeMockQRY" id="CategoriaTreeMockQRY"
+               type="jsonScriptable">
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Output indexes="0" mode="exclude"/>
+      <Parameters/>
+      <Query><![CDATA[{
+    "metadata": [{
+        "colName": "Categoria",
+        "colType": "String",
+        "colIndex": 0
+    }, {
+        "colName": "CatName",
+        "colType": "String",
+        "colIndex": 1
+    }, {
+        "colName": "Faturamento",
+        "colType": "Numeric",
+        "colIndex": 2
+    }, {
+        "colName": "Margem",
+        "colType": "Numeric",
+        "colIndex": 3
+    }, {
+        "colName": "Meta",
+        "colType": "String",
+        "colIndex": 4
+    }, {
+        "colName": "perc_meta",
+        "colType": "String",
+        "colIndex": 5
+    }, {
+        "colName": "Faturamento (M-1)",
+        "colType": "Numeric",
+        "colIndex": 6
+    }, {
+        "colName": "Margem (M-1)",
+        "colType": "Numeric",
+        "colIndex": 7
+    }, {
+        "colName": "Faturamento (A-1)",
+        "colType": "Numeric",
+        "colIndex": 8
+    }, {
+        "colName": "Margem (A-1)",
+        "colType": "Numeric",
+        "colIndex": 9
+    }, {
+        "colName": "Tendencia",
+        "colType": "Numeric",
+        "colIndex": 10
+    }, {
+        "colName": "perc_tendencia",
+        "colType": "String",
+        "colIndex": 11
+    }],
+    "resultset": [
+        ["HIGIENE PESSOAL A BELEZA", "[Categoria].[HIGIENE PESSOAL A BELEZA]", 1918705.7299999997, 0.08542748049773541, null, null, 2823762.89, 0.09100725487608906, 2228014.349999999, 0.04790013517543379, 2398382.1624999996, null],
+
+        ["CORPO", "[Categoria].[HIGIENE PESSOAL A BELEZA].[CORPO]", 1918705.7299999997, 0.08542748049773541, null, null, 2823762.89, 0.09100725487608906, 2228014.349999999, 0.04790013517543379, 2398382.1624999996, null],
+
+        ["LINHA SOLAR", "[Categoria].[HIGIENE PESSOAL A BELEZA].[CORPO].[LINHA SOLAR]", 1918705.7299999997, 0.08542748049773541, null, null, 2823762.89, 0.09100725487608906, 2228014.349999999, 0.04790013517543379, 2398382.1624999996, null],
+        ["MANICURE E PEDICURE", "[Categoria].[HIGIENE PESSOAL A BELEZA].[CORPO].[MANICURE E PEDICURE]", 239841.08000000002, 0.09548631930766024, null, null, 542772.8600000001, 0.09500029971565722, 142898.25, 0.03361218941878755, 299801.35, null],
+        
+        ["LIMPEZA GERAL", "[Categoria].[HIGIENE PESSOAL A BELEZA].[CORPO].[LINHA SOLAR].[LIMPEZA GERAL]", 724086.1499999999, 0.09046073611648317, null, null, 727492.07, 0.07431187693434106, 599639.4, 0.053239320104506625, 905107.6874999999, null],
+        ["DESOD SANITARIO", "[Categoria].[HIGIENE PESSOAL A BELEZA].[CORPO].[LINHA SOLAR].[LIMPEZA GERAL].[DESOD SANITARIO]", 723492.8500000001, 0.09137272377070838, null, null, 726582.6600000001, 0.07473358292364922, 599639.4, 0.053239320104506625, 904366.0625, null],
+        ["CERA SAPATO", "[Categoria].[HIGIENE PESSOAL A BELEZA].[CORPO].[LINHA SOLAR].[LIMPEZA GERAL].[CERA SAPATO]", 593.3000000000002, 0.055864469195510136, null, null, 909.41, 0.058379899607087005, null, null, 741.6250000000002, null],
+        ["PROTETOR LABIAL", "[Categoria].[HIGIENE PESSOAL A BELEZA].[CORPO].[LINHA SOLAR].[PROTETOR LABIAL]", 1089354.0699999998, 0.0811069987436815, null, null, 1546040.66, 0.11044832687409521, 852771.0099999998, 0.060613883840316296, 1361692.5874999997, null],
+        ["BAZAR", "[Categoria].[HIGIENE PESSOAL A BELEZA].[CORPO].[LINHA SOLAR].[PROTETOR LABIAL].[BAZAR]", 1089354.0699999998, 0.0811069987436815, null, null, 1546040.66, 0.11044832687409521, 852771.0099999998, 0.060613883840316296, 1361692.5874999997, null],
+        ["FILMES", "[Categoria].[HIGIENE PESSOAL A BELEZA].[CORPO].[LINHA SOLAR].[PROTETOR LABIAL].[BAZAR].[FILMES]", 1077663.6899999997, -0.01855712607013228, null, null, 1524866.7000000002, 0.00922105607286479, 848565.8799999999, 0.020204289687113096, 1347079.6124999998, null],
+        ["GUARDANAPOS", "[Categoria].[HIGIENE PESSOAL A BELEZA].[CORPO].[LINHA SOLAR].[PROTETOR LABIAL].[BAZAR].[GUARDANAPOS]", 10623.76, 0.1502115234592813, null, null, 19358.94, 0.17709370213140527, 4205.130000000001, 0.1156921963428948, 13279.699999999999, null],
+        ["PROTETOR SOLAR", "[Categoria].[HIGIENE PESSOAL A BELEZA].[CORPO].[LINHA SOLAR].[PROTETOR SOLAR]", 105265.51, 0.08902808925919226, null, null, 550230.1599999999, 0.04062507599809306, 775603.94, 0.009052181839442298, 131581.88749999998, null],
+        ["BELEZA&SAUDE", "[Categoria].[HIGIENE PESSOAL A BELEZA].[CORPO].[LINHA SOLAR].[PROTETOR SOLAR].[BELEZA&SAUDE]", 105265.51, 0.08902808925919226, null, null, 550230.1599999999, 0.04062507599809306, 775603.94, 0.009052181839442298, 131581.88749999998, null],
+        ["CUTELARIA", "[Categoria].[HIGIENE PESSOAL A BELEZA].[CORPO].[MANICURE E PEDICURE].[CUTELARIA]", 239841.08000000002, 0.09548631930766024, null, null, 542772.8600000001, 0.09500029971565722, 142898.25, 0.03361218941878755, 299801.35, null],
+        ["BISCOITOS", "[Categoria].[HIGIENE PESSOAL A BELEZA].[CORPO].[MANICURE E PEDICURE].[CUTELARIA].[BISCOITOS]", 226382.97000000003, 0.0012824364804562417, null, null, 529366.8899999999, 0.025946857868171472, 138094.26, -0.02257638503191322, 282978.7125, null],
+        ["SECOS&DOCES", "[Categoria].[HIGIENE PESSOAL A BELEZA].[CORPO].[MANICURE E PEDICURE].[CUTELARIA].[BISCOITOS].[SECOS&DOCES]", 226382.97000000003, 0.0012824364804562417, null, null, 529366.8899999999, 0.025946857868171472, 138094.26, -0.02257638503191322, 282978.7125, null],
+        ["ESMALTE", "[Categoria].[HIGIENE PESSOAL A BELEZA].[CORPO].[MANICURE E PEDICURE].[ESMALTE]", 13458.109999999995, 0.1331724266371162, null, null, 13405.970000000003, 0.13191617483045082, 4803.989999999999, 0.05616940596961455, 16822.637499999993, null],
+        ["MOLHOS", "[Categoria].[HIGIENE PESSOAL A BELEZA].[CORPO].[MANICURE E PEDICURE].[ESMALTE].[MOLHOS]", 13458.109999999995, 0.1331724266371162, null, null, 13405.970000000003, 0.13191617483045082, 4803.989999999999, 0.05616940596961455, 16822.637499999993, null],
+
+        ["LIMPEZA", "[Categoria].[LIMPEZA]", 1918705.7299999997, 0.08542748049773541, null, null, 2823762.89, 0.09100725487608906, 2228014.349999999, 0.04790013517543379, 2398382.1624999996, null],
+        ["MAGAZINE", "[Categoria].[MAGAZINE]", 277961.71, 0.10497190801022864, null, null, 608728.8499999999, 0.09929198088482467, 194426.70000000004, 0.06264972256820278, 347452.1375, null],
+        ["ARTIGOS ESPORTE", "[Categoria].[MAGAZINE].[ARTIGOS ESPORTE]", 38120.630000000005, 0.11940871878992565, null, null, 65955.99, 0.10455589304208698, 51528.44999999999, 0.08405786352537825, 47650.787500000006, null],
+        ["BOLAS", "[Categoria].[MAGAZINE].[ARTIGOS ESPORTE].[BOLAS]", 38120.630000000005, 0.11940871878992565, null, null, 65955.99, 0.10455589304208698, 51528.44999999999, 0.08405786352537825, 47650.787500000006, null],
+
+        ["NESTLE ALIMENTOS", "[Categoria].[NESTLE ALIMENTOS]", 113199.60000000003, 0.13747518896146974, null, null, 125715.93, 0.14504354457500573, 184040.57, 0.11247543352552049, 141499.50000000003, null],
+        ["CEREAL BARRA", "[Categoria].[NESTLE ALIMENTOS].[CHOCOLATES]", 25811.36, 0.13461212287814098, null, null, 29203.45, 0.13566992833907232, 25785.39, 0.04248867402535556, 32264.2, null],
+        ["CEREAL BARRA", "[Categoria].[NESTLE ALIMENTOS].[CHOCOLATES].[CEREAL BARRA]", 25811.36, 0.13461212287814098, null, null, 29203.45, 0.13566992833907232, 25785.39, 0.04248867402535556, 32264.2, null],
+        ["ACHOCOLATADOS POS", "[Categoria].[NESTLE ALIMENTOS].[ACHOCOLATADOS POS]", 113199.60000000003, 0.13747518896146974, null, null, 125715.93, 0.14504354457500573, 184040.57, 0.11247543352552049, 141499.50000000003, null],
+        ["ACHOC PO LATA 400G", "[Categoria].[NESTLE ALIMENTOS].[ACHOCOLATADOS POS].[ACHOC PO LATA 400G]", 113199.60000000003, 0.13747518896146974, null, null, 125715.93, 0.14504354457500573, 184040.57, 0.11247543352552049, 141499.50000000003, null],
+        ["SUCOS EM PO", "[Categoria].[NESTLE ALIMENTOS].[SUCOS EM PO]", 49432.42000000002, 0.12785433180904018, null, null, 59689.090000000004, 0.11009572359883388, 44405.56999999999, 0.14922625418395039, 61790.52500000002, null],
+        ["SUCOS EM PO", "[Categoria].[NESTLE ALIMENTOS].[SUCOS EM PO].[SUCOS EM PO]", 49432.42000000002, 0.12785433180904018, null, null, 59689.090000000004, 0.11009572359883388, 44405.56999999999, 0.14922625418395039, 61790.52500000002, null],
+        ["PESSEGO", "[Categoria].[NESTLE ALIMENTOS].[PESSEGO]", 1066.62, 0.14235467879146657, null, null, 1815.02, 0.12299082415047705, null, null, 1333.2749999999999, null],
+
+        ["DEL", "[Categoria].[DEL]", 8716.020000000002, 0.1504218436415266, null, null, 13035.289999999999, 0.13573143642178423, null, null, 10895.025000000003, null],
+        ["DEL", "[Categoria].[DEL].[DEL]", 8716.020000000002, 0.1504218436415266, null, null, 13035.289999999999, 0.13573143642178423, null, null, 10895.025000000003, null],
+        ["BRINDES", "[Categoria].[BRINDES]", 49432.42000000002, 0.12785433180904018, null, null, 59689.090000000004, 0.11009572359883388, 44405.56999999999, 0.14922625418395039, 61790.52500000002, null],
+        ["DEVOLUCAO", "[Categoria].[DEVOLUCAO]", 202217.77000000002, 0.12015464213139361, null, null, 198526.81999999998, 0.12045475049279374, 385782.7799999999, 0.08803576707976284, 252772.21250000002, null],
+        ["LACTEOS", "[Categoria].[DEVOLUCAO].[LACTEOS]", 202217.77000000002, 0.12015464213139361, null, null, 198526.81999999998, 0.12045475049279374, 385782.7799999999, 0.08803576707976282, 252772.21250000002, null]
+    ],
+    "queryInfo": {
+        "totalRows": "33"
+    }
+}]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="CategoriaMockQRY" id="CategoriaMockQRY"
+               type="jsonScriptable">
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[{
+   "resultset":[
+     ["Name", 10000000, 0.06, null, -0.04, 10000000, 0.0, 100000, 0.04, 1000000, 0.44],
+     ["Bebidas", 20000000, 1.04, 5000000, null, 10000000, 0.0, 100000, 0.04, 1000000, 0.44],
+     ["Acougue", 50000000, 0.0, 1000000, -0.04, 10000000, 0.0, 100000, 0.04, 1000000, 0.9],
+     ["Frios&Lacticinios", 1000000, 0.04, 100000, 0.0, 0, 0.0, 100000, 0.04, 1000000, 0.44],
+     ["Consumo e expediente", 9000000, 0.54, 900000, 0.04, null, 0.0, 100000, 0.04, 1000000, 0.44]
+   ],
+
+   "metadata":[
+      {"colIndex":0,"colType":"String","colName":"categoria"},
+      {"colIndex":1,"colType":"Numeric","colName":"fat"},
+      {"colIndex":2,"colType":"Numeric","colName":"perc_fat"},
+      {"colIndex":3,"colType":"Numeric","colName":"meta"},
+      {"colIndex":4,"colType":"Numeric","colName":"perc_meta"},
+      {"colIndex":5,"colType":"Numeric","colName":"fatm1"},
+      {"colIndex":6,"colType":"Numeric","colName":"perc_fatm1"},
+      {"colIndex":7,"colType":"Numeric","colName":"fatm2"},
+      {"colIndex":8,"colType":"Numeric","colName":"perc_fatm2"},
+      {"colIndex":9,"colType":"Numeric","colName":"tend"},
+      {"colIndex":10,"colType":"Numeric","colName":"perc_tend"}
+   ]
+}]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="LojasSelectorQRY" id="LojasSelectorQRY" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Output indexes="1,0" mode="include"/>
+      <Parameters>
+         <Parameter default="[Divisao].[Varejo].[CASH CARRY]" name="divisaoParam" type="String"/>
+      </Parameters>
+      <Query><![CDATA[with
+  member [Measures].[un] as [Loja].currentMember.uniquename
+
+select
+  {[Measures].[un], [Measures].[Valor Faturamento]} on columns,
+  
+  union(
+    [Loja].[Tudo],
+      filter( 
+          [Loja].children,
+          not [Loja].currentMember in {[Loja].[#null]} and
+          not isEmpty(([Loja].currentMember, [Measures].[Valor Faturamento])) 
+      )
+  )
+ on rows
+from [Faturamento]
+where
+{ ${divisaoParam} }]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="LojasQRY" id="LojasQRY" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="false"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="[Divisao].[Varejo].[CASH CARRY]" name="divisaoParam" type="String"/>
+         <Parameter default=" [Tempo].[Tudo].[2016].[Junho].[23]" name="dateParam" type="String"/>
+         <Parameter default="[Loja].[Tudo]" name="lojaParam" type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH 
+
+Set [lojas]   as { ${lojaParam}    }
+Set [tempo]   as { ${dateParam}    }
+Set [divisao] as { ${divisaoParam} }
+Set [filtro]  as crossjoin( [tempo], [divisao] )
+
+Set [rows] as 
+  iif(
+    [Loja].[Tudo] in [lojas],
+    descendants([Loja],1),
+    filter(
+      descendants([Loja],1),
+      [Loja].currentMember in [lojas]
+    )
+  )
+Set [medidas] as {
+  [Measures].[Faturamento],
+  [Measures].[perc_meta],
+  [Measures].[Meta],
+  [Measures].[Margem Contribuicao],
+  [Measures].[Margem (M-1)],
+  [Measures].[Faturamento (M-1)],
+  [Measures].[perc_m_1],
+  [Measures].[Faturamento (A-1)],
+  [Measures].[perc_a_1],
+  [Measures].[Tendencia],
+  [Measures].[perc_tendencia]
+ }
+ 
+Member [Loja].[Total] as 
+iif(
+  count([rows])>1,
+  aggregate([rows]),
+  null
+)
+
+SELECT
+  [medidas] on columns,
+  non empty union([rows], [Loja].[Total]) on rows
+from [Plano de Voo]
+where 
+  [filtro]]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="CategoriaTreeQRY" id="CategoriaTreeQRY" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="0" enabled="true"/>
+      <Columns/>
+      <Output indexes="0" mode="exclude"/>
+      <Parameters>
+         <Parameter default="[Divisao].[Varejo].[CASH CARRY]" name="divisaoParam" type="String"/>
+         <Parameter default=" [Tempo].[Tudo].[2016].[Junho].[23]" name="dateParam" type="String"/>
+         <Parameter default="[Loja].[Tudo]" name="lojaParam" type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH 
+member [Measures].[CatName] as [Categoria].currentmember.uniquename
+Member [Categoria].[Total] as [Categoria].[Tudo]
+Set [medidas] as 
+ {
+  [Measures].[CatName],
+  [Measures].[Faturamento],
+  [Measures].[perc_meta],
+  [Measures].[Meta],
+  [Measures].[Margem Contribuicao],
+  [Measures].[Margem (M-1)],
+  
+  [Measures].[Faturamento (M-1)],
+  [Measures].[perc_m_1],
+  [Measures].[Faturamento (A-1)],
+  [Measures].[perc_a_1],
+  [Measures].[Tendencia],
+  [Measures].[perc_tendencia]
+  
+ }
+SELECT
+ [medidas] on columns,
+union(
+    extract(
+        nonEmptyCrossJoin(
+            [Categoria].[Categoria].members,
+            except( [medidas] , [Measures].[CatName])
+        ),
+        [Categoria]
+    ),
+    [Categoria].[Total]
+)on rows
+from [Plano de Voo]
+where
+  crossjoin(
+      crossjoin(
+      { ${divisaoParam} },
+        ${dateParam}
+      )
+      , { ${lojaParam} }
+    )]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="SegmentoQRY" id="SegmentoQRY" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="[Divisao].[Varejo].[CASH CARRY]" name="divisaoParam" type="String"/>
+         <Parameter default=" [Tempo].[Tudo].[2016].[Junho].[23]" name="dateParam" type="String"/>
+         <Parameter default="[Loja].[Tudo]" name="lojaParam" type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH 
+
+Member [Segmento].[Total] as [Segmento].[Tudo]
+Member [Measures].[PERC_REPR] as
+    [Measures].[Faturamento]/
+    ( 
+      [Measures].[Faturamento] , 
+      iif(
+        [Segmento].currentMember is [Segmento].[Total], 
+        [Segmento].[Total], 
+        [Segmento].currentMember.parent 
+      )
+    )
+  
+member [Measures].[Contrib] as [Measures].[Contribuicao]*100    
+Set [medidas] as 
+ {
+  [Measures].[Faturamento],
+  [Measures].[PERC_REPR],
+  
+  [Measures].[Margem Contribuicao],
+  [Measures].[Margem (M-1)],
+  
+  [Measures].[Faturamento (M-1)],
+  [Measures].[perc_m_1],
+  [Measures].[Faturamento (A-1)],
+  [Measures].[perc_a_1],
+  
+  [Measures].[Contrib]
+ }
+
+SELECT
+ [medidas] on columns,
+  non empty union(descendants([Segmento],1), [Segmento].[Total]) on rows
+from [Plano de Voo]
+where 
+  crossjoin(
+      crossjoin(
+      { ${divisaoParam} },
+        ${dateParam}
+      )
+      , { ${lojaParam} }
+    )]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="Forn10MaisQRY" id="Forn10MaisQRY" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="[Divisao].[Varejo].[CASH CARRY]" name="divisaoParam" type="String"/>
+         <Parameter default=" [Tempo].[Tudo].[2016].[Junho].[23]" name="dateParam" type="String"/>
+         <Parameter default="[Loja].[Tudo]" name="lojaParam" type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+SET [*NATIVE_CJ_SET_WITH_SLICER] AS 'NONEMPTYCROSSJOIN([*BASE_MEMBERS__Fornecedor_],NONEMPTYCROSSJOIN([*BASE_MEMBERS__Loja_],NONEMPTYCROSSJOIN([*BASE_MEMBERS__Divisao_],[*BASE_MEMBERS__Tempo_])))'
+SET [*NATIVE_CJ_SET] AS 'GENERATE([*NATIVE_CJ_SET_WITH_SLICER], {([Fornecedor].CURRENTMEMBER)})'
+SET [*METRIC_CJ_SET] AS 'FILTER([*NATIVE_CJ_SET],[Measures].[*TOP_Faturamento_SEL~SUM] <= 10)'
+SET [*SORTED_ROW_AXIS] AS 'ORDER([*CJ_ROW_AXIS],[Measures].[*SORTED_MEASURE],BDESC)'
+SET [*BASE_MEMBERS__Measures_] AS '{
+  [Measures].[*FORMATTED_MEASURE_2], 
+  [Measures].[*FORMATTED_MEASURE_3],
+  [Measures].[*FORMATTED_MEASURE_4],
+  
+  [Measures].[*FORMATTED_MEASURE_8],
+  [Measures].[*FORMATTED_MEASURE_9],
+  [Measures].[*FORMATTED_MEASURE_0],
+  [Measures].[*FORMATTED_MEASURE_7],
+  [Measures].[REPRESENTATIVIDADE]
+}'
+SET [*BASE_MEMBERS__Fornecedor_] AS 'FILTER([Fornecedor].[Fornecedor].MEMBERS,[Fornecedor].CURRENTMEMBER NOT IN {[Fornecedor].[Tudo].[#null]})'
+SET [*BASE_MEMBERS__Divisao_] AS '{ ${divisaoParam} }'
+SET [*BASE_MEMBERS__Loja_] AS '{ ${lojaParam} }'
+SET [*BASE_MEMBERS__Tempo_] AS '{ ${dateParam} }'
+SET [*CJ_SLICER_AXIS] AS 'GENERATE([*NATIVE_CJ_SET_WITH_SLICER], {([Loja].CURRENTMEMBER,[Divisao].CURRENTMEMBER,[Tempo].CURRENTMEMBER)})'
+SET [*TOP_SET] AS 'ORDER(GENERATE([*NATIVE_CJ_SET],{[Fornecedor].CURRENTMEMBER}),([Measures].[Faturamento]),BDESC)'
+SET [*CJ_ROW_AXIS] AS 'GENERATE([*METRIC_CJ_SET], {([Fornecedor].CURRENTMEMBER)})'
+MEMBER [Measures].[*FORMATTED_MEASURE_0] AS '[Measures].[Faturamento (A-1)]', FORMAT_STRING = '#,###.00', SOLVE_ORDER=500
+MEMBER [Measures].[*FORMATTED_MEASURE_2] AS '[Measures].[Faturamento]', FORMAT_STRING = '#,###.00', SOLVE_ORDER=500
+MEMBER [Measures].[*FORMATTED_MEASURE_3] AS '[Measures].[Contribuicao]*100', FORMAT_STRING = '#,###.00', SOLVE_ORDER=500
+MEMBER [Measures].[*FORMATTED_MEASURE_4] AS '[Measures].[Margem Contribuicao]', FORMAT_STRING = '0.00%', SOLVE_ORDER=500
+
+MEMBER [Measures].[*FORMATTED_MEASURE_7] AS '[Measures].[perc_a_1]', FORMAT_STRING = '0.00%', SOLVE_ORDER=500
+MEMBER [Measures].[*FORMATTED_MEASURE_8] AS '[Measures].[Faturamento (M-1)]', FORMAT_STRING = '#,###.00', SOLVE_ORDER=500
+MEMBER [Measures].[*FORMATTED_MEASURE_9] AS '[Measures].[perc_m_1]', FORMAT_STRING = '0.00%', SOLVE_ORDER=500
+MEMBER [Measures].[*SORTED_MEASURE] AS '([Measures].[*FORMATTED_MEASURE_2])', SOLVE_ORDER=400
+MEMBER [Measures].[*TOP_Faturamento_SEL~SUM] AS 'RANK([Fornecedor].CURRENTMEMBER,[*TOP_SET])', SOLVE_ORDER=400
+MEMBER [Fornecedor].[Total] AS aggregate([*CJ_ROW_AXIS])
+Member [Measures].[REPRESENTATIVIDADE] AS [Measures].[*FORMATTED_MEASURE_2]/AGGREGATE([Fornecedor].[Tudo], [Measures].[*FORMATTED_MEASURE_2])
+
+SELECT
+[*BASE_MEMBERS__Measures_] ON COLUMNS
+,NON EMPTY
+Union([*SORTED_ROW_AXIS],[Fornecedor].[Total])  ON ROWS
+FROM [Plano de Voo]
+WHERE ([*CJ_SLICER_AXIS])]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="Forn10MenosQRY" id="Forn10MenosQRY" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="[Divisao].[Varejo].[CASH CARRY]" name="divisaoParam" type="String"/>
+         <Parameter default=" [Tempo].[Tudo].[2016].[Junho].[23]" name="dateParam" type="String"/>
+         <Parameter default="[Loja].[Tudo]" name="lojaParam" type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+SET [*NATIVE_CJ_SET_WITH_SLICER] AS 'NONEMPTYCROSSJOIN([*BASE_MEMBERS__Fornecedor_],NONEMPTYCROSSJOIN([*BASE_MEMBERS__Loja_],NONEMPTYCROSSJOIN([*BASE_MEMBERS__Divisao_],[*BASE_MEMBERS__Tempo_])))'
+SET [*NATIVE_CJ_SET] AS 'GENERATE([*NATIVE_CJ_SET_WITH_SLICER], {([Fornecedor].CURRENTMEMBER)})'
+SET [*METRIC_CJ_SET] AS 'FILTER(FILTER([*NATIVE_CJ_SET],[Fornecedor].CURRENTMEMBER IN [*METRIC_CACHE_SET]),[Measures].[*BOTTOM_Faturamento_SEL~SUM] <= 10)'
+SET [*SORTED_ROW_AXIS] AS 'ORDER([*CJ_ROW_AXIS],[Measures].[*SORTED_MEASURE],BDESC)'
+SET [*BOTTOM_SET] AS 'ORDER(FILTER(GENERATE([*NATIVE_CJ_SET],{[Fornecedor].CURRENTMEMBER}),[Fornecedor].CURRENTMEMBER IN [*METRIC_CACHE_SET]),([Measures].[Faturamento]),BASC)'
+SET [*BASE_MEMBERS__Measures_] AS '{[Measures].[*FORMATTED_MEASURE_2],[Measures].[*FORMATTED_MEASURE_5],[Measures].[*FORMATTED_MEASURE_6],[Measures].[*FORMATTED_MEASURE_8],[Measures].[*FORMATTED_MEASURE_9],[Measures].[*FORMATTED_MEASURE_0],[Measures].[*FORMATTED_MEASURE_7],[Measures].[*FORMATTED_MEASURE_3],[Measures].[*FORMATTED_MEASURE_4],[Measures].[*FORMATTED_MEASURE_1]}'
+SET [*BASE_MEMBERS__Fornecedor_] AS 'FILTER([Fornecedor].[Fornecedor].MEMBERS,[Fornecedor].CURRENTMEMBER NOT IN {[Fornecedor].[Tudo].[#null]})'
+SET [*BASE_MEMBERS__Divisao_] AS '{ ${divisaoParam} }'
+SET [*BASE_MEMBERS__Loja_] AS '{ ${lojaParam} }'
+SET [*METRIC_CACHE_SET] AS 'FILTER(GENERATE([*NATIVE_CJ_SET],{([Fornecedor].CURRENTMEMBER)}),NOT ISEMPTY([Measures].[*Faturamento_SEL~SUM]))'
+SET [*BASE_MEMBERS__Tempo_] AS '{ ${dateParam} }'
+SET [*CJ_SLICER_AXIS] AS 'GENERATE([*NATIVE_CJ_SET_WITH_SLICER], {([Loja].CURRENTMEMBER,[Divisao].CURRENTMEMBER,[Tempo].CURRENTMEMBER)})'
+SET [*CJ_ROW_AXIS] AS 'GENERATE([*METRIC_CJ_SET], {([Fornecedor].CURRENTMEMBER)})'
+MEMBER [Measures].[*BOTTOM_Faturamento_SEL~SUM] AS 'RANK([Fornecedor].CURRENTMEMBER,[*BOTTOM_SET])', SOLVE_ORDER=400
+MEMBER [Measures].[*FORMATTED_MEASURE_0] AS '[Measures].[Faturamento (A-1)]', FORMAT_STRING = '#,###.00', SOLVE_ORDER=500
+MEMBER [Measures].[*FORMATTED_MEASURE_1] AS '[Measures].[Lucratividade]', FORMAT_STRING = '#,###.00', SOLVE_ORDER=500
+MEMBER [Measures].[*FORMATTED_MEASURE_2] AS '[Measures].[Faturamento]', FORMAT_STRING = '#,###.00', SOLVE_ORDER=500
+MEMBER [Measures].[*FORMATTED_MEASURE_3] AS '[Measures].[Contribuicao]', FORMAT_STRING = '#,###.00', SOLVE_ORDER=500
+MEMBER [Measures].[*FORMATTED_MEASURE_4] AS '[Measures].[Margem Contribuicao]', FORMAT_STRING = '0.00%', SOLVE_ORDER=500
+MEMBER [Measures].[*FORMATTED_MEASURE_5] AS '[Measures].[Margem]', FORMAT_STRING = '0.00%', SOLVE_ORDER=500
+MEMBER [Measures].[*FORMATTED_MEASURE_6] AS '[Measures].[Margem (M-1)]', FORMAT_STRING = '0.00%', SOLVE_ORDER=500
+MEMBER [Measures].[*FORMATTED_MEASURE_7] AS '[Measures].[perc_a_1]', FORMAT_STRING = '0.00%', SOLVE_ORDER=500
+MEMBER [Measures].[*FORMATTED_MEASURE_8] AS '[Measures].[Faturamento (M-1)]', FORMAT_STRING = '#,###.00', SOLVE_ORDER=500
+MEMBER [Measures].[*FORMATTED_MEASURE_9] AS '[Measures].[perc_m_1]', FORMAT_STRING = '0.00%', SOLVE_ORDER=500
+MEMBER [Measures].[*Faturamento_SEL~SUM] AS '([Measures].[Faturamento],[Fornecedor].CURRENTMEMBER)', SOLVE_ORDER=400
+MEMBER [Measures].[*SORTED_MEASURE] AS '([Measures].[*FORMATTED_MEASURE_2])', SOLVE_ORDER=400
+SELECT
+[*BASE_MEMBERS__Measures_] ON COLUMNS
+,NON EMPTY
+[*SORTED_ROW_AXIS] ON ROWS
+FROM [Plano de Voo]
+WHERE ([*CJ_SLICER_AXIS])]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="Prod50MaisQRY" id="Prod50MaisQRY" type="mdx">
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="[Divisao].[Varejo].[CASH CARRY]" name="divisaoParam" type="String"/>
+         <Parameter default=" [Tempo].[Tudo].[2016].[Junho].[23]" name="dateParam" type="String"/>
+         <Parameter default="[Loja].[Tudo]" name="lojaParam" type="String"/>
+      </Parameters>
+      <Query><![CDATA[WITH
+SET [*NATIVE_CJ_SET_WITH_SLICER] AS 'NONEMPTYCROSSJOIN([*BASE_MEMBERS__Produto_],NONEMPTYCROSSJOIN([*BASE_MEMBERS__Loja_],NONEMPTYCROSSJOIN([*BASE_MEMBERS__Divisao_],[*BASE_MEMBERS__Tempo_])))'
+SET [*NATIVE_CJ_SET] AS 'GENERATE([*NATIVE_CJ_SET_WITH_SLICER], {([Produto].CURRENTMEMBER)})'
+SET [*METRIC_CJ_SET] AS 'FILTER([*NATIVE_CJ_SET],[Measures].[*TOP_Faturamento_SEL~SUM] <= 50)'
+SET [*SORTED_ROW_AXIS] AS 'ORDER([*CJ_ROW_AXIS],[Measures].[*SORTED_MEASURE],BDESC)'
+SET [*BASE_MEMBERS__Measures_] AS '{
+  [Measures].[*FORMATTED_MEASURE_2],
+  [Measures].[*FORMATTED_MEASURE_3],
+  [Measures].[*FORMATTED_MEASURE_4],
+  [Measures].[*FORMATTED_MEASURE_8],
+  [Measures].[*FORMATTED_MEASURE_9],
+  [Measures].[*FORMATTED_MEASURE_0],
+  [Measures].[*FORMATTED_MEASURE_7],
+  [Measures].[REPRESENTATIVIDADE]
+  }'
+SET [*BASE_MEMBERS__Produto_] AS 'FILTER([Produto].[Produto].MEMBERS,[Produto].CURRENTMEMBER NOT IN {[Produto].[Tudo].[#null]})'
+SET [*BASE_MEMBERS__Divisao_] AS '{ ${divisaoParam} }'
+SET [*BASE_MEMBERS__Loja_] AS '{ ${lojaParam} }'
+SET [*BASE_MEMBERS__Tempo_] AS '{ ${dateParam} }'
+SET [*CJ_SLICER_AXIS] AS 'GENERATE([*NATIVE_CJ_SET_WITH_SLICER], {([Loja].CURRENTMEMBER,[Divisao].CURRENTMEMBER,[Tempo].CURRENTMEMBER)})'
+SET [*TOP_SET] AS 'ORDER(GENERATE([*NATIVE_CJ_SET],{[Produto].CURRENTMEMBER}),([Measures].[Faturamento]),BDESC)'
+SET [*CJ_ROW_AXIS] AS 'GENERATE([*METRIC_CJ_SET], {([Produto].CURRENTMEMBER)})'
+MEMBER [Measures].[*FORMATTED_MEASURE_0] AS '[Measures].[Faturamento (A-1)]', FORMAT_STRING = '#,###.00', SOLVE_ORDER=500
+MEMBER [Measures].[*FORMATTED_MEASURE_2] AS '[Measures].[Faturamento]', FORMAT_STRING = '#,###.00', SOLVE_ORDER=500
+MEMBER [Measures].[*FORMATTED_MEASURE_3] AS '[Measures].[Contribuicao]*100', FORMAT_STRING = '#,###.00', SOLVE_ORDER=500
+MEMBER [Measures].[*FORMATTED_MEASURE_4] AS '[Measures].[Margem Contribuicao]', FORMAT_STRING = '0.00%', SOLVE_ORDER=500
+MEMBER [Measures].[*FORMATTED_MEASURE_7] AS '[Measures].[perc_a_1]', FORMAT_STRING = '0.00%', SOLVE_ORDER=500
+MEMBER [Measures].[*FORMATTED_MEASURE_8] AS '[Measures].[Faturamento (M-1)]', FORMAT_STRING = '#,###.00', SOLVE_ORDER=500
+MEMBER [Measures].[*FORMATTED_MEASURE_9] AS '[Measures].[perc_m_1]', FORMAT_STRING = '0.00%', SOLVE_ORDER=500
+MEMBER [Measures].[*SORTED_MEASURE] AS '([Measures].[*FORMATTED_MEASURE_2])', SOLVE_ORDER=400
+MEMBER [Measures].[*TOP_Faturamento_SEL~SUM] AS 'RANK([Produto].CURRENTMEMBER,[*TOP_SET])', SOLVE_ORDER=400
+MEMBER [Produto].[Total] as aggregate([*CJ_ROW_AXIS])
+Member [Measures].[REPRESENTATIVIDADE] AS [Measures].[*FORMATTED_MEASURE_2]/AGGREGATE([Produto].[Tudo], [Measures].[*FORMATTED_MEASURE_2])
+SELECT
+[*BASE_MEMBERS__Measures_] ON COLUMNS
+,NON EMPTY
+union([*SORTED_ROW_AXIS],[Produto].[Total]) ON ROWS
+FROM [Plano de Voo]
+WHERE ([*CJ_SLICER_AXIS])]]></Query>
+   </DataAccess>
+</CDADescriptor>

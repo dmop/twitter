@@ -1,0 +1,124 @@
+<Schema name="TRF3">
+  <Dimension type="StandardDimension" visible="true" name="Grupo">
+    <Hierarchy visible="true" hasAll="true" allMemberName="Tudo" primaryKey="id_grupo">
+      <Table name="dim_grupo" schema="dw">
+      </Table>
+      <Level name="Grupo Pai" visible="true" column="grupo_pai" uniqueMembers="false">
+      </Level>
+      <Level name="Grupo Filho" visible="true" column="grupo_filho" uniqueMembers="false">
+      </Level>
+      <Level name="Questao" visible="true" column="cod_questao" nameColumn="questao" uniqueMembers="false">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" name="Gabinete">
+    <Hierarchy visible="true" hasAll="true" primaryKey="id_gabinete">
+      <Table name="dim_gabinete" schema="dw">
+      </Table>
+      <Level name="Gabinete" visible="true" column="cod_gabinete" nameColumn="gabinete" uniqueMembers="false">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" name="Tempo">
+    <Hierarchy visible="true" hasAll="true" primaryKey="id_tempo">
+      <Table name="dim_tempo" schema="dw" alias="">
+      </Table>
+      <Level name="Ano" visible="true" column="ano" uniqueMembers="false">
+      </Level>
+      <Level name="Mes" visible="true" column="mes_numero" nameColumn="mes_abrev" ordinalColumn="mes_numero" uniqueMembers="false">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Cube name="Movimentacao Gabinete" visible="true" cache="true" enabled="true">
+    <Table name="fato_movimentacao_gabinete" schema="dw">
+    </Table>
+    <DimensionUsage source="Grupo" name="Grupo" visible="true" foreignKey="id_grupo">
+    </DimensionUsage>
+    <DimensionUsage source="Gabinete" name="Gabinete" visible="true" foreignKey="id_gabinete">
+    </DimensionUsage>
+    <DimensionUsage source="Tempo" name="Tempo" visible="true" foreignKey="id_tempo">
+    </DimensionUsage>
+    <Measure name="Qtd Agravo Legal Regimental" column="qtd_agravo_legal_regimental" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Agravos" column="qtd_agravos" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Baixados Arquivados" column="qtd_baixados_arquivados" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Conclusos" column="qtd_conclusos" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Decisao Agravos Embargos" column="qtd_decisao_agravos_embargos" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Decisao Interlocutoria" column="qtd_decisao_interlocutoria" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Decisao Questao Incidente" column="qtd_decisao_questao_incidente" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Decisao Retratacao" column="qtd_decisao_retratacao" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Decisao Terminativa" column="qtd_decisao_terminativa" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Despacho" column="qtd_despacho" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Distribuidos" column="qtd_distribuidos" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd em Diligencia" column="qtd_em_diligencia" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd em Secretaria" column="qtd_em_secretaria" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Embargos Declaracao" column="qtd_embargos_declaracao" aggregator="sum" caption="Qtd Embargos Declara&#231;&#227;o" visible="true">
+    </Measure>
+    <Measure name="Qtd Embargos Declaracao Pendentes" column="qtd_embargos_declaracao_pendentes" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Homologacao Acordo" column="qtd_homologacao_acorde" aggregator="sum" caption="Qtd Homologa&#231;&#227;o de Acordo" visible="true">
+    </Measure>
+    <Measure name="Qtd Julgamento Agravos Embargos" column="qtd_julgamento_agravos_embargos" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Julgamento Questao incidente" column="qtd_julgamento_questao_incidente" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Julgamento Retratacao" column="qtd_julgamento_retratacao" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Julgamento Sessao" column="qtd_julgamento_sessao" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Meta 2" column="qtd_meta2" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Meta 4" column="qtd_meta4" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Meta 6" column="qtd_meta6" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Meta 8" column="qtd_meta8" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Outras Diligencias" column="qtd_outras_diligencia" aggregator="sum" caption="Qtd Outras Dilig&#234;ncias" visible="true">
+    </Measure>
+    <Measure name="Qtd Outras Entradas" column="qtd_outras_entradas" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Outras Saidas" column="qtd_outras_saidas" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Pendentes 1 Julgamento" column="qtd_pendentes_1_julgamento" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Processamento Recurso" column="qtd_processamento_recurso" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Questao Ordem" column="qtd_quest&#227;o_ordem" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Recebidos Outros Gabinetes" column="qtd_recebidos_outros_gabinetes" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Redistribuidos" column="qtd_redistribuidos" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Redistribuidos Saidas" column="qtd_redistribuidos_saidas" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Remetidos Outros Gabinetes" column="qtd_remetidos_outros_gabinetes" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Retratacao" column="qtd_retratacao" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Retratacao Pendentes" column="qtd_retratacao_pendentes" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Sobrestados" column="qtd_sobrestados" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Tramitacao" column="qtd_tramitacao" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Qtd Tramitacao Sem Sobrestados" column="qtd_tramitacao_sem_sobrestados" aggregator="sum" visible="true">
+    </Measure>
+    <CalculatedMember name="Total Pendentes" dimension="Measures" formula="[Measures].[Qtd Pendentes 1 Julgamento] + [Measures].[Qtd Agravo Legal Regimental] + [Measures].[Qtd Embargos Declaracao Pendentes] + [Measures].[Qtd Retratacao Pendentes]">
+    </CalculatedMember>
+    <CalculatedMember name="Total Incluidos nas Metas" dimension="Measures" formula="[Measures].[Meta 2] + [Measures].[Meta 4] + [Measures].[Meta 6] + [Measures].[Meta 8]">
+    </CalculatedMember>
+  </Cube>
+</Schema>

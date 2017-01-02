@@ -1,0 +1,102 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-weight:300;
+}
+
+/*
+  General report borders
+ */
+.styled >* #reportContent, #reportContent,
+div#reportContent{
+  border:0;
+}
+
+
+/*
+  Pivot table headers
+ */
+.pivotTable .rowLabelHeaders TD{
+  border: 1px solid #999;
+  background-color:rgba(38,50,56,1);
+  color:#fff;
+}
+.pivotTable .rowLabelHeaders TD:hover{
+  background-color:rgba(38,50,56,.9);
+}
+
+.pivotTable .columnHeaders .metric{
+  background-color:rgba(69,90,100,1);
+  color:#fff;
+}
+.pivotTable .columnHeaders .metric:hover{
+  background-color:rgba(69,90,100,.9);
+}
+
+
+
+/*
+  Borders
+*/
+
+.pivotTable .pivotTableColumnHeaderContainer TABLE,
+.pivotTable .pivotTableRowLabelHeaderContainer TABLE  {
+    border-bottom: 0px solid rgb(38,50,56);
+}
+.pivotTable .pivotTableRowLabelHeaderContainer,
+.pivotTable .pivotTableRowLabelContainer  {
+    border-right: 0px solid rgb(38,50,56);
+}
+.pivotTable .columnHeaders TD {
+    color: #000000;
+    border: 0px solid rgb(38,50,56);
+    border-left: none;
+    border-bottom: none;
+}
+.pivotTable .rowLabelHeaders TD{
+    border: 0px solid rgb(38,50,56);
+}
+.pivotTable .cells TD{
+    border-bottom: 1px solid #ddd;
+}
+.pivotTable .rowHeaders TD{
+  border:0;
+  border-bottom: 1px solid #ddd;
+}
+
+.pivotTable .pivotTableDataContainer{
+  border:0;
+}
+.pivotTable .cells TD,
+.pivotTable .rowHeaders TD,
+.pivotTable .rowLabelHeaders TD,
+.pivotTable .columnHeaders .metric
+{
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+
+div.tipsy.trf3-tipsy div.tipsy-inner {
+  font-size: 11px;
+  background-color: #333;
+  color: #ddd;
+  border: 0;
+  outline: 0;
+
+  -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.trf3-tipsy .tipsy-arrow-n {  }
+.trf3-tipsy .tipsy-arrow-s {  }
+.trf3-tipsy .tipsy-arrow-e {  }
+.trf3-tipsy .tipsy-arrow-w {  }
+.trf3-tipsy.tipsy-w .tipsy-arrow{
+    left: -5px;
+    opacity: 0.8;
+}
+.trf3-tipsy {
+  font-size:11px;
+}

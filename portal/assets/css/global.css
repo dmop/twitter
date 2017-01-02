@@ -1,0 +1,361 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+body{
+  font-family: 'Open Sans', sans-serif; !important;
+  font-weight:300;
+  padding-top:64px;
+  overflow-y: hidden !important;
+  background-color:#ddd;
+}
+md-content{
+  -webkit-overflow-scrolling: auto;
+}
+
+
+md-sidenav, md-backdrop {
+  position: fixed !important;
+}
+
+.ne-white-bg,
+ md-toolbar.ne-white-bg{background-color: #fff;}
+.ne-gray-bg{background-color: #333;}
+.ne-light-gray-bg{background-color: #ddd;}
+
+.ne-white.material-icons,
+.ne-white{color: white;}
+.ne-gray,
+ md-toolbar.ne-gray,
+ button.ne-gray > md-icon.ne-gray,
+ button.ne-gray{color: #333;}
+
+.ne-gray,
+button.ne-gray > md-icon.ne-gray{color: #333;}
+
+.ne-light-gray,
+button.ne-light-gray > md-icon.ne-light-gray{color: #ddd;}
+
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+.margin-right{margin-right:15px;}
+
+md-icon.s16 {
+  width: 16px;
+  height: 16px;
+}
+md-icon.s24 {
+  width: 24px;
+  height: 24px;
+}
+md-icon.s36 {
+  width: 36px;
+  height: 36px;
+}
+md-icon.s48 {
+  width: 48px;
+  height: 48px;
+}
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ /*
+    Recursos para temas
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+.ne-green-bg,
+.ned-filters-actions button.md-fab.md-button.ne-green-bg,
+.ned-filters-actions button.md-fab.md-button.ne-green-bg:hover{background-color:#22b573}
+.ne-green   {           color:#22b573}
+.ne-green-bd{    border-color: #22b573}
+
+.ne-black-bg,
+.ned-filters-actions button.md-fab.md-button.ne-black-bg,
+.ned-filters-actions button.md-fab.md-button.ne-black-bg:hover{background-color:#000}
+.ne-black   {           color:#000}
+.ne-black-bd{    border-color: #000}
+
+.ne-blue-bg,
+.ned-filters-actions button.md-fab.md-button.ne-blue-bg,
+.ned-filters-actions button.md-fab.md-button.ne-blue-bg:hover{background-color:#2196f3}
+.ne-blue   {           color:#2196f3}
+.ne-blue-bd{   border-color:#2196f3 }
+
+.ne-yellow-bg,
+.ned-filters-actions button.md-fab.md-button.ne-yellow-bg,
+.ned-filters-actions button.md-fab.md-button.ne-yellow-bg:hover{background-color:#ffc107}
+.ne-yellow   {           color:#ffc107}
+.ne-yellow-bd{     border-color:#ffc107 }
+
+.ne-red-bg,
+.ned-filters-actions button.md-fab.md-button.ne-red-bg,
+.ned-filters-actions button.md-fab.md-button.ne-red-bg:hover{background-color:#f44336}
+.ne-red   {           color:#f44336}
+.ne-red-bd{  border-color:#f44336}
+
+.ne-blue-trf3-bg,
+.ned-filters-actions button.md-fab.md-button.ne-blue-trf3-bg,
+.ned-filters-actions button.md-fab.md-button.ne-blue-trf3-bg:hover{background-color:#007dbb !important;}
+.ne-blue-trf3   {           color:#007dbb !important;}
+.ne-blue-trf3-bd{  border-color:#007dbb !important;}
+
+.ne-secondary-trf3-bg,
+.ned-filters-actions button.md-fab.md-button.ne-secondary-trf3-bg,
+.ned-filters-actions button.md-fab.md-button.ne-secondary-trf3-bg:hover{background-color:#004976 !important;}
+.ne-secondary-trf3   {           color:#004976 !important;}
+.ne-secondary-trf3-bd{  border-color:#004976 !important;}
+
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ /*
+    Header
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+.ne-header{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 4;
+  border-top-style:solid;
+  border-top-width:4px;
+}
+
+.ne-logo{
+
+  background-repeat:no-repeat;
+  background-position: left center;
+  background-size: auto 100%;
+
+  height:48px;
+  width:95px;
+}
+
+.ne-logo-gourmet{
+  background-image:url(../img/logo-patio.png);
+}
+.ne-logo-atacado{
+  background-image:url(../img/logo-nova-era-azul.png);
+}
+.ne-logo-cash{
+  background-image:url(../img/logo-nova-era.png);
+}
+.ne-logo-blue-trf3{
+  background-image:url(../img/logo-trf3.png);
+
+  height: 58px;
+  width: 300px;
+  margin-left: 20px;
+}
+
+
+button.ne-divisao-selector{
+  width:100%;
+  height: 100%;
+  margin:0;
+  padding:0;
+  overflow:visible;
+}
+
+/*
+  TODO: Isso habilitaria um label no seletor de divisao
+        Se for solicitado, fazer assim, senão, retirar
+        esse trecho `button.ne-divisao-selector small`
+ */
+button.ne-divisao-selector small{
+  color:#333;
+  vertical-align: -1px;
+}
+
+button.ne-divisao-selector md-icon{
+  margin-right:-20px;
+}
+
+a.md-button.ne-divisao-selector.md-default-theme:not([disabled]):hover,
+a.md-button.ne-divisao-selector:not([disabled]):hover,
+.md-button.ne-divisao-selector.md-default-theme:not([disabled]):hover,
+.md-button.ne-divisao-selector:not([disabled]):hover{
+  background-color:transparent;
+}
+
+
+/* UserMenu */
+.ne-user-menu-button{
+  height: 64px;
+  border-radius: 0;
+}
+
+.ne-username-text-wrapper > div{
+  line-height: normal;
+  text-transform: none;
+  line-height:12px;
+}
+
+/* Pequeno override */
+md-toolbar.md-default-theme:not(.md-menu-toolbar) .md-button.ne-gray:not(.md-raised),
+md-toolbar:not(.md-menu-toolbar) .md-button.ne-gray:not(.md-raised){
+  color:#333;
+}
+
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ /*
+    General body (body - header)
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+.ne-general-body{
+
+}
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ /*
+    Side menu (dashboards menu)
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+v-pane-header > div{
+  width:100%;
+}
+
+v-pane-header md-icon{
+  transform: rotateX( 0deg );
+  transition: transform 400ms ease;
+
+  text-align: center;
+  line-height: 24px;
+
+}
+v-pane-header md-icon.ne-open{
+  transform: rotateX( 180deg );
+  transition: transform 400ms ease;
+}
+
+v-pane-content {
+    background-color: rgba(0,0,0,.2);
+}
+v-pane-content md-list{
+  padding:0;
+}
+
+.ne-side-menu-holder{width:180px;height:10px;background:transparent;}
+.ne-side-menu{
+  width: 180px;
+  padding-top:4px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  top:64px;
+  z-index:3;
+}
+
+.ne-side-menu-content v-pane-header{
+  padding:10px;
+}
+
+.ne-general-body md-backdrop.md-sidenav-backdrop{
+  z-index:3;
+}
+
+.ne-small-list-item,
+.ne-small-list-item  button.md-no-style.md-button.md-ink-ripple,
+.ne-small-list-item .md-list-item-inner.ng-scope{
+	min-height:24px;
+	height:24px;
+}
+
+.ne-small-list-item {
+}
+
+.ne-small-list-item button.md-no-style.md-button.md-ink-ripple{
+  padding-left:20px;
+}
+
+.ne-small-list-item .md-list-item-inner.ng-scope {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ne-bullet-item.ne-active{
+  border-right-style: solid;
+  border-right-width:4px;
+}
+
+span.truncate {
+  width: 124px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ /*
+    Dashboard content container
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+.ne-dash-content{
+  background-color:#ddd;
+  padding-top:14px;
+  overflow-x:hidden;
+}
+
+
+
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ /*
+    Map side-nav
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+.ne-side-map-holder{width:180px;height:10px;background:transparent;}
+.ne-side-map{
+  padding-top:4px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  top:64px;
+  z-index:3;
+  max-width:10000px;
+  width: 80%;
+}
+
+
+.ne-side-map-content{
+  width: 100%;
+  /* margin-bottom: -64px; */
+  position: absolute;
+  bottom: 0;
+  top: 64px;
+  overflow: hidden;
+}
+
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ /*
+    Regras para impressao
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+@media print {
+  @page {
+    size: A4 landscape;
+  }
+  body {
+    transform: scale(.9);
+    padding-top:0;
+    -webkit-print-color-adjust: exact;
+    width:120%;
+  }
+  body * {
+    visibility: hidden;
+  }
+
+  table { page-break-inside:auto }
+  tr    { page-break-inside:avoid; page-break-after:auto }
+  tr td div   { page-break-inside:avoid; }
+
+
+  .section-to-print, .section-to-print * {
+    visibility: visible;
+  }
+  .section-to-print {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+}
+
+
+@media only screen and (max-width: 959px) and (min-width: 0) and (orientation: landscape){
+  page-header .md-toolbar-tools {
+      height: 64px;
+      max-height: 64px;
+  }
+}

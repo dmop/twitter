@@ -1,0 +1,55 @@
+{
+
+      "trf3" : {
+        "label" : "TRF3",
+        "cssKey" : "blue-trf3",
+        "roles" : ["pentaho - loja10", "pentaho - loja07", "pentaho - loja11", "pentaho - loja14", "pentaho - diretoria", "administrator", "pentaho - loja13", "pentaho - cash", "pentaho - compras"],
+        "params" : {
+            "lojaParam"    : ["[Loja].[10 CASH]"],
+            "divisaoParam" : ["[Divisao].[Varejo].[CASH CARRY]"]
+        },
+        "colorKeys" : {
+          "primary" : "blue-trf3",
+          "secondary" : "secondary-trf3"
+        }
+      },
+      "cash" : {
+        "label" : "Cash",
+        "cssKey" : "cash",
+        "roles" : ["pentaho - loja10", "pentaho - loja07", "pentaho - loja11", "pentaho - loja14", "pentaho - diretoria", "pentaho - loja13", "pentaho - cash", "pentaho - compras"],
+        "params" : {
+            "lojaParam"    : ["[Loja].[10 CASH]"],
+            "divisaoParam" : ["[Divisao].[Varejo].[CASH CARRY]"]
+        },
+        "colorKeys" : {
+          "primary" : "red",
+          "secondary" : "yellow"
+        }
+      },
+      "gourmet" : {
+        "label" : "Patio Gourmet",
+        "cssKey" : "gourmet",
+        "roles" : ["pentaho - loja 12", "pentaho - diretoria", "pentaho - compras"],
+        "params" : {
+            "lojaParam"    : ["[Loja].[12 PATIO]"],
+            "divisaoParam" : ["[Divisao].[Varejo].[VAREJO]"]
+        },
+        "colorKeys" : {
+          "primary" : "green",
+          "secondary" : "black"
+        }
+      },
+      "atacado" : {
+        "label" : "Atacado",
+        "cssKey" : "atacado",
+        "roles" : ["pentaho - matriz", "pentaho - diretoria", "pentaho - logistica"],
+        "params" : {
+            "lojaParam"    : ["[Loja].[01 MATRIZ]"],
+            "divisaoParam" : ["[Divisao].[Atacado].[ATACADO AM]"]
+        },
+        "colorKeys" : {
+          "primary" : "blue",
+          "secondary" : "white"
+        }
+      }
+}

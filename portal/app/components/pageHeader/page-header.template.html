@@ -1,0 +1,63 @@
+<md-toolbar class="ne-header ne-white-bg ne-gray md-whiteframe-3dp" ng-class="headerCtrl.getBorderClass('primary')">
+    <div class="md-toolbar-tools">
+      <md-button class="md-icon-button ne-gray" aria-label="Settings" ng-click="headerCtrl.toggleSideMenu()">
+        <md-icon class="material-icons ne-gray">menu</md-icon>
+      </md-button>
+      <div class="ne-logo" ng-class="headerCtrl.getLogoClass()">
+        <md-menu ng-if="headerCtrl.hasMoreThemes" md-offset="0 58" md-position-mode="target">
+          <md-button class="ne-divisao-selector text-right" ng-click="$mdOpenMenu($event)">
+            <md-icon md-svg-src="assets/img/down-arrow.svg" class="s16"></md-icon>
+          </md-button>
+          <md-menu-content width="4">
+            <md-menu-item ng-repeat="_theme in headerCtrl.allowedThemes">
+              <md-button ng-click="headerCtrl.setTheme(_theme)" ng-disabled="_theme.cssKey === headerCtrl.getCurrentTheme().cssKey">
+                <div layout="row">
+                  <span flex>{{_theme.label}}</span>
+                  <md-icon class="material-icons">keyboard_arrow_right</md-icon>
+                </div>
+              </md-button>
+            </md-menu-item>
+          </md-menu-content>
+        </md-menu>
+
+      </div>
+        <span flex></span>
+
+        <md-menu md-offset="0 68" md-position-mode="target-right target">
+
+          <md-button class="ne-user-menu-button ne-gray" md-no-ink aria-label="Menu" ng-click="$mdOpenMenu($event)">
+            <div layout="row">
+              <div layout="column" layout-align="center end" class="margin-right ne-username-text-wrapper">
+                <div class="ne-username" ng-cloak>{{headerCtrl.user}}</div>
+                <div class="ne-usergroup"><small ng-cloak>{{headerCtrl.role}}</small></div>
+              </div>
+              <div layout="column" ><md-icon md-svg-src="assets/img/user.svg" class="margin-right ne-user-icon s36"></md-icon></div>
+              <div layout="column" ><md-icon md-svg-src="assets/img/down-arrow.svg" class="s16"></md-icon></div>
+            </div>
+          </md-button>
+
+          <md-menu-content width="4">
+            <md-menu-item>
+              <md-button ng-click="headerCtrl.goHome()">
+                <div layout="row">
+                  <span flex>Administra&ccedil;&atilde;o</span>
+                  <md-icon class="material-icons">settings</md-icon>
+                </div>
+              </md-button>
+            </md-menu-item>
+            <md-menu-item>
+              <md-button ng-click="headerCtrl.logout()">
+                <div layout="row">
+                  <span flex>Sair</span>
+                  <md-icon class="material-icons">exit_to_app</md-icon>
+                </div>
+              </md-button>
+            </md-menu-item>
+          </md-menu-content>
+        </md-menu>
+
+
+
+
+    </div>
+</md-toolbar>

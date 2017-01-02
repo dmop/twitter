@@ -1,0 +1,10 @@
+<div class="ne-side-menu-content">
+
+  <v-accordion class="ne-accordion" id="my-accordion" control="myAccordion">
+
+    <links-group ng-if="group.isAuthorized" ng-repeat="group in sMenuCtrl.linksGroups" group="group" index="{{$index}}"></links-group>
+
+  </v-accordion>
+
+
+</div>

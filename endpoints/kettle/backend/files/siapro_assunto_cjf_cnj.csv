@@ -1,0 +1,1743 @@
+cod_assunt_judici;cod_cjf;cod_cnj_filho;cod_cnj_pai;des_assunt_jf
+100000;01          ;9985;;Direito Administrativo e outras matérias do Direito Público
+101000;0101        ;9986;9985;Garantias Constitucionais
+101001;1106        ;6192;6191;Nacionalidade
+101002;010102      ;9988;9986;Anistia Política
+101003;010103      ;;;Veiculação de Imagens
+101004;010104      ;9989;9986;Direitos Indígenas
+101005;010106      ;9990;9986;Intervenção em Estado/Município
+101006;;11848;9986;Alimentação
+101007;;11847;9986;ASSISTÊNCIA SOCIAL
+101008;;11845;9986;Comunicação Social
+101009;;11844;9986;Minorias Étnicas
+101010;;11846;9986;Moradia
+101011;;11849;9986;Não Discriminação
+101012;;11842;9986;Pessoa Idosa
+101013;;11843;9986;Pessoas com deficiência
+102000;0102        ;9991;9985;Responsabilidade da Administração
+102002;01030801    ;10012;10011;Dano ao Erário
+102003;010203      ;9994;9991;Indenização por Dano Ambiental
+102006;010206      ;9992;9991;Indenização por Dano Moral
+102007;01020601    ;9995;9992;Erro Médico
+102008;01020602    ;9996;9992;Acidente de Trânsito
+102009;010207      ;10502;9991;Indenização por Dano Material
+102010;01020701    ;10503;10502;Erro Médico
+102011;01020702    ;10504;10502;Acidente de Trânsito
+103000;0103        ;9997;9985;Atos Administrativos
+103001;010301      ;9998;9997;Licenças
+103002;01030101    ;9999;9998;Declaração de Bagagem
+103003;01030102    ;10000;9998;Declaração de Trânsito Aduaneiro
+103004;010308      ;10011;9997;Improbidade Administrativa
+103005;010105      ;10587;9986;Proteção da Intimidade e Sigilo de Dados
+103006;010306      ;10009;9997;Inquérito/Processo/Recurso Administrativo
+103007;01030106    ;10001;9998;Comercialização sem restrições de Produtos Industrializados
+103008;01030107    ;10002;9998;Comercialização sem restrições de Gêneros Alimentícios
+103009;01030108    ;10003;9998;Comercialização e/ou utilização sem Restrições de Medicamentos
+103010;01030109    ;10004;9998;Funcionamento e Comércio de Derivados de Petróleo
+103011;01030110    ;10005;9998;Registro de Empresa
+103012;010307      ;10010;9997;Ato Lesivo ao Patrimônio Artístico Estético, Histórico ou Turístico
+103013;01030112    ;10006;9998;Funcionamento de Estabelecimentos Empresariais
+103014;012101      ;10111;10110;Revogação/Concessão de Licença Ambiental
+103015;010302      ;10015;9997;Fiscalização
+103016;01030201    ;10016;10015;Inspeção Fitossanitária
+103017;01030202    ;10017;10015;Exportação/Vedações
+103018;01030203    ;10018;10015;Inspeção Sanitária de Origem Animal
+103020;010304      ;10020;9997;Registro de Trabalho Portuário/Órgão de Gestão de Mão-de-Obra
+103021;011801      ;10410;10409;Contrato Temporário de Mão de Obra L 8745/1993
+103022;012102      ;10112;10110;Revogação/Anulação de Multa Ambiental
+103023;01030204    ;10019;10015;Segurança e Medicina do Trabalho
+103024;01030116    ;10008;9998;Registro de Aeronave
+103025;01030802    ;10013;10011;Enriquecimento Ilícito
+103026;01030803    ;10014;10011;Violação aos Princípios Administrativos
+103027;010310      ;10022;9997;Infração Administrativa
+103028;01031001    ;10023;10022;Multas e demais Sanções
+103029;01031002    ;10024;10022;Interdição
+103030;01031003    ;10025;10022;Apreensão
+103031;010311      ;10026;9997;Registro de Direito Autoral
+103032;010312      ;10027;9997;Registro de Programa de Computador
+104000;0104        ;10028;9985;Serviços
+104005;010402      ;10029;10028;Ensino Superior
+104006;01040201    ;10030;10029;Matrícula
+104007;            ;10031;10029;Financiamento Público da Educação
+104008;01040203    ;10032;10029;Colação de Grau
+104009;01040204    ;10033;10029;Exigência de Estágio Profissionalizante
+104010;01040205    ;10034;10029;Transferência de Estudante
+104011;01040206    ;10035;10029;Freqüência às Aulas
+104012;01040207    ;10036;10029;Penalidades Disciplinares
+104014;01040209    ;10037;10029;Colisão de Horário
+104015;01040210    ;10038;10029;Vestibular
+104016;01040211    ;10039;10029;Mensalidades
+104017;01040212    ;10040;10029;Currículo Escolar
+104018;01040213    ;10041;10029;Ingresso no Curso Superior
+104019;01040214    ;10042;10029;Jubilamento de Aluno
+104020;01040215    ;10043;10029;Criação e/ou Autorização para funcionamento de Curso Superior
+104021;01040216    ;10044;10029;Omissão de Entrega de Notas
+104022;01040217    ;10045;10029;Diplomas/Certificado de Conclusão do Curso
+104024;01040219    ;10047;10029;Residência Médica
+104025;01040220    ;10048;10029;Provão - Avaliação da Educação Superior
+104026;010403      ;10051;10028;Ensino Fundamental e Médio
+104028;01040302    ;10052;10051;Mensalidade
+104029;01040303    ;10053;10051;Matrícula
+104030;01040304    ;10054;10051;Material Didático
+104031;01040305    ;10055;10051;Exame Nacional de Ensino Médio/ ENEM
+104032;010404      ;10064;10028;Saúde
+104033;01040401    ;10065;10064;Repasse de Verbas do SUS
+104034;01040402    ;10066;10064;Reajuste da Tabela do SUS
+104035;01040403    ;10067;10064;Convênio Médico com o SUS
+104037;01040405    ;10069;10064;Tratamento Médico-Hospitalar e/ou Fornecimento de Medicamentos
+104038;01040406    ;10070;10064;Ressarcimento ao SUS
+104039;0119        ;10417;9985;Sistema Nacional de Trânsito
+104040;010406      ;10072;10028;Sistema Nacional do Desporto
+104041;01040811    ;10074;10073;Fornecimento de Gás
+104042;010408      ;10073;10028;Concessão/Permissão/Autorização
+104043;01040801    ;10075;10073;Energia Elétrica
+104044;01040802    ;10076;10073;Transporte Terrestre
+104045;01040803    ;10077;10073;Transporte Aéreo - Aeroporto
+104047;01040805    ;10078;10073;Radiodifusão
+104048;01030117    ;10079;9998;Loterias/Sorteio
+104049;01040807    ;10080;10073;Telefonia
+104050;01040808    ;10081;10073;Transporte Aquaviário
+104051;01030115    ;10007;9998;Registro/Porte de Arma de Fogo
+104052;01040809    ;10082;10073;Serviço Postal
+104053;01040221    ;10049;10029;Sistemas de cotas - Lei 10558/2002 - Ensino Superior - Serviços - Administrativo
+104054;01040407    ;10071;10064;Genética / Células Tronco
+104055;01040222    ;10050;10029;Pós-Graduação - Ensino Superior - Administrativo
+104056;01030118    ;10084;9998;Jogos de Bingo e/ou Caça-níqueis
+104057;01040306    ;10056;10051;Penalidades Disciplinares
+104058;01040307    ;10057;10051;Transferência
+104059;01040308    ;10058;10051;Ensino Especial
+104060;01040309    ;10059;10051;Exame Supletivo
+104061;01040310    ;10060;10051;Merenda
+104062;01040311    ;10061;10051;Transporte
+104063;01040312    ;10062;10051;Educação Pré-Escolar
+104064;01040313    ;10063;10051;Educação Profissionalizante
+104065;01040223    ;10046;10029;Financiamento privado da educação e/ou pesquisa
+104066;;11855;10064;Controle Social e Conselhos de Saúde
+104067;;11857;10064;"""Doação e Transplante de Órgãos; Tecidos e Partes do Corpo Humano"""
+104068;;11852;10064;Financiamento do SUS
+104069;;11884;10064;Fornecimento de Medicamentos
+104070;;11856;10064;Hospitais e Outras Unidades de Saúde
+104071;;11854;10064;Saúde Mental
+104072;;11851;10064;Terceirização do SUS
+104073;;11883;10064;Tratamento Médico-Hospitalar
+104074;;11885;11883;Unidade de terapia intensiva (UTI) ou unidade de cuidados intensivos (UCI)
+104075;;11853;10064;Vigilância Sanitária e Epidemiológica
+104076;;11993;10064;INTERNAÇÃO COMPULSÓRIA
+104077;;11994;10064;INTERNAÇÃO VOLUNTÁRIA
+104078;;11995;10064;INTERNAÇÃO INVOLUNTÁRIA
+105000;0105        ;10088;9985;Domínio Público
+105001;010501      ;10089;10088;Bens Públicos
+105002;01050101    ;10090;10089;Locação/ Permissão de Uso
+105004;01050102    ;10091;10089;Terreno de Marinha
+105005;01050103    ;10092;10089;Taxa de Ocupação
+105009;01050402    ;10103;10102;Terreno Aldeado
+105010;01050105    ;10095;10089;Águas Públicas
+105011;010504      ;10102;10088;Terras Indígenas
+105012;01050401    ;10104;10102;Restituição de área - FUNAI
+105013;010505      ;10106;10088;Recursos Minerais
+105014;012103      ;10113;10110;Flora
+105015;012104      ;10114;10110;Fauna
+105016;010508      ;10107;10088;Espaço Aéreo
+105017;010509      ;10108;10088;Patrimônio Histórico / Tombamento
+105018;010309      ;10021;9997;Registro de Marcas, Patentes ou Invenções
+105019;0121        ;10110;9985;Meio Ambiente
+105020;012105      ;10115;10110;Transgênicos
+105021;012106      ;10116;10110;Agrotóxicos
+105023;01050104    ;10093;10089;Foro/Laudêmio
+105024;01050106    ;10094;10089;Terras Devolutas
+105025;01050107    ;10096;10089;Bloqueio de Valores de Contas Públicas
+105026;010512      ;10097;10088;Imóvel Funcional
+105027;01051201    ;10098;10097;Alienação
+105028;01051202    ;10099;10097;Ocupação
+105029;01051203    ;10100;10097;Reintegração de Posse
+105030;01051204    ;10101;10097;Taxa de Ocupação
+105031;01050403    ;10105;10102;Demarcação
+105032;;11870;10089;Utilização de bens públicos
+106000;0106        ;10120;9985;Intervenção do Estado na Propriedade
+106001;010601      ;10121;10120;Desapropriação
+106002;010602      ;10122;10120;Desapropriação por Utilidade Pública/DL 3365/1941
+106003;010603      ;10123;10120;Desapropriação por Interesse Social Comum/ Lei 4132/1962
+106004;010604      ;10124;10120;Desapropriação por Interesse Social para Reforma Agrária
+106005;010605      ;10125;10120;Desapropriação Indireta
+106006;010606      ;10126;10120;Retrocessão
+106007;010607      ;10127;10120;Vistoria
+106008;010608      ;10128;10120;Servidão Administrativa
+106009;010609      ;10129;10120;Ocupação Temporária
+106010;010610      ;10130;10120;Limitação Administrativa
+106011;010513      ;10131;10088;Privatização
+106013;010613      ;10132;10120;Restituição de área
+106014;010614      ;10133;10120;Direito de Preempção
+106015;010615      ;10134;10120;Desapropriação de Imóvel Urbano
+106016;010616      ;10135;10120;Requisição de Bem Particular
+107000;0107        ;10136;9985;Intervenção no Domínio Econômico
+107001;010701      ;10138;10136;Controle de Preços
+107002;010702      ;10139;10136;Controle de Abastecimento
+107003;010703      ;10140;10136;Importações
+107004;01070301    ;10141;10140;Desembaraço Aduaneiro
+107006;010704      ;10144;10136;Incentivo
+107007;01070401    ;10145;10144;PROAGRO
+107008;010705      ;10146;10136;Proteção à Livre Concorrência
+107009;01020703    ;10505;10502;Variação Cambial
+107010;010707      ;10153;10136;Moeda Estrangeira
+107011;02190314    ;10501;9580;Crédito rural
+107012;010709      ;10154;10136;Expurgos Inflacionários/Planos Econômicos
+107013;01070901    ;10155;10154;Cruzados Novos/Bloqueio
+107014;06040101    ;10945;7752;Expurgos inflacionários / Planos econômicos
+107015;01070303    ;10142;10140;Regime ou Certificado de Origem MERCOSUL
+107016;01070304    ;10143;10140;Veículo de Turista Comunitário MERCOSUL
+107017;01070501    ;10147;10146;Venda Casada
+107018;01070502    ;10148;10146;Preços Predatórios
+107019;01070503    ;10149;10146;Acordo de Exclusividade
+107020;01070504    ;10150;10146;Cartel
+107021;01070505    ;10151;10146;Atos de Concentração
+107022;010710      ;10137;10136;Política de Preço Mínimo
+107023;;11871;10136;Agências/órgãos de regulação
+108000;0108        ;10157;9985;ORGANIZAÇÃO POLÍTICO-ADMINISTRATIVA/ADMINISTRAÇÃO PÚBLICA
+108001;010801      ;10158;10157;FGTS/Fundo de Garantia por Tempo de Serviço
+108002;01080101    ;10159;10158;Atualização de Conta
+108003;01080102    ;10160;10158;Liberação de Conta
+108004;01080103    ;10161;10158;Juros Progressivos
+108005;01080104    ;10162;10158;Localização de Contas
+108007;010802      ;10163;10157;PIS/PASEP
+108008;01080201    ;10164;10163;Atualização de Conta
+108009;01080202    ;10165;10163;Liberação de Conta
+108010;010803      ;10166;10157;Conselhos Regionais de Fiscalização Profissional e Afins
+108012;01080302    ;10168;10166;Multas e demais Sanções
+108013;01080303    ;10169;10166;Questões Funcionais
+108014;01080304    ;10170;10166;Exame da Ordem (OAB)
+108015;01080305    ;10171;10166;Eleições
+108017;01080607    ;10179;10174;Liquidação Extrajudicial
+108021;01080606    ;10177;10174;Remuneração de Ativos Retidos
+108022;010806      ;10174;10157;Instituições Financeiras
+108025;01080603    ;10178;10174;Cooperativas de Crédito
+108027;010807      ;10180;10157;Fundo de Participação dos Municípios
+108028;010808      ;10181;10157;Seguro-desemprego
+108029;01080306    ;10172;10166;Anuidades OAB
+108030;01080307    ;10173;10166;Exercício Profissional
+108031;01080308    ;10167;10166;Registro Profissional
+108032;01080605    ;10176;10174;Normatizações
+108033;01080608    ;10175;10174;Liberação de Depósitos de Instituição Liquidanda
+108034;;55006;10158;CORREÇÃO/ATUALIZAÇÃO INPC/IPCA/OUTRO ÍNDICE
+109000;0109        ;10182;9985;Dívida Pública Mobiliária
+109001;010901      ;10183;10182;Apólices da Dívida Pública
+109002;010902      ;10184;10182;Títulos da Dívida Pública
+109003;010903      ;10185;10182;Títulos da Dívida Agrária
+109004;01090201    ;;;Títulos Internacionais
+110000;0110        ;10186;9985;Agentes Políticos
+110001;011001      ;10187;10186; MAGISTRATURA
+110002;011002      ;10194;10186;Ministério Público
+110003;010410      ;10087;10028;Defensoria Pública
+110004;01100101    ;10188;10187;Remuneração
+110005;01100102    ;10189;10187;Afastamento
+110006;01100103    ;10190;10187;Processo Disciplinar/Sindicância
+110007;01100104    ;10191;10187;Aposentadoria
+110008;01100105    ;10192;10187;Promoção
+110009;01100106    ;10193;10187;Remoção
+110010;01100201    ;10195;10194;Remuneração
+110011;01100202    ;10196;10194;Afastamento
+110012;01100203    ;10197;10194;Processo Disciplinar/Sindicância
+110013;01100204    ;10198;10194;Aposentadoria
+110014;01100205    ;10199;10194;Promoção
+110015;01100206    ;10200;10194;Remoção
+110016;011004      ;10201;10186;Prefeito
+110017;01100401    ;10202;10201;Afastamento do Cargo
+110018;01100402    ;10203;10201;Remuneração
+110019;01100403    ;10204;10201;Recondução
+110020;01100404    ;10205;10201;Prestação de Contas
+110021;01100405    ;10206;10201;Indisponibilidade de Bens
+110022;011005      ;10213;10186;Parlamentares
+110023;01100501    ;10214;10213;Remuneração
+110024;01100502    ;10215;10213;Afastamento do Cargo
+110025;01100503    ;10216;10213;Recondução
+110026;01100504    ;10217;10213;Prestação de Contas
+110027;01100505    ;10218;10213;Indisponibilidade de Bens
+110028;0110050101  ;10732;10214;Verba de Representação
+110029;;10675;10187;Quinto constitucional
+111000;0111        ;10219;9985;Servidor Público Civil
+111001;011101      ;10220;10219;Regime Estatutário
+111002;01110237    ;10221;10288;Isonomia/Equivalência Salarial
+111003;01110102    ;10222;10220;Estabilidade
+111004;01110103    ;10223;10220;Enquadramento
+111005;01110104    ;10224;10220;Recondução
+111006;01110105    ;10225;10220;Acumulação de Cargos
+111007;01110106    ;10226;10220;Reintegração
+111008;01110107    ;10227;10220;Direito de Greve
+111009;01110108    ;10228;10220;Transferência
+111010;01110109    ;10229;10220;Remoção
+111012;01110111    ;10230;10220;Regime Previdenciário
+111013;01110112    ;10231;10220;Anistia Administrativa
+111014;011102      ;10288;10219;Sistema Remuneratório e Benefícios
+111015;01110201    ;10289;10288;Gratificações da Lei 8112/1990
+111016;01110202    ;10290;10288;Gratificação de incentivo
+111017;01110203    ;10291;10288;Adicional de Insalubridade
+111018;01110204    ;10292;10288;Adicional de Periculosidade
+111019;01110205    ;10293;10288;Adicional de Fronteira
+111020;01110206    ;10294;10288;Abono Pecuniário (Art 78 Lei 8112/1990)
+111021;01110207    ;10295;10288;Gratificação Incorporada/Quintos e Décimos/VPNI
+111022;01110208    ;10296;10288;Descontos Indevidos
+111023;01110209    ;10297;10288;Teto Salarial
+111024;01110210    ;10298;10288;Diárias e Outras Indenizações
+111025;01110211    ;10299;10288;Plano de Classificação de Cargos
+111026;01110212    ;10300;10288;Data base
+111027;01110213    ;10301;10288;Férias
+111028;01110214    ;10302;10288;Adicional de Tempo de Serviço
+111029;01110215    ;10303;10288;Adicional de horas extras
+111030;01110216    ;10304;10288;Auxílio-alimentação
+111031;011103      ;10313;10219;Reajuste de Remuneração, Proventos ou Pensão
+111032;01110301    ;10314;10313;Índice da URP fev/1989
+111033;01110302    ;10315;10313;Índice de 84,32% março/1990
+111034;01110303    ;10316;10313;Reajuste de 45% Lei 8237/1991
+111035;01110304    ;10317;10313;Índice de 28,86% Lei 8622/1993 e 8627/1993
+111036;01110305    ;10318;10313;Índice da URV Lei 8880/1994
+111037;01110306    ;10319;10313;Reajuste da Lei 8270/1991)
+111038;01110307    ;10320;10313;Índice do IPC junho/1987
+111040;011116      ;10250;10219;Pensão
+111041;011117      ;10254;10219;Aposentadoria
+111044;01110221    ;10243;10288;Complementação de Benefício/Ferro
+111047;011118      ;10276;10219;Tempo de Serviço
+111048;01110222    ;10244;10288;Assistência à Saúde
+111049;011105      ;10279;10219;Processo Administrativo Disciplinar ou Sindicância
+111051;01110502    ;10283;10279;Responsabilidade Civil do Servidor Público/Indenização ao Erário
+111053;01110       ;10286;10219;Programa de Desligamento Voluntário (PDV)
+111055;01110236    ;10323;10288;Inclusão de Dependente
+111057;011112      ;10287;10219;Jornada de Trabalho
+111058;01110119    ;10238;10220;Estágio Probatório
+111059;01111       ;10258;10219;Licenças/Afastamentos
+111061;01110217    ;10305;10288;Gratificações de Atividade
+111063;01110308    ;10321;10313;Índice de 10,87% / Lei 10192/2001
+111064;01110219    ;10306;10288;Auxílio-transporte
+111065;01110220    ;10307;10288;Revisão Geral Anual (Mora do Executivo - inciso X, art 37, CF 1988)
+111066;01110309    ;10322;10313;Índice de 47,94% Lei n 8676/1993
+111067;01110113    ;10232;10220;Reversão
+111068;01110114    ;10233;10220;Redistribuição
+111069;01110115    ;10234;10220;Disponibilidade/Aproveitamento
+111070;01110116    ;10235;10220;Lotação
+111071;01110117    ;10236;10220;Promoção/Ascensão
+111072;01110118    ;10237;10220;Readaptação
+111073;01110120    ;10239;10220;Nomeação
+111074;01110121    ;10240;10220;Posse e Exercício
+111075;01110122    ;10241;10220;Exoneração
+111076;01110223    ;10245;10288;Assistência Pré-Escolar
+111077;01110224    ;10246;10288;Auxílio-Natalidade
+111078;01110225    ;10247;10288;Auxílio-Reclusão
+111079;01110226    ;10248;10288;Auxílio-Funeral
+111080;01110227    ;10249;10288;Salário-Família
+111081;01110228    ;10308;10288;Adicional de Serviço Noturno
+111082;01110229    ;10309;10288;Adicional de Produtividade
+111083;01110230    ;10310;10288;Gratificação Natalina/13º Salário
+111084;01110231    ;10311;10288;Irredutibilidade de Vencimentos
+111085;01110232    ;10312;10288;Piso Salarial
+111086;01110233    ;10497;10288;Subsídios
+111087;01110503    ;10280;10279;Demissão ou Exoneração
+111088;01110504    ;10281;10279;Advertência
+111089;01110505    ;10282;10279;Suspensão
+111090;01111401    ;10259;10258;Dirigente Sindical
+111091;01111402    ;10260;10258;Licença Capacitação (Aperfeiçoamento Profissional)
+111092;01111403    ;10261;10258;Licença-Prêmio
+111093;01111404    ;10262;10258;Doença em Pessoa da Família
+111094;01111405    ;10263;10258;Tratamento da Própria Saúde
+111095;01111406    ;10264;10258;Gestante/Adotante/Paternidade
+111096;01111407    ;10265;10258;Interesse Particular
+111097;01111408    ;10266;10258;Serviço Militar
+111098;01111409    ;10267;10258;Atividade Política
+111099;01111410    ;10268;10258;Casamento
+111100;01111411    ;10269;10258;Luto
+111101;01111412    ;10270;10258;Amamentação
+111102;01111413    ;10271;10258;Doação de Sangue
+111103;01111414    ;10272;10258;Alistamento/Serviço Eleitoral
+111104;01111415    ;10273;10258;Acompanhamento de Cônjuge ou Companheiro
+111105;01111416    ;10274;10258;Exercício em Outro Município
+111106;01111417    ;10275;10258;Licença por Acidente em Serviço
+111107;0111160     ;10251;10250;Provisória
+111108;01111602    ;10252;10250;Concessão
+111109;01111603    ;10253;10250;Restabelecimento
+111110;01111701    ;10255;10254;Invalidez Permanente
+111111;01111702    ;10256;10254;Compulsória
+111112;01111703    ;10257;10254;Voluntária
+111113;01111801    ;10277;10276;Averbação/Contagem de Tempo Especial
+111114;01111802    ;10278;10276;Averbação/Contagem Recíproca
+111115;01110234    ;10662;10288;Abono de Permanência
+111116;01110235    ;10638;10288;Acumulação de Proventos
+111117;;10946;10313;Correção Monetária de Diferenças Pagas em Atraso
+111118;;11858;10288;Recebimento de bolsa de estudos
+111119;;10243;10288;COMPLEMENTAÇÃO DE BENEFÍCIO/FER
+111120;;10878;10254;ESPECIAL
+112000;0112        ;10324;9985;Servidor Público Militar
+112001;011201      ;10325;10324;Regime
+112002;01120101    ;10326;10325;Ingresso e Concurso
+112003;01120102    ;10327;10325;Curso de Formação
+112004;01120103    ;10328;10325;Reintegração
+112005;01120104    ;10329;10325;Estabilidade
+112006;01120105    ;10330;10325;Anistia Política
+112007;01120106    ;10331;10325;Adidos, Agregados e Adjuntos
+112008;011202      ;10337;10324;Sistema Remuneratório e Benefícios
+112009;01120201    ;10338;10337;Gratificações e Adicionais
+112011;01120203    ;10339;10337;Férias
+112012;011203      ;10342;10324;Reajuste de Remuneração, Soldo, Proventos ou Pensão
+112013;01120301    ;10343;10342;Índice de 28,86% LL 8622/1993 e 8627/1993
+112015;01120208    ;10349;10337;Reforma
+112016;011214      ;10359;10324;Pensão
+112017;01120209    ;10350;10337;Licenças
+112018;01120210    ;10351;10337;Agregação
+112019;01120211    ;10352;10337;Reserva Remunerada
+112020;01120212    ;10353;10337;Transferência ex-officio para reserva
+112021;01120213    ;10354;10337;Tempo de Serviço
+112022;01120214    ;10355;10337;Transferência para reserva
+112023;011205      ;10363;10324;Processo Administrativo Disciplinar/Sindicância
+112024;01120501    ;10367;10363;Suspensão
+112026;01120107    ;10332;10325;Serviço Militar Obrigatório
+112027;;;;
+112028;01120108    ;10333;10325;Ex-combatentes
+112029;01120109    ;10334;10325;Promoção
+112030;01120110    ;10335;10325;Serviço Militar dos Profissionais da Saúde
+112031;01120111    ;10336;10325;Corpo Feminino
+112032;01120205    ;10591;10337;Inclusão de Dependente
+112033;01120302    ;10344;10342;Índice da URV Lei 8880/1994
+112034;01120303    ;10345;10342;Índice do IPC junho/1987
+112035;01120304    ;10346;10342;Índice de 84,32% IPC março/1990
+112036;01120305    ;10347;10342;Índice da URP abril e maio/1988 DL 2425/1988
+112039;01120206    ;10340;10337;Indenizações Regulares
+112040;01120207    ;10341;10337;Isonomia
+112041;01120215    ;10356;10337;Assistência Médico-Hospitalar
+112042;01120216    ;10357;10337;Licença Prêmio
+112043;01120217    ;10358;10337;Licenciamento
+112044;01120503    ;10364;10363;Advertência/Repreensão
+112045;01120504    ;10365;10363;Impedimento/Detenção/Prisão
+112046;01120505    ;10366;10363;Licenciamento/Exclusão
+112047;01120506    ;10512;10363;Responsabilidade Civil do Militar - Indenização ao Erário
+112048;01121401    ;10360;10359;Concessão
+112049;01121402    ;10361;10359;Restabelecimento
+112050;01121403    ;10362;10359;Provisória
+112051;01120218    ;10596;10337;Auxílio-invalidez
+112052;01120219    ;10593;10337;Remuneração mínima
+113000;0113        ;10370;9985;Concurso Público/Edital
+113001;011301      ;10371;10370;Reserva de Vagas para Deficientes
+113002;011302      ;10372;10370;Inscrição/Documentação
+113004;011304      ;10373;10370;Limite de Idade
+113005;011305      ;10374;10370;Exigência de Prática Forense
+113006;011306      ;10375;10370;Prova de Títulos
+113008;011308      ;10379;10370;Anulação e Correção de Provas/Questões
+113009;011309      ;10377;10370;Curso de Formação
+113010;011310      ;10380;10370;Escolaridade
+113011;01.13.11... ;10381;10370;Classificação e/ou Preterição
+113012;011312      ;10376;10370;Exame de Saúde e/ou Aptidão Física
+113013;011313      ;10378;10370;Exame Psicotécnico/Psiquiátrico
+113014;011314      ;10382;10370;Anulação
+113015;011315      ;10383;10370;Prazo de Validade
+113016;011316      ;10384;10370;Condições Especiais para Prestação de Prova
+114000;0114        ;10385;9985;Licitações
+114006;011409      ;10386;10385;Modalidade/Limite/Dispensa/Inexigibilidade
+114007;011410      ;10387;10385;Habilitação/Registro Cadastral/Julgamento/Homologação
+114019;011407      ;10390;10385;Sanções Administrativas
+114020;011408      ;10391;10385;Recursos Administrativos
+114023;011411      ;10388;10385;Edital
+114024;011412      ;10389;10385;Revogação
+114025;011413      ;10392;10385;Convênio
+114026;011414      ;10393;10385;Adjudicação
+115000;0115        ;10394;9985;Dívida Ativa não-tributária
+115001;011501      ;10395;10394;Multas e demais Sanções
+115002;011502      ;10401;10394;Taxa de ocupação/laudêmios/foros
+115003;01150101    ;10396;10395;Ambiental
+115004;011503      ;10402;10394;Cessão de créditos não-tributário
+115005;01150102    ;10397;10395;Sanitárias
+115006;01150103    ;10398;10395;Metrológica
+115007;01150104    ;10399;10395;Profissional
+115008;01150105    ;10400;10395;Segurança e/ou Medicina do Trabalho
+116000;0116        ;10403;9985;Organização Sindical
+116001;011601      ;10404;10403;Contribuição Sindical
+116002;011602      ;10405;10403;Eleições Sindicais
+116003;011603      ;10406;10403;Registro Sindical
+116004;011604      ;10407;10403;Dilação e Extensão de Base Territorial
+116005;011605      ;10408;10403;Filiação
+117000;0117        ;10421;9985;Contratos Administrativos
+117001;011701      ;10429;10421;Execução Contratual
+117002;011702      ;10425;10421;Rescisão
+117003;011703      ;10423;10421;Anulação
+117004;011704      ;10422;10421;Pagamento Atrasado/Correção Monetária
+117005;011705      ;10426;10421;Prorrogação
+117006;011706      ;10427;10421;Termo Aditivo
+117007;011707      ;10430;10421;Equilíbrio Financeiro
+117008;011708      ;10428;10421;Penalidades
+117009;011709      ;10424;10421;Suspensão
+118000;0118        ;10409;9985;Empregado Público/Temporário
+118001;011802      ;10411;10409;Admissão/Permanência/Despedida
+119000;011901      ;10418;10417;CNH - Carteira Nacional de Habilitação
+119001;011902      ;10419;10417;Liberação de Veículo Apreendido
+119002;011903      ;10420;10417;Licenciamento de Veículo
+120000;0120        ;10412;9985;Comissão Parlamentar de Inquérito - CPI
+120001;012001      ;10413;10412;Quebra de Sigilo Bancário/Fiscal/Telefônico
+120002;012002      ;10414;10412;Criação/Instalação/Prosseguimento/Encerramento
+120003;012003      ;10415;10412;Limites dos Poderes de Investigação
+120004;012004      ;10416;10412;Limites do Objeto
+121000;012107      ;10118;10110;Unidade de Conservação da Natureza
+121001;012108      ;10119;10110;Gestão de Florestas Públicas
+121002;;11828;10110;Área de Preservação Permanente
+121003;;11822;10110;Mineração
+121004;;11830;10110;Patrimônio Cultural
+121005;;11825;10110;Poluição
+121006;;11829;10110;Produtos Controlados / Perigosos
+121007;;11824;10110;Recursos Hídricos
+121008;;11823;10110;Reserva legal
+121009;;11862;10110;Saneamento
+121010;;11827;10110;Zona Costeira
+121011;;11826;10110;Zoneamento Ecológico e Econômico
+122000;;10954;9985;Orçamento
+122001;;10958;10954;Crédito Suplementar
+122002;;10955;10954;Criação de Dotação Orçamentária
+122003;;10956;10954;Repasse de Duodécimos
+122004;;10957;10954;Repasse de Verbas Públicas
+123000;;11803;9985;CONSELHOS
+123001;;11833;11803;Conselho da Comunidade
+123002;;11835;11803;Conselho de Direitos da Criança e Adolescente
+123003;;11832;11803;Conselho do Idoso
+123004;;11834;11803;Conselho sobre Drogas
+124000;;11831;9985;Controle Externo da atividade policial
+125000;;11802;9985;Ordem Urbanística
+125001;;11837;11802;Comércio Ambulante
+125002;;11838;11802;Operações Urbanas Consorciadas
+125003;;11836;11802;Parcelamento do Solo
+125004;;11839;11802;Posturas Municipais
+125005;;11840;11802;Segurança em Edificações
+126000;;11841;9985;Política Agrícola
+127000;;11873;9985;Política fundiária e da reforma agrária
+128000;;11863;9985;Responsabilidade Fiscal
+129000;;11872;9985;Sistema de proteção especial a vítimas e a testemunhas
+199001;10          ;1146;;Direito Marítimo
+199002;1001        ;5603;1146;Inscrição/Registro da Embarcação
+199003;1002        ;5585;1146;Registro/Cadastro do Armador
+199004;1003        ;7783;1146;Responsabilidade Contratual
+199005;100301      ;5196;7783;Aluguel de Embarcações (Fretamento e Carta Partida)
+199006;100302      ;5612;7783;Créditos/Privilégios Marítimos
+199007;100303      ;5193;7783;Engajamento e Profissionais Marítimos
+199008;100304      ;5609;7783;Hipoteca Marítima
+199009;100305      ;7798;7783;Quanto à Carga
+199010;100306      ;7797;7783;Quanto à Embarcação
+199011;100307      ;5194;7783;Seguros Marítimos
+199012;1004        ;5595;1146;Responsabilidade do Comandante ou Capitão
+199013;1005        ;7784;1146;Responsabilidade Extracontratual
+199014;100501      ;5575;7784;Abandono
+199015;100502      ;5577;7784;Acidentes da Navegação
+199016;100503      ;5589;7784;Arresto de Embarcação
+199017;100504      ;5591;7784;Assistência/Salvamento
+199018;100505      ;5592;7784;Avaria
+199019;100506      ;7799;7784;Clandestinos
+199020;1006        ;5621;1146;Serviços Auxiliares da Navegação
+199021;100601      ;5622;5621;Agenciamento
+199022;100602      ;5623;5621;Corretagem de Embarcação
+199023;100603      ;5624;5621;Praticagem
+199024;1007        ;;;Responsabilidade do Fornecedor
+199025;11          ;6191;;Direito Internacional
+199026;1101        ;6219;6191;Contratos internacionais
+199027;1102        ;6203;6191;Cooperação internacional
+199028;110201      ;6206;6203;Auxílio direto
+199029;110202      ;6207;6203;MERCOSUL
+199030;110203      ;10921;6203;Repatriação de criança ou adolescente
+199031;110302      ;6199;6197;Asilo
+199032;110303      ;6200;6197;Livre trânsito MERCOSUL
+199033;110304      ;6201;6197;Trabalhador migrante ou fronteiriço do MERCOSUL
+199034;1104        ;6217;6191;Funcionamento de empresa estrangeira
+199035;1105        ;9565;6191;Laudo arbitral internacional
+199036;110601      ;6193;6192;Aquisição
+199037;110604      ;6194;6192;Perda
+199038;1107        ;6213;6191;Normas do MERCOSUL
+199039;1108        ;6218;6191;Pessoa Jurídica Estrangeira
+199040;1110        ;6202;6191;Proteção Internacional a Direitos Humanos
+199042;1112        ;6212;6191;Tratado Internacional
+199043;;;9633;DIREITO DA CRIANÇA E DO ADOLESCENTE
+199044;;9633;9964;Seção Cível
+199045;;11819;9964;Classificação indicativa
+199046;;11821;9964;Conselhos tutelares
+199047;;11820;9964;Entidades de atendimento
+199048;;11817;9964;Fundos
+199049;;11816;9964;Infrações administrativas
+199050;;11818;9964;Medidas de proteção
+199051;;12090;9964;PERDA OU MODIFICAÇÃO DE GUARDA
+200000;02          ;899;;Direito Civil
+201000;0216        ;10432;899;Coisas
+201004;021701      ;7661;5626;Bem de família
+202000;0218        ;7947;899;Fatos jurídicos
+202001;021801      ;5632;7947;Prescrição e decadência
+203000;021603      ;10444;10432;Posse
+203001;02160302    ;10445;10444;Esbulho/turbação/ameaça
+204000;021604      ;10448;10432;Propriedade
+204008;02160402    ;10462;10448;Condomínio
+204010;0216040502  ;4656;4654;Direito autoral
+205001;021601      ;10494;10432;Hipoteca
+206000;0219        ;7681;899;Obrigações
+208000;021903      ;9580;7681;Espécies de contrato
+208003;02190315    ;9589;9580;Depósito
+208004;02190325    ;9594;9580;Mandato
+208005;02190331    ;9597;9580;Seguro
+208006;021602      ;10488;10432;Penhor
+208007;02190306    ;9585;9580;Cartão de crédito
+208009;02190408    ;4970;7717;Cheque
+208017;02190321    ;9608;9580;Franquia
+208018;02190303    ;9584;9580;Arrendamento mercantil
+208019;060403      ;7619;7771;Consórcio
+208020;02190309    ;9587;9580;Compra e venda
+208021;;;;
+208022;02190312    ;9607;9580;Contratos bancários
+208023;02190328    ;9596;9580;Prestação de serviços
+209000;02190332    ;4839;9580;Sistema Financeiro de Habitação
+209001;0219033202  ;4841;4839;Quitação
+209002;0219033203  ;4842;4839;Reajuste de prestações
+209003;0219033207  ;4843;4839;Transferência de financiamento (contrato de gaveta)
+209005;0219033206  ;4846;4839;Sustação/alteração de leilão
+209006;0219033205  ;4847;4839;Seguro
+209008;02160303    ;10446;10444;Imissão
+209010;02190506    ;10582;7691;Rescisão/resolução
+209011;02160403    ;10463;10448;Condomínio em edifício
+209013;0219033204  ;4854;4839;Revisão de saldo devedor
+210000;0220        ;10431;899;Responsabilidade civil
+210001;;;;
+210003;022001      ;10438;10431;Dano ambiental
+211002;0216040501  ;4670;4654;Desenho industrial
+212006;021904      ;7717;7681;Espécies de títulos de crédito
+212007;02190411    ;4973;7717;Letra de câmbio
+212008;02190414    ;4976;7717;Nota de crédito rural
+212009;02190703    ;9575;4949;Sustação de protesto
+212010;02190413    ;4975;7717;Nota de crédito industrial
+215000;1103        ;6197;6191;Estrangeiro
+215001;1109        ;6216;6191;Prestação de alimentos
+215003;110603      ;6195;6192;Concessão de naturalização
+215004;110602      ;6196;6192;Cancelamento de naturalização
+215005;110301      ;6198;6197;Admissão/entrada/permanência/saíd
+216001;02160201    ;10491;10488;Direitos e títulos de crédito
+216002;02160202    ;10490;10488;Industrial/mercantil
+216003;02160203    ;10489;10488;Rural - agrícola/pecuária
+216004;02160204    ;10492;10488;Veículos
+216005;02160301    ;10447;10444;Aquisição
+216006;02160401    ;10455;10448;Aquisição
+216007;0216040101  ;10456;10455;Acessão
+216008;0216040102  ;10500;10455;Usucapião da Lei nº 6969/1981
+216009;0216040103  ;10457;10455;Usucapião especial (constitucional)
+216010;0216040104  ;10460;10455;Usucapião especial coletiva
+216011;0216040105  ;10458;10455;Usucapião extraordinária
+216012;0216040106  ;10459;10448;Usucapião ordinária
+216013;0216040301  ;10595;10463;Multa
+216014;02160404    ;10449;10448;Perda da propriedade
+216015;02160405    ;4654;10448;Propriedade intelectual/industrial
+216016;0216040503  ;4680;4654;Marca
+216017;0216040504  ;4660;4654;Patente
+216018;0216040505  ;10499;4654;Programa de computador
+216019;;11412;10432;Conflito fundiário coletivo rural
+216020;;11413;10432;Conflito fundiário coletivo urbano
+217000;0217        ;5626;899;Família
+219000;021901      ;7690;7681;Adimplemento e extinção
+219001;02190101    ;7709;7690;Compensação
+219002;02190102    ;7710;7690;Confusão
+219003;02190103    ;7707;7690;Dação em pagamento
+219004;02190104    ;10592;7690;Desconto em folha de pagamento
+219005;02190105    ;7706;7690;Imputação de pagamento
+219006;02190106    ;7708;7690;Novação
+219007;02190107    ;7703;7690;Pagamento
+219008;02190108    ;7705;7690;Pagamento com sub-rogação
+219009;02190109    ;7704;7690;Pagamento em consignação
+219010;02190110    ;7711;7690;Remissão das dívidas
+219011;021902      ;7694;7681;Atos unilaterais
+219012;02190201    ;7715;7694;Enriquecimento sem causa
+219013;02190202    ;7713;7694;Gestão de negócios
+219014;02190203    ;7714;7694;Pagamento indevido
+219015;02190204    ;7712;7694;Promessa de recompensa
+219016;02190301    ;9581;9580;Agência e distribuição
+219017;02190302    ;9582;9580;Alienação fiduciária
+219018;02190304    ;9583;9580;Arrendamento rural
+219019;02190305    ;4728;9580;Câmbio
+219020;02190307    ;9586;9580;Comissão
+219021;02190308    ;9602;9580;Comodato
+219022;02190310    ;9606;9580;Compromisso
+219023;02190311    ;9604;9580;Constituição de renda
+219024;02190313    ;9588;9580;Corretagem
+219025;02190316    ;9590;9580;Doação
+219026;02190317    ;5680;9580;Edição
+219027;02190318    ;9591;9580;Empreitada
+219028;02190319    ;9601;9580;Estimatório
+219029;02190320    ;9592;9580;Fiança
+219030;02190322    ;9605;9580;Jogo e aposta
+219031;02190323    ;9593;9580;Locação de imóvel
+219032;0219032301  ;9614;9593;Benfeitorias
+219033;0219032302  ;9611;9593;Despejo para uso de ascendentes e descendentes
+219034;0219032303  ;9610;9593;Despejo para uso próprio
+219035;0219032304  ;9612;9593;Despejo por denúncia vazia
+219036;0219032305  ;9615;9593;Direito de preferência
+219037;02190324    ;9609;9580;Locação de móvel
+219038;02190326    ;9603;9580;Mútuo
+219039;02190327    ;4794;9580;Parceria agrícola e/ou pecuária
+219040;02190329    ;4805;9580;Previdência privada
+219041;0219032901  ;10590;4805;Resgate de contribuição
+219042;02190330    ;4813;9580;Representação comercial
+219043;0219033201  ;4840;4839;Equivalência salarial
+219044;0219033208  ;10588;4839;Vícios de construção
+219045;02190333    ;9598;9580;Transação
+219046;02190334    ;9599;9580;Transporte de coisas
+219047;02190335    ;9600;9580;Transporte de pessoas
+219048;02190336    ;9595;9580;Troca ou permuta
+219049;02190401    ;4961;7717;Cédula de crédito à exportação
+219050;02190402    ;4960;7717;Cédula de crédito bancário
+219051;02190403    ;4962;7717;Cédula de crédito comercial
+219052;02190404    ;4963;7717;Cédula de crédito industrial
+219053;02190405    ;4964;7717;Cédula de crédito rural
+219054;02190406    ;4968;7717;Cédula de produto rural
+219055;02190407    ;4969;7717;Cédula hipotecária
+219056;02190409    ;4971;7717;Debêntures
+219057;02190410    ;4972;7717;Duplicata
+219058;02190412    ;4974;7717;Nota de crédito comercial
+219059;02190415    ;4980;7717;Nota promissória
+219060;02190416    ;4981;7717;Warrant
+219061;021905      ;7691;7681;Inadimplemento
+219062;02190501    ;7701;7691;Arras ou sinal
+219063;02190502    ;7700;7691;Cláusula penal
+219064;02190503    ;7697;7691;Correção monetária
+219065;02190504    ;7699;7691;Juros de mora - legais/contratuais
+219066;0219050401  ;10585;7699;Capitalização/anatocismo
+219067;0219050402  ;10586;7699;Limitação de juros
+219068;02190505    ;7698;7691;Perdas e danos
+219069;021906      ;7696;7681;Preferências e privilégios creditórios
+219070;021907      ;4949;7681;Títulos de crédito
+219071;02190701    ;4951;4949;Anulação
+219072;02190702    ;4957;4949;Requisitos
+219073;021908      ;7688;7681;Transmissão
+219074;02190801    ;7689;7688;Assunção de dívida
+219075;02190802    ;4718;7688;Cessão de crédito
+219076;;11804;4839;Programas de Arrendamento Residencial PAR
+219077;;11805;4839;Tabela Price
+220000;022002      ;10439;10431;Indenização por dano material
+220001;02200201    ;10441;10439;Acidente de trânsito
+220002;02200202    ;10443;10439;Direito de imagem
+220003;02200203    ;10440;10439;Erro médico
+220004;02200204    ;10442;10439;Lei de impresnsa
+220005;022003      ;10433;10431;Indenização por dano moral
+220006;02200301    ;10435;10433;Acidente de trânsito
+220007;02200302    ;10437;10433;Direito de imagem
+220008;02200303    ;10434;10433;Erro médico
+220009;02200304    ;10436;10433;Lei de imprensa
+220010;;11954;10439;ACIDENTE DE TRABALHO
+300000;03          ;14;;Direito Tributário
+301000;0301        ;5913;14;Limitações ao Poder de Tributar
+301001;030101      ;5914;5913;Imunidade
+301002;030102      ;5915;5913;Isenção
+301003;03010101    ;10528;5914;Entidades sem Fins Lucrativos
+301004;03010102    ;10530;5914;Imunidade Recíproca
+301005;03010103    ;10527;5914;Livros/Jornais/Periódicos
+301006;03010104    ;10529;5914;Partidos Políticos
+301007;030103      ;10540;5913;Competência Tributária
+302000;0302        ;5916;14;Impostos
+302001;030201      ;5917;5916;IRPF/Imposto de Renda de Pessoa Física
+302002;03020101    ;5918;5917;Incidência sobre PDV
+302003;03020102    ;5919;5917;Incidência sobre Aposentadoria
+302004;03020103    ;10689;5917;Correção da Tabela
+302005;03020104    ;5920;5917;Incidência sobre Aplicações Financeiras
+302006;03020105    ;5921;5917;Incidência sobre Licença-Prêmio/Abono/Indenização
+302007;03020106    ;5922;5917;Retido na fonte
+302008;03020107    ;5923;5917;Incidência sobre Férias Compensadas
+302009;03020108    ;5924;5917;Incidência sobre Proventos de Previdência Privada
+302010;03020109    ;5925;5917;Incidência sobre Participação nos Lucros
+302011;03020110    ;5926;5917;Incidência sobre Lucro Imobiliário
+302012;030202      ;5933;5916;IRPJ/Imposto de Renda de Pessoa Jurídica
+302013;03020201    ;5940;5933;Compensação de Prejuízos
+302014;03020202    ;5934;5933;Microempresa
+302015;03020203    ;5935;5933;Demonstrações Financeiras (DCTF)
+302016;03020205    ;5936;5933;Incidência sobre Aplicações Financeiras
+302017;03020206    ;5937;5933;Retido na fonte
+302018;03020207    ;5938;5933;Incidência sobre Lucro Líquido
+302019;030203      ;5941;5916;II/ Imposto sobre Importação
+302020;03020301    ;5942;5941;Importação de bens usados
+302021;03020302    ;5943;5941;Drawback
+302022;030204      ;5944;5916;IE/ Imposto sobre Exportação
+302023;030205      ;5945;5916;IPI/ Imposto sobre Produtos Industrializados
+302024;030206      ;10690;5916;IPMF/ Imposto Provisório sobre Movimentação Financeira
+302025;030207      ;5946;5916;ICMS/ Imposto sobre Circulação de Mercadorias
+302026;03112301    ;10556;6008;Exclusão de ICMS
+302027;030208      ;5948;5916;IOC/IOF Imposto sobre operações de crédito, câmbio e seguro, ou relativas a títulos ou valores mobiliários
+302028;030209      ;5950;5916;ITR/ Imposto Territorial Rural
+302029;030210      ;5951;5916;ISS/ Imposto sobre Serviços
+302030;030211      ;5952;5916;IPTU/ Imposto Predial e Territorial Urbano
+302032;03020111    ;5927;5917;Incidência sobre 1/3 de férias (art 7º, XVII da CF)
+302033;031121      ;6009;5986;Crédito Prêmio
+302034;03020112    ;5928;5917;Incidência sobre 13° Salário
+302035;031122      ;6010;5986;Crédito Presumido
+302036;03020702    ;5947;5946;ICMS/Importação
+302037;03020113    ;5929;5917;Incidência sobre Função Comissionada
+302038;03020114    ;5930;5917;Incidência sobre Hora-Extra
+302039;03020115    ;5931;5917;Incidência decorrente de Desligamento de Plano de Previdência Privada
+302040;03020116    ;5932;5917;Incidência decorrente de Liquidação de Entidade de Previdência Privada
+302041;03020117    ;10661;5917;Incidência sobre Abono de Permanência
+302042;03020118    ;10532;5917;Incidência sobre Auxílio-condução
+302043;03020119    ;10533;5917;Incidência sobre Auxílio-creche
+302044;03020208    ;5939;5933;Cooperativa
+302045;03020801    ;5949;5948;Incidência sobre Ações de Companhias Abertas
+302046;030213      ;5953;5916;IPVA - Imposto sobre Propriedade de Veículos Automotores
+302047;030214      ;5954;5916;ITBI - Imposto de Transmissão Intervivos de Bens Móveis e Imóveis
+302048;030215      ;5955;5916;ITCD - Imposto de Transmissão Causa Mortis
+303000;0303        ;5956;14;Taxas
+303003;03031301    ;5958;5957;Taxa Anual por Hectare
+303004;03031302    ;5959;5957;Taxa de Armazenamento
+303005;03031303    ;5960;5957;Taxa de Despacho Aduaneiro
+303006;03031304    ;5961;5957;Taxa de Exploração Mineral
+303007;03031305    ;5962;5957;Taxa de Fiscalização Ambiental
+303008;03031306    ;5963;5957;Taxa de Guia de Importação
+303009;03031307    ;5964;5957;Taxa de Licença de Importação
+303010;03031308    ;5965;5957;Taxa de Melhoramento de Portos
+303011;03031309    ;5966;5957;Taxa de Permanência
+303012;03031310    ;5967;5957;Taxa de Saúde Suplementar
+303013;030313      ;5957;5956;Taxas Federais
+303014;03031311    ;5968;5957;Taxa de Fiscalização da Comissão de Valores Mobiliários
+303015;03031312    ;5969;5957;Taxa Judiciária
+303016;03031313    ;5970;5957;Taxa de Aferição de Equipamentos de Metrologia
+303017;030314      ;5971;5956;Estaduais
+303018;030315      ;5972;5956;Municipais
+303019;03031501    ;10536;5972;Taxa de Coleta de Lixo
+303020;03031502    ;10535;5972;Taxa de Iluminação Pública
+303021;03031503    ;10538;5972;Taxa de Licenciamento de Estabelecimento
+303022;03031504    ;10534;5972;Taxa de Limpeza Pública
+303023;03031505    ;10537;5972;Taxa de Prevenção e Combate a Incêndio
+303024;;55015;5957;TAXA DE FISCALIZAÇÃO DE VIGILÂNCIA SANITÁRIA
+303025;;55016;5957;TAXA DE ANOTAÇÃO DE RESPONSABILIDADE TÉCNICA - ART
+304000;0304        ;6031;14;Contribuições
+304001;030401      ;6032;6031;Contribuição de Melhoria - Tributário
+304002;03040203    ;10562;6033;Cofins - Importação
+304003;0304020401  ;10563;6036;Compensação de prejuízo
+304004;03040208    ;10561;6033;PIS - Importação
+304005;03040304    ;10565;6044;Contribuição Sindical Rural
+304006;03040415    ;6069;6048;Contribuição sobre Nota Fiscal de Execução de Serviços
+304007;03040416    ;6063;6048;Auxílio-alimentação
+304008;03040418    ;6064;6048;Custeio de Assistência Médica
+304009;03040419    ;6065;6048;Hora-extra
+304010;03040420    ;6066;6048;Massa Falida - recolhimento
+304011;03040421    ;6068;6048;Salário-maternidade
+304012;03040514    ;6083;6071;Contribuição de Iluminação Pública
+304013;03040515    ;6086;6071;Contribuição sobre Açúcar e Álcool
+304014;03040516    ;6084;6071;IUEE/Imposto Único sobre Energia Elétrica
+305000;030402      ;6033;6031;Contribuição Social
+305001;03040201    ;6034;6033;Finsocial
+305002;03040202    ;6035;6033;Cofins
+305003;03040204    ;6036;6033;Contribuição Social sobre o Lucro Líquido
+305004;03040205    ;6037;6033;Salário-Educação
+305005;03040206    ;6038;6033;Seguro acidentes do trabalho
+305006;03040207    ;6039;6033;PIS
+305007;03040417    ;6070;6048;Contribuição de autônomos, Empresários (Pró-labore) e Facultativos
+305008;03040209    ;6040;6033;FUNRURAL
+305009;03040210    ;6041;6033;Contribuição INCRA
+305010;03040211    ;6042;6033;PASEP
+305011;03040422    ;6067;6048;Nota Fiscal ou Fatura
+305012;03040213    ;6043;6033;Construção Civil
+306000;030403      ;6044;6031;Contribuições Corporativas
+306001;03040301    ;6045;6044;Contribuições para o SEBRAE, SESC, SENAC, SENAI e outros
+306002;03040302    ;6046;6044;Conselhos Regionais e afins (Anuidade)
+306003;03040303    ;6047;6044;Contribuição Sindical
+307000;030404      ;6048;6031;Contribuições Previdenciárias
+307002;03040401    ;6049;6048;Servidores Ativos
+307003;03040402    ;6050;6048;Servidores Inativos
+307004;03040403    ;6051;6048;Mandato Eletivo/Lei 9506/97
+307005;03040404    ;6052;6048;Aposentadoria/retorno ao trabalho
+307006;03040405    ;6053;6048;Cargo em Comissão
+307007;03040406    ;6054;6048;Tempo de Serviço Urbano/Contribuições não recolhidas
+307008;03040407    ;6055;6048;Tempo de Serviço Rural/Contribuições não recolhidas
+307009;03040408    ;6056;6048;Gratificação Natalina/13º salário
+307010;03040409    ;6057;6048;Produção Agropecuária
+307011;03040410    ;6058;6048;Indenização Trabalhista
+307012;03040411    ;6059;6048;Reembolso auxílio-creche
+307013;03040412    ;6060;6048;Contribuição sobre a folha de sal
+307014;03040413    ;6061;6048;Devolução de contribuições previdenciárias pagas além do teto
+307015;03040414    ;6062;6048;1/3 de férias
+308000;0308        ;5973;14;Empréstimo Compulsório
+308001;030801      ;5974;5973;Aquisição de veículos automotores
+308002;030802      ;5975;5973;Aquisição de combustíveis
+308003;030803      ;5976;5973;Aquisição de passagens e moedas - Viagem Exterior
+308004;030804      ;5977;5973;Energia Elétrica
+309000;030405      ;6071;6031;Contribuições Especiais
+309002;03040501    ;6072;6071;FNT/Fundo Nacional de Telecomunicações
+309003;03040502    ;6073;6071;ATP/Adicional de Tarifa Portuária
+309004;03040503    ;6074;6071;AITP/Adicional de Indenização do Trabalhador Portuário Avulso
+309005;03040504    ;6075;6071;Adicional de Tarifa Aeroportuária
+309006;03040505    ;6076;6071;AFRMM/Adicional ao Frete para Renovação da Marinha Mercante
+309007;03040506    ;6085;6071;FGTS/Fundo de Garantia por Tempo 
+309008;0304050601  ;;;FGTS - Contribuição da LC 110/2001
+309009;03040507    ;6077;6071;FUNDEF/Fundo de Manutenção e Desenvolvimento do Ensino Fundamental e Valorização do Magistério
+309010;03040508    ;6087;6071;CPMF/Contribuição Provisória sobre Movimentação Financeira
+309011;03040509    ;6078;6071;Seguro Apagão (Lei 10438/02)
+309012;03040510    ;6079;6071;Contribuição sobre licença de uso ou transferência de tecnologia
+309013;03040511    ;6080;6071;Contribuição de Intervenção no Domínio Econômico (CIDE)
+309014;031503      ;6092;6089;SIMPLES
+309015;03040512    ;6081;6071;FUNDAF/Fundo Especial de Desenvolvimento e Aperfeiçoamento das Atividades de Fiscalização
+309016;03040513    ;6082;6071;FUSEX/FUNSA/FUSMA/Fundo de Saúde das Forças Armadas
+310000;0310        ;5978;14;Obrigação Tributária
+310002;031002      ;5979;5978;Responsabilidade tributária
+310003;031003      ;5982;5978;DIMOB/ Declaração de Informações sobre Atividades Imobilíárias
+310004;031004      ;5985;5978;Obrigação Acessória
+310005;03100201    ;5980;5979;Responsabilidade Tributária do Sócio-Gerente/ Diretor / Representante
+310006;03100202    ;5981;5979;Substituição Tributária
+311000;0311        ;5986;14;Crédito Tributário
+311001;031101      ;5987;5986;Suspensão da Exigibilidade
+311002;03110101    ;5988;5987;Carta de fiança
+311004;03110103    ;5989;5987;Parcelamento
+311005;031502      ;6090;6089;REFIS/Programa de Recuperação Fiscal
+311007;03110605    ;5991;5990;Compensação com Apólices da Dívida Pública
+311008;031106      ;5990;5986;Extinção do Crédito Tributário
+311011;031109      ;5997;5986;Denúncia espontânea (art 138 CTN)
+311012;031110      ;5998;5986;Lançamento
+311013;03110604    ;5994;5990;Compensação
+311014;031501      ;6091;6089;PAES/Parcelamento Especial
+311015;031113      ;5999;5986;Certidão Negativa de Débito (CND)
+311016;03111301    ;6000;5999;Expedição de CND
+311017;03111302    ;6001;5999;Expedição de Certidão Positiva de Débito com Efeito de Negativa
+311018;031005      ;5983;5978;CNPJ - Cadastro Nacional de Pessoas Jurídicas
+311020;;;;
+311021;031116      ;6003;5986;Incentivos fiscais
+311022;03111303    ;6002;5999;Certificado de Regularidade - FGTS/Fundo de Garantia por Tempo de Serviço
+311023;031117      ;6007;5986;Repetição de Indébito
+311024;03110102    ;10543;5987;Depósito Judicial
+311025;031006      ;5984;5978;CPF/Cadastro de Pessoas Físicas
+311026;03110606    ;5995;5990;TDA/Títulos da Dívida Agrária
+311027;031120      ;6004;5986;Anulação de Débito Fiscal
+311028;031123      ;6008;5986;Base de cálculo
+311029;03110602    ;5992;5990;Prescrição
+311030;0311060201  ;10545;5992;Constitucionalidade do art 46 da Lei nº 8212/91
+311031;0311060202  ;10544;5992;Constitucionalidade do art 4º da LC 118/2005
+311032;0311060203  ;10548;5992;Decretação de ofício
+311033;0311060204  ;10547;5992;Interrupção
+311034;031106020401;10550;10547;Despacho de citação
+311035;0311060205  ;10546;5992;Suspensão
+311036;031106020501;10549;10546;Arquivamento administrativo - Crédito de Pequeno Valor
+311037;03110603    ;5993;5990;Decadência
+311038;0311060301  ;10551;5993;Constitucionalidade do art 45 da Lei nº 8212/1991
+311039;03112302    ;10559;6008;"""Cálculo de ICMS """"por dentro"""""""
+311040;03112303    ;10557;6008;Exclusão - IPI
+311041;03112304    ;10558;6008;Exclusão - Receitas Provenientes de Exportação
+311042;031125      ;6012;5986;Alíquota
+311043;03112501    ;6014;6012;Alíquota Progressiva
+311044;03112502    ;6013;6012;Alíquota Zero
+311045;03112503    ;6015;6012;Índice da Alíquota
+311046;031126      ;5996;5986;Anistia
+311047;031127      ;6016;5986;Creditamento
+311048;031128      ;6011;5986;Fato Gerador/Incidência
+311049;031129      ;6006;5986;Prazo de Recolhimento
+311050;03020503    ;10947;5945;Princípio da Seletividade
+311051;031007      ;10539;5978;Capacidade Tributária
+311052;03112305    ;10959;6008;Exclusão - Receitas Transferidas a outras Pessoas Jurídicas
+312000;0312        ;6017;14;Dívida Ativa
+313000;0313        ;6018;14;Processo Administrativo Fiscal
+313002;031302      ;6019;6018;Depósito Prévio ao Recurso Administrativo
+313003;031303      ;6020;6018;Arrolamento de Bens
+314000;0314        ;6021;14;Procedimentos Fiscais
+314001;031401      ;6022;6021;Sigilo Fiscal
+314003;031403      ;6025;6021;Levantamento de depósito
+314004;031404      ;6026;6021;Cadastro de Inadimplentes - CADIN
+314005;031124      ;6005;5986;Juros/Correção Monetária
+314006;031406      ;6029;6021;Perdimento de Bens
+314007;031407      ;6024;6021;Liberação de Mercadorias
+314008;03140101    ;6023;6022;Utilização de Dados Relativos à CPMF para Fins de Fiscalização
+314009;031408      ;6028;6021;Liberação de Veículo Apreendido
+314010;031409      ;10560;6021;Quebra de Sigilo Bancário
+314011;031410      ;6027;6021;Autorização para Impressão de Documentos Fiscais - AIDF
+315000;0315        ;6089;14;Regimes Especiais de Tributação
+315001;031504      ;6093;6089;Super SIMPLES
+315002;;55010;6089;CSRF - CONTRIBUIÇÕES SOCIAIS RETIDAS NA FONTE DE PESSOAS JURÍDICAS DE DIREITO PRIVADO
+315003;;55014;6089;INCORPORAÇÕES IMOBILIÁRIAS DO PMCMV
+316000;0316        ;6088;14;Discriminação Tributária MERCOSUL
+317000;0317        ;6030;14;GATT - Acordo Geral sobre Tarifas e Comércio
+400000;04          ;195;;Direito Previdenciário
+401000;0401        ;6094;195;Benefícios em Espécie
+401001;040101      ;6095;6094;Aposentadoria por Invalidez (Art42/7)
+401002;040102      ;6096;6094;Aposentadoria por Idade (Art 48/51)
+401003;04010201    ;6097;6096;Urbana
+401004;04010202    ;6098;6096;Rural
+401006;040104      ;6100;6094;Aposentadoria Especial (Art 57/8)
+401007;040105      ;6101;6094;Auxílio-Doença Previdenciário
+401008;040106      ;6102;6094;Salário-Família (Art 65/70)
+401009;040107      ;6103;6094;Salário-Maternidade (Art 71/73)
+401010;040108      ;6104;6094;Pensão por Morte (Art 74/9)
+401011;040109      ;6105;6094;Auxílio-Reclusão (Art 80)
+401012;040110      ;6106;6094;Pecúlios (Art 81/5)
+401013;040111      ;6107;6094;Auxílio-Acidente (Art 86)
+401014;040112      ;6113;6094;Abono de Permanência em Serviço (Art 87)
+401015;040113      ;6114;6094;Benefício Assistencial (Art 203,V
+401016;040115      ;6115;6094;Ferroviário
+401017;040116      ;6116;6094;Ex-combatentes
+401018;040117      ;6117;6094;Renda Mensal Vitalícia
+401019;04011101    ;6108;6107;Incapacidade laborativa parcial
+401020;04011102    ;6109;6107;Incapacidade laborativa permanente
+401021;04011103    ;6110;6107;Incapacidade laborativa temporária
+401022;04011104    ;6111;6107;Movimentos repetitivos/tenossinovite/LER/DORT
+401023;04011105    ;6112;6107;Redução da capacidade auditiva
+401024;040118      ;6099;6094;Aposentadoria por tempo de serviço (art 52/4)
+401025;040119      ;6118;6094;Aposentadoria por tempo de contribuição (art 55/6)
+401026;040120      ;7757;6094;Auxílio-doença acidentário
+401028;;10567;6094;Aposentadoria por Invalidez Acidentária
+401029;;11946;6114;Deficiente
+401030;;55001;6095;ACRÉSCIMO DE 25%
+401031;;11947;6114;IDOSO
+401032;;55007;6094;APOSENTADORIA DA PESSOA COM DEFICIÊNCIA
+402000;0402        ;6119;195;RMI - Renda Mensal Inicial, Reajustes e Revisões Específicas
+402001;040201      ;6120;6119;Renda Mensal Inicial
+402002;04020101    ;6121;6120;RMI pelo art 202 CF/88 (média dos 36 últimos salários-de-contribuição)
+402003;04020102    ;6122;6120;RMI pelo art 1º da Lei 6423/77 - índices de atualização dos 24 1ºs salários-de-contribuição, anteriores aos 12 últimos)
+402004;04020103    ;6123;6120;RMI pela equivalência entre Salário-de-Benefício e Salário-de-Contribuição
+402005;04020104    ;6124;6120;RMI sem incidência de Teto Limitador
+402006;04020105    ;6125;6120;RMI da pensão de dependente de ex-combatente
+402007;04020106    ;6126;6120;Benefício mínimo a partir da CF/88 (art 201, § 2º CF/88)
+402008;04020107    ;6127;6120;Parcelas e índices de correção do salário-de-contribuição
+402009;04020108    ;6128;6120;Limitação do salário-de-benefício e da renda mensal inicial
+402010;04020109    ;6129;6120;RMI cuja salário-de-benefício supera menor valor teto
+402011;04020110    ;6130;6120;Escala de Salário-Base
+402012;04020111    ;6131;6120;Contribuição sobre vinte salários mínimos
+402013;04020112    ;6132;6120;Cálculo do Benefício de acordo com a Sistemática anterior à Lei 9876/99
+402014;04020113    ;6133;6120;IRSM de Fevereiro de 1994(39,67%)
+402015;04020115    ;6134;6120;Alteração do coeficiente de cálculo de pensão
+402016;04020116    ;6135;6120;Alteração do coeficiente de cálculo do benefício
+402017;040401      ;6174;6173;Data de início do benefício (DIB)
+402022;040203      ;6138;6119;Reajustes e Revisões Específicas
+402023;04020301    ;6139;6138;Reajuste pela Súmula 260 do TFR
+402024;04020302    ;6140;6138;Art 58 ADCT da CF/88
+402025;04020303    ;6141;6138;Utilização do PNS no Reajuste de Benefícios
+402026;04020304    ;6142;6138;Manutenção do Benefício pela equivalência salarial
+402027;04020305    ;6143;6138;Expurgos inflacionários sobre os benefícios
+402028;04020306    ;6144;6138;Salário Mínimo de Ncz$ 120,00 para junho/89
+402029;04020307    ;6145;6138;Reajuste de 147%
+402030;04020308    ;6146;6138;Reajustamento pelo IGP-DI
+402031;04020316    ;6147;6138;Aplicação de coeficiente de cálculo diverso do fixado na Lei nº 8213/91
+402032;04020317    ;6148;6138;Reajuste aplicado ao salário mínimo em setembro/94
+402033;04020318    ;6149;6138;Sistemática de conversão dos benefícios previdenciários em URVs
+402034;04020319    ;6150;6138;Reajustamento pelo INPC
+402036;04020320    ;6151;6138;Art 144 da Lei 8213/91 e/ou diferenças decorrentes
+402037;04020321    ;6152;6138;Gratificação Natalina a partir da CF/88 (art 201, § 6º, CF/88)
+402038;04020322    ;6153;6138;Abono da Lei 8178/91
+402039;04020323    ;6154;6138;Índice de 4,02% da Lei 8222/91
+402040;04020324    ;6155;6138;Desconto do DL 1910/81
+402041;04020325    ;6156;6138;Descontos dos benefícios
+402042;04020326    ;6157;6138;Correção monetária pela Súmula 71 TFR
+402043;04020327    ;6158;6138;Correção monetária de benefício pago com atraso
+402046;04020117    ;6136;6120;Cálculo do benefício de segurado especial de acordo com a Lei 9876/99
+402047;04020118    ;6137;6120;Cálculo do fator previdenciário - Lei 9876/99
+402049;04020328    ;6159;6138;Reajuste conforme Portaria MPAS 714/1993
+402050;;11945;6149;Revisão do valor do benefício no primeiro reajuste após a concessão (Art. 21, § 3º, da Lei 8.880/1994)
+402051;;11944;6120;Alteração do teto máximo para o valor do benefício  previdenciário do RGPS (EC 20 e 41)
+402052;;11941;6120;Art. 26 da Lei 8.870/1994
+402053;;11943;6120;Art. 29, II, da Lei 8.213/1991
+402054;;11942;6120;Art. 29, § 5º, da Lei 8.213/1991
+402055;;11940;6127;Inclusão do 13º salário (gratificação natalina) no PBC
+402056;;55003;6138;DIFERENÇA EC 20 E 41
+403000;0403        ;6160;195;Disposições Diversas Relativas às Prestações
+403001;040301      ;6161;6160;Habilitação e Reabilitação Profissional
+403002;040302      ;6162;6160;Decadência/Prescrição
+403003;040303      ;;;Requerimento Administrativo
+403005;040317      ;6171;6160;Inclusão de dependente
+403006;040314      ;6164;6160;Declaração de Ausência
+403007;040305      ;;;Opção por permanecer em atividade
+403008;040402      ;6175;6173;Cumulação
+403009;0405        ;6181;195;Tempo de Serviço
+403010;040501      ;6182;6181;Averbação/cômputo/conversão de tempo de serviço especial
+403011;040502      ;6183;6181;Averbação/cômputo de tempo de serviço de segurado especial (regime de economia familiar)
+403012;040503      ;6184;6181;Averbação/cômputo de tempo de serviço rural (empregado/empregador)
+403013;040504      ;6185;6181;Averbação/cômputo de tempo de serviço como aluno aprendiz
+403014;040505      ;6186;6181;Averbação/cômputo de tempo de serviço militar
+403015;040508      ;6189;6181;Certidão de tempo de serviço
+403016;040309      ;6165;6160;Atividade concomitante
+403017;040310      ;6166;6160;Renúncia ao benefício
+403018;040311      ;6167;6160;Demonstrativo das importâncias pagas
+403019;040312      ;6168;6160;Períodos de Carência
+403020;040403      ;6176;6173;Parcelas de benefício não pagas
+403021;040315      ;6169;6160;Limite mínimo de idade
+403022;040316      ;6170;6160;Perda da qualidade de segurado
+403023;040318      ;6172;6160;Regra de transição para aposentadoria - pedágio
+404000;0404        ;6173;195;Pedidos Genéricos relativos aos Benefícios em Espécie
+404001;040404      ;6177;6173;Concessão
+404002;040405      ;6178;6173;Restabelecimento
+404003;040406      ;6179;6173;Conversão
+404004;040407      ;;;Revisão
+404005;;55002;6173;DESAPOSENTAÇÃO
+404006;;55017;6173;BENEFÍCIO PREVIDENCIÁRIO PAGO INDEVIDAMENTE
+405001;040506      ;6187;6181;Averbação/cômputo de tempo de serviço de empregado doméstico
+405002;040507      ;6188;6181;Averbação/cômputo de tempo de serviço urbano
+405003;040509      ;6190;6181;Contagem recíproca de tempo de serviço
+500000;05          ;287;;Direito Penal
+501000;0501        ;3369;287;Crimes contra a vida
+501001;050101      ;3370;3369;Homicídio Simples (art 121 caput)
+501002;050102      ;3371;3369;Homicídio Privilegiado (art 121, §1º)
+501003;050103      ;3372;3369;Homicídio qualificado (art 121, § 2º)
+501004;050104      ;3373;3369;Induzimento, Instigação ou Auxílio a Suicídio (art122)
+501005;050105      ;3375;3369;Infanticídio
+501006;050106      ;10915;3369;Aborto
+501007;05010601    ;10917;10915;Aborto provocado pela gestante ou com o seu consentimento
+501008;05010602    ;10918;10915;Aborto provocado por terceiro
+501009;05010603    ;10919;10915;Aborto qualificado
+502000;0502        ;;;Demais Crimes contra a Vida
+503000;0503        ;3385;287;Lesões Corporais
+503001;050301      ;3386;3385;Leve (art 129, caput)
+503002;050302      ;3387;3385;Seguida de morte (art 129, § 3º)
+503003;050303      ;5556;3385;Grave (art 129, § 1º)
+503004;050304      ;5557;3385;Gravíssima (art 129, § 2º)
+503005;050305      ;5558;3385;Privilegiada (art 129, § 4º)
+503006;050306      ;5560;3385;Decorrente de violência doméstica (art 129, §§ 9º e 11)
+504000;0504        ;3388;287;Periclitação da Vida e da Saúde e Rixa
+504001;050401      ;3389;3388;Perigo de contágio de moléstia grave (art131)
+504002;050402      ;3390;3388;Perigo para a vida ou saúde de outrem (art 132)
+504003;050403      ;3391;3388;Abandono de incapaz (art 133)
+504004;050404      ;3392;3388;Omissão de socorro (art 135)
+504005;050405      ;3393;3388;Rixa (art 137)
+504006;050406      ;5911;3388;Perigo de contágio venéreo (art 130)
+504007;050407      ;10508;3388;Maus tratos (art 136)
+504008;050408      ;10509;3388;Exposição ou abandono de recém-nascido (art 134)
+505000;0505        ;3394;287;Crimes contra a Honra
+505001;050501      ;3395;3394;Calúnia (art 138)
+505002;050502      ;3396;3394;Difamação (art 139)
+505003;050503      ;3397;3394;Injúria (art 140)
+506000;0506        ;3400;287;Crimes contra a liberdade pessoal
+506001;050601      ;3401;3400;Constrangimento ilegal (art 146)
+506002;050602      ;3402;3400;Ameaça (art 147)
+506003;050603      ;3403;3400;Seqüestro e cárcere privado (art 148)
+506004;050604      ;3404;3400;Redução a condição análoga à de escravo (art 149)
+507000;0507        ;3405;287;Crimes contra a inviolabilidade de domicílio
+507001;050701      ;3406;3405;Violação de domicílio (art 150)
+508000;0508        ;3407;287;Crimes contra a inviolabilidade de correspondência
+508001;050801      ;3408;3407;Violação de correspondência (art 151, caput)
+508002;050802      ;3409;3407;Sonegação ou destruição de correspondência (art 151, § 1º, I)
+508003;050803      ;3410;3407;Violação de comunicação telegráfica, radioelétrica ou telefônica (art 151, § 1º, II, III e IV)
+508004;050804      ;3411;3407;Violação de correspondência comercial (art 152)
+509000;0509        ;3412;287;Crimes contra a inviolabilidade de segredo
+509001;050901      ;3413;3412;Divulgação de segredo (art 153)
+509002;050902      ;3414;3412;Violação do segredo profissional (art 154)
+509003;;11978;3412;INVASÃO DE DISPOSITIVO INFORMÁT
+510000;0510        ;3415;287;Crimes contra o Patrimônio
+510001;051001      ;3416;3415;Furto (art 155)
+510002;051002      ;3418;3415;Furto de coisa comum (art 156)
+510003;051003      ;3419;3415;Roubo (art 157)
+510004;051004      ;3420;3415;Extorsão (art 158)
+510005;051005      ;3421;3415;Extorsão mediante seqüestro (art 159)
+510006;051006      ;3422;3415;Extorsão indireta (art 160)
+510007;051007      ;3423;3415;Alteração de limites (art 161, caput)
+510008;051008      ;3424;3415;Usurpação de águas (art 161, I)
+510009;051009      ;3425;3415;Esbulho possessório (art 161, II e Lei 5741, art 9º)
+510010;051010      ;3426;3415;Dano (art 163)
+510011;051011      ;3427;3415;Introdução ou abandono de animais em propriedade alheia (art 164)
+510012;051012      ;3428;3415;Dano em coisa de valor artístico, arqueológico ou histórico (art 165)
+510013;051013      ;3429;3415;Alteração de local especialmente protegido (art 166)
+510014;051014      ;3430;3415;Apropriação indébita previdenciária (art 168-A e Lei 8212/91)
+510015;051015      ;3431;3415;Estelionato (art 171)
+510017;051017      ;3434;3415;Fraude à execução (art 179)
+510018;051018      ;3435;3415;Receptação (art 180)
+510019;051019      ;3436;3415;Apropriação indébita (art 168, caput)
+510020;051022      ;3432;3415;Estelionato majorado (art 171, § 3º)
+510021;051020      ;3437;3415;Apropriação de Coisa Havida por Erro, Caso Fortuito ou Força da Natureza (art169)
+510022;051021      ;3417;3415;Furto qualificado (art 155, § 4º)
+510023;051023      ;3433;3415;Outras fraudes (art 176)
+510024;051024      ;5564;3415;Furto privilegiado (art 155, § 2º)
+510025;051025      ;5565;3415;Furto de Veículo Automotor a ser Transportado para outro Estado ou Exterior (art 155, § 5º)
+510026;051026      ;5566;3415;Roubo majorado (art 157, § 2º)
+510027;051027      ;5567;3415;Latrocínio (art 157, § 3º)
+510028;051028      ;5568;3415;Extorsão mediante seqüestro seguida de morte (art 159, § 3º)
+510029;051029      ;5569;3415;Extorsão mediante seqüestro seguida de lesão corporal grave (art 159, § 2º)
+510030;051030      ;5570;3415;Supressão ou alteração de marcas em animais (art 162)
+510031;051031      ;5571;3415;Dano qualificado (art 163, p único)
+510032;051032      ;5572;3415;Apropriação de tesouro (art 169, p único, I)
+510033;051033      ;5573;3415;Apropriação de coisa achada (art 169, p único, II)
+510034;051034      ;5835;3415;Disposição de coisa alheia como própria (art 171, § 2º, I)
+510035;051035      ;5836;3415;Alienação ou oneração fraudulenta de coisa própria (art 171, § 2º, II)
+510036;051036      ;5837;3415;Defraudação de penhor (art 171, § 2º, III)
+510037;051037      ;5838;3415;Fraude na Entrega de Coisa (art 171, § 2º, IV)
+510038;051038      ;5839;3415;Fraude para recebimento de indenização ou valor de seguro (art 171, § 2º, V)
+510039;051039      ;5840;3415;Fraude no pagamento por meio de cheque (art 171, § 2º, VI)
+510040;051040      ;5841;3415;Duplicata simulada (art 172)
+510041;051041      ;5842;3415;Abuso de incapazes (art 173)
+510042;051042      ;5843;3415;Induzimento à especulação (art 174)
+510043;051043      ;5844;3415;Fraude no comércio (art 175)
+510044;051044      ;5845;3415;Fraudes e abusos na fundação ou administração de sociedade por ações (art 177)
+510045;051045      ;5846;3415;Emissão irregular de conhecimento de depósito ou Warrant
+510046;051046      ;5847;3415;Receptação qualificada (art 180, § 1º)
+510048;;11959;3415;RECEPTAÇÃO CULPOSA
+511000;0511        ;3442;287;Crimes contra a Propriedade Intelectual
+511001;051101      ;3443;3442;Violação de direito autoral (art 184) e Lei 9609/98, art 12)
+512000;0512        ;3445;287;Crimes contra a Organização do Tr
+512001;051201      ;3446;3445;Atentado contra a liberdade de trabalho (art 197)
+512002;051202      ;3447;3445;Atentado contra a liberdade de contrato de trabalho e boicotagem violenta (art 198)
+512003;051203      ;3448;3445;Atentado contra a liberdade de associação (art 199)
+512004;051204      ;3449;3445;Paralisação de trabalho, seguida de violência ou perturbação da ordem (art 200)
+512005;051205      ;3450;3445;Paralisação de trabalho de interesse coletivo (art 201)
+512006;051206      ;3451;3445;Invasão de estabelecimento industrial, comercial ou agrícola Sabotagem (art 202)
+512007;051207      ;3452;3445;Frustração de direitos assegurados por lei trabalhista (art 203)
+512008;051208      ;3453;3445;Exercício de atividade com infração de decisão administrativa (art 205)
+512009;051209      ;3454;3445;Aliciamento para fins de emigração (art 206)
+512010;051210      ;3455;3445;Aliciamento de trabalhadores de um local para outro do território nacional (art 207)
+512011;051211      ;3456;3445;Frustração de lei sobre a nacionalização do trabalho (art 204)
+513000;0513        ;3457;287;Crimes contra o sentimento religioso e contra o respeito aos mortos
+513001;051301      ;3458;3457;Destruição/Subtração/Ocultação de Cadáver (art 211)
+513002;051302      ;3462;3457;Ultraje/Impedimento ou Perturbação de Culto Religioso (art 208)
+513003;051303      ;3459;3457;Impedimento ou Perturbação de Cerimônia Funerária (art 209)
+513004;051304      ;3461;3457;Violação à sepultura (art 210)
+513005;051305      ;3460;3457;Vilipêndio a cadáver (art 212)
+514000;0514        ;3463;287;Crimes contra a Dignidade Sexual
+514003;051403      ;3465;3463;Estupro (art 213)
+514004;051404      ;3466;3463;Atentado violento ao pudor (art 214)
+514005;051405      ;5850;3463;Posse sexual mediante fraude (art 215)
+514006;051406      ;3467;3463;Atentado ao pudor mediante fraude (art 216)
+514007;051407      ;5851;3463;Assédio sexual (art 216-A)
+514008;051408      ;3468;3463;Corrupção de menores (art 218)
+514009;051409      ;3471;3463;Mediação para servir à lascívia de outrem (art 227)
+514010;051410      ;5852;3463;Favorecimento da prostituição (art 228)
+514011;051411      ;5853;3463;Casa de prostituição (art 229)
+514012;051412      ;5854;3463;Rufianismo (art 230)
+514013;051413      ;5855;3463;Tráfico internacional de pessoas (art 231)
+514014;051414      ;5856;3463;Tráfico interno de pessoas (art 231-A)
+514015;051415      ;3469;3463;Ultraje público ao pudor (ato/escrito obsceno - arts 233 e 234)
+514016;;11417;3463;Estupro de vulnerável (art 217-A)
+514017;;11416;3463;Violação sexual mediante fraude (art 215)
+514018;;11418;3463;Satisfação de lascívia mediante presença de criança ou adolescente (art 218-A)
+514019;;11419;3463;Favorecimento da prostituição ou outra forma de exploração sexual (art 228)
+514020;;11420;3463;Favorecimento da prostituição ou outra forma de exploração sexual de vulnerável (art 218-B)
+514021;;11421;3463;Tráfico internacional de pessoa para fim de exploração sexual (art 231)
+514022;;11422;3463;Tráfico interno de pessoa para fim de exploração sexual (art 231-A)
+515000;0515        ;3472;287;Crimes contra a Família
+515002;051502      ;3477;3472;Crimes contra o casamento
+515003;05150201    ;3479;3477;Bigamia (art 235)
+515004;05150202    ;3481;3477;Induzimento a erro essencial e ocultação de impedimento (art 236)
+515005;05150203    ;3480;3477;Conhecimento prévio de impedimento (art 237)
+515006;05150204    ;3483;3477;Simulação de autoridade para celebração de casamento (art 238)
+515007;05150205    ;3482;3477;Simulação de casamento (art 239)
+515008;051503      ;3484;3472;Crimes contra o estado de filiação
+515009;05150301    ;3486;3484;Registro de nascimento inexistente (art 241)
+515010;05150302    ;3485;3484;Parto suposto (art 242)
+515011;05150303    ;3487;3484;Sonegação do estado de filiação (art 243)
+515012;051504      ;3473;3472;Crimes contra a assistência familiar
+515013;05150401    ;3474;3473;Abandono material (art 244)
+515014;05150402    ;3476;3473;Entrega de filho menor a pessoa inidônea (art 245)
+515015;05150403    ;3475;3473;Abandono intelectual (arts 246 e 247)
+515016;051505      ;3488;3472;Crime contra o pátrio-poder e tutela
+515017;05150501    ;3489;3488;Induzimento a fuga, entrega arbitrária ou sonegação de incapazes
+515018;05150502    ;3490;3488;Subtração de incapazes
+516000;0516        ;3491;287;Crimes contra a Incolumidade Pública
+516001;051601      ;3492;3491;Incêndio (art 250)
+516002;051602      ;3493;3491;Explosão (art 251)
+516003;051603      ;3494;3491;Uso de gás tóxico ou asfixiante (art 252)
+516004;051604      ;3495;3491;Inundação/perigo de inundação (arts 254 e 255)
+516005;051605      ;3496;3491;Desabamento ou desmoronamento (art 256)
+516006;051606      ;3497;3491;Subtração, ocultação ou inutilização de material de salvamento (art 257)
+516007;051607      ;3498;3491;Difusão de doença ou praga (art 259)
+516008;051608      ;3500;3491;Desastre ferroviário/perigo de desastre ferroviário (art 260)
+516010;051610      ;3501;3491;Atentado contra a segurança de transporte público (arts 261 e 262)
+516011;051611      ;3502;3491;Arremesso de projétil (art 264)
+516012;051612      ;3503;3491;Atentado contra a segurança de serviços de utilidade pública (art 265)
+516013;051613      ;3504;3491;Interrupção /perturbação de serviços telegráficos/telefônicos (art 266)
+516014;051614      ;3505;3491;Epidemia (art 267)
+516015;051615      ;3506;3491;Emprego de processo proibido/substância não permitida (art 274)
+516016;051616      ;3507;3491;Invólucro ou recipiente com falsa indicação (art 275)
+516017;051617      ;3508;3491;Falsificação, corrupção, adulteração ou alteração de produto destinado a fins terapêuticos ou medicinais (art 273)
+516018;051618      ;3509;3491;Exercício Ilegal da Medicina, Arte Dentária ou Farmacêutica (art 282)
+516019;051619      ;5867;3491;Medicamento em desacordo com receita médica (art 280)
+516020;051620      ;3510;3491;Charlatanismo (art 283)
+516021;051621      ;3512;3491;Curandeirismo (art 284)
+516022;051622      ;5862;3491;Fabrico/fornecimento/aquisição/posse ou transporte de explosivos ou gás tóxico ou asfixiante (art 253)
+516023;051623      ;3515;3491;Infração de Medida Sanitária Preventiva (art 268)
+516024;051624      ;3516;3491;Omissão de notificação de doença (art 269)
+516025;051625      ;3513;3491;Envenenamento de água potável/susbstância alimentícia ou medicinal (art 270)
+516026;051626      ;3511;3491;Corrupção ou poluição de água potável (art 271)
+516027;051627      ;3514;3491;Falsificação/corrupção/adulteração/alteração de substância ou produtos alimentícios (art 272)
+516028;051628      ;5866;3491;Venda de produtos ou substâncias nas condições dos artigos 274 e 275 (art 276)
+516029;051629      ;3519;3491;Substância destinada à falsificação (art 277)
+516030;051630      ;3517;3491;Outras substâncias nocivas à saúde pública (art 278)
+516031;;11961;3491;INCÊNDIO CULPOSO
+516032;;11963;3491;EXPLOSÃO CULPOSA
+516033;;11966;3491;USO CULPOSO DE GÁS TÓXICO OU A
+516034;;11967;3491;INUNDAÇÃO CULPOSA
+516035;;11969;3491;DESABAMENTO OU DESMORONAMENTO CUL
+516036;;11972;3491;DESASTRE FERROVIÁRIO CULPOSO
+517000;0517        ;3520;287;Crimes contra a Paz Pública
+517001;051701      ;3521;3520;Quadrilha ou Bando (art 288)
+517003;051703      ;5869;3520;Incitação ao crime (art 286)
+517004;051704      ;5870;3520;Apologia de crime ou criminoso (art 287)
+517005;;55008;3520;CONSTITUIÇÃO DE MILÍCIA PRIVADA - ART. 288-A
+518000;0518        ;3523;287;Crimes contra a Fé Pública
+518001;051801      ;3524;3523;Moeda Falsa/Assimilados (arts 289 e §§ e 290)
+518003;051803      ;3527;3523;Petrechos para falsificação de moeda (art 291)
+518004;051804      ;3528;3523;Emissão de título ao portador sem permissão legal (art 292)
+518005;051805      ;3529;3523;Falsificação de papéis públicos (art 293)
+518006;051806      ;3530;3523;Falsificação do selo ou sinal público (art 296)
+518007;051807      ;3531;3523;Falsificação de documento público (art 297 e Lei 8212/91)
+518008;051808      ;3532;3523;Falsificação de documento particular (art 298)
+518009;051809      ;3533;3523;Falsidade ideológica (art 299)
+518010;051810      ;3534;3523;Falso reconhecimento de firma ou letra (art 300)
+518011;051811      ;3535;3523;Certidão ou atestado ideologicamente falso (art 301, caput)
+518012;051812      ;3536;3523;Falsidade material de atestado ou certidão (art 301, § 1º)
+518013;051813      ;3537;3523;Falsidade de atestado médico (art 302)
+518014;051814      ;3538;3523;Reprodução ou adulteração de selo ou peça filatélica (art 303)
+518015;051815      ;3539;3523;Uso de documento falso (art 304)
+518016;051816      ;3540;3523;Supressão de documento (art 305)
+518017;051817      ;3541;3523;Falsificação do sinal empregado no contraste de metal precioso ou na fiscalização alfandegária, ou para outros fins (art 306)
+518018;051818      ;3542;3523;Falsa identidade (arts 307 e 308)
+518019;051819      ;3543;3523;Fraude de lei sobre estrangeiros (art 309)
+518021;051821      ;3545;3523;Petrechos de Falsificação de papéis públicos (art 294)
+518022;;11007;3523;MOEDA FALSA
+518023;05180102    ;11007;3523;Crime de moeda falsa praticado por Funcionário Público (art 289, § 3º)
+518024;0518010     ;11006;3523;Crime de Desvio e/ou Circulação de Moeda Não Autorizada
+518025;05182101    ;10993;3523;Petrechos de Falsificação (art 294) - praticado por Funcionário Público
+518026;05180601    ;11004;3523;Falsificação do selo ou sinal público (art 296) praticado por Funcionário Público (296, §2º) - Crimes contra a Fé Pública ¿ Penal
+518027;05180701    ;10998;3523;Falsificação de documento público (art 297 e Lei 8212/91) ) praticado por Funcionário Público (297, §1º) - Crimes contra a Fé Pública ¿ Penal
+518028;05180901    ;10995;3523;Falsidade ideológica (art 299) praticado por Funcionário Público (299, § único)- Crimes contra a Fé Pública ¿ Penal
+518029;051822      ;3546;3523;Adulteração de sinal identificador de veículo automotor (art 311)
+518030;05182201    ;10992;3523;Adulteração de sinal identificador de veículo automotor por Funcionário Público (art 311, §1º e 2º )
+518031;05180501    ;11005;3523;Falsificação de papéis públicos (art 293) praticado por Funcionário Público (art 295) - Crimes contra a Fé Pública - Penal
+518032;;10994;3523;Petrechos para falsificação de moeda por Funcionário Público
+518033;;55013;3523;FRAUDES EM CERTAME DE INTERESSE PÚBLICO - ART. 311-A
+519000;0519        ;3547;287;Crimes praticados por funcionários públicos contra a Administração em Geral
+519001;051901      ;3548;3547;Peculato (art 312, caput e § 1º)
+519003;051903      ;3550;3547;Peculato mediante erro de outrem (art 313)
+519004;051904      ;3551;3547;Extravio, sonegação ou inutilização de livro ou documento (art 314)
+519005;051905      ;3552;3547;Emprego irregular de verbas ou rendas públicas (art 315)
+519006;051906      ;3553;3547;Concussão (art 316, caput)
+519007;051907      ;3554;3547;Excesso de exação (art 316, §§ 1º e 2º)
+519008;051908      ;3555;3547;Corrupção passiva (art 317)
+519009;051909      ;3556;3547;Facilitação de contrabando ou descaminho (art 318)
+519010;051910      ;3557;3547;Prevaricação (arts 319 e 319-A)
+519011;051911      ;3558;3547;Condescendência criminosa (art 320)
+519012;051912      ;3559;3547;Advocacia administrativa (art 321)
+519013;051913      ;3560;3547;Violência arbitrária (art 322)
+519014;051914      ;3561;3547;Abandono de função (art 323)
+519015;051915      ;3562;3547;Exercício funcional ilegalmente antecipado ou prolongado (art 324)
+519016;051916      ;3563;3547;Violação do sigilo funcional (art 325)
+519017;051917      ;3564;3547;Violação do sigilo de proposta de concorrência (art 326)
+519018;052201      ;3565;5872;Usurpação de função pública (art 328)
+519019;052202      ;3566;5872;Resistência (art 329)
+519020;052203      ;3567;5872;Tráfico de influência (art 332)
+519021;052204      ;3568;5872;Corrupção ativa (art 333)
+519022;052205      ;3569;5872;Impedimento, perturbação ou fraude de concorrência (art 335)
+519023;052206      ;3570;5872;Inutilização de edital ou de sinal (art 336)
+519024;052207      ;3571;5872;Subtração ou inutilização de livro ou documento (art 337, caput)
+519025;052208      ;3572;5872;Desobediência (art 330)
+519026;052209      ;3573;5872;Desacato (art 331)
+519027;052210      ;3574;5872;Contrabando ou Descaminho (art 334)
+519028;052301      ;3575;5874;Reingresso de estrangeiro expulso (art 338)
+519029;052302      ;3576;5874;Denunciação caluniosa (art 339)
+519030;052303      ;3577;5874;Comunicação falsa de crime ou de contravenção (art 340)
+519031;052304      ;3578;5874;Auto-acusação falsa (art 341)
+519032;052305      ;3579;5874;Falso testemunho ou falsa perícia (arts 342 e 343)
+519033;052306      ;3580;5874;Coação no curso do processo (art 344)
+519034;052307      ;3581;5874;Exercício arbitrário das próprias razões (arts 345 e 346)
+519035;052308      ;3582;5874;Fraude processual (art 347)
+519036;052309      ;3583;5874;Favorecimento pessoal (art 348)
+519037;052310      ;3584;5874;Favorecimento real (art 349)
+519038;052311      ;3585;5874;Exercício arbitrário ou abuso de poder (art 350)
+519039;052312      ;3586;5874;Fuga de pessoa presa ou submetida a medida de segurança (art 351)
+519040;052313      ;3587;5874;Evasão mediante violência contra a pessoa (art 352)
+519041;052314      ;3588;5874;Arrebatamento de preso (art 353)
+519042;052315      ;3589;5874;Motim de presos (art 354)
+519043;052316      ;3590;5874;Patrocínio infiel (art 355, caput)
+519044;052317      ;3591;5874;Patrocínio simultâneo ou tergiversação (art 355, p único)
+519045;052318      ;3592;5874;Sonegação de papel ou objeto de valor probatório (art 356)
+519046;052319      ;3593;5874;Exploração de prestígio (art 357)
+519047;052320      ;3594;5874;Violência ou fraude em arrematação judicial (art 358)
+519048;052321      ;3595;5874;Desobediência a decisão judicial sobre perda ou suspensão de direitos (art 359)
+519049;051949      ;3596;3547;Inserção de dados falsos em sistema de informações (art 313-A)
+519050;051950      ;3597;3547;Modificação ou alteração não autorizada de sistema de informações (art 313-B)
+519051;052211      ;3598;5872;Sonegação de contribuição previdenciária (art 337-A e Lei 8212/91)
+519052;0524        ;5873;287;Crimes Praticados por Particular contra a Administração Pública estrangeira
+519053;0525        ;5875;287;Crimes contra as Finanças Públicas
+520000;0520        ;3603;287;Crimes Previstos na Legislação Extravagante
+520001;052001      ;3604;3603;"""Crimes de Responsabilidade (DL 201/67; Lei 1079/50 e Lei 5249/67)"""
+520002;052002      ;3605;3603;Crimes contra a Economia Popular (Lei 1521/51)
+520003;052003      ;3606;3603;Crimes de Abuso de Autoridade (Lei 4898/65)
+520004;052004      ;3607;3603;Crimes de Tráfico Ilícito e Uso Indevido de Drogas (Lei 11343/06)
+520005;052005      ;3609;3603;Responsabilidade Criminal por Danos Nucleares (Lei 6453/77)
+520006;052006      ;3610;3603;Crimes contra o Serviço Postal e o Serviço de Telegrama (Lei 6538/78)
+520007;052007      ;3611;3603;Crimes contra a Segurança Nacional, a Ordem Política e Social (Lei 7170/83)
+520008;052008      ;3612;3603;Crimes contra o Sistema Financeiro Nacional (Lei 7492/86)
+520009;052009      ;3613;3603;Crimes Resultante de Preconceito de Raça ou de Cor (Lei 7716/89)
+520010;052010      ;3614;3603;Crimes contra a Ordem Tributária (art 1º ao 3º da Lei 8137/90 e art 1º da Lei 4729/65)
+520011;052011      ;3615;3603;Crimes contra a Ordem Econômica (art 4º ao 6º da Lei 8137/90 e Lei 8176/91)
+520012;052012      ;3616;3603;Crimes contra as Relações de Consumo (art 7º da Lei 8137/90 e Lei 8078/90)
+520013;052013      ;3617;3603;Representação caluniosa (art 19, Lei 8429/92)
+520014;052015      ;3618;3603;Crimes contra o Meio Ambiente e o Patrimônio Genético
+520015;05201501    ;3619;3618;Crimes contra a Fauna
+520016;05201502    ;3620;3618;Crimes contra a Flora
+520017;05201503    ;3621;3618;Da Poluição
+520018;05201504    ;3622;3618;Agrotóxicos (Lei 7802/89)
+520019;05201505    ;3623;3618;Atividades Nucleares (Lei 6453/77)
+520020;05201506    ;3624;3618;Caça (Lei nº 5197/67)
+520021;05201507    ;;;Contravenções Florestais ( Lei nº 4771/65)
+520023;05201509    ;3627;3618;Pesca (Lei nº 5197/67, Lei nº 7643/87, Lei 7679/88, DL 221/67)
+520024;052016      ;3628;3603;"""Crimes de """"Lavagem"""" ou Ocultação de Bens, Direitos ou Valores"""
+520025;052017      ;3629;3603;Crimes contra as Telecomunicações (Lei 9472/97 - art 183)
+520026;052018      ;3630;3603;Crimes Previstos na Lei de Estrangeiros(Lei 6815/80)
+520027;052019      ;3631;3603;Crimes de Tortura(Lei 9455/97)
+520028;052020      ;3632;3603;Crimes de Trânsito (Lei 9503/97)
+520029;052021      ;3633;3603;Crimes do Sistema Nacional de Armas (Lei 9437/97 e Lei 10826/03)
+520030;052022      ;3634;3603;Crimes de Imprensa (Lei 5250/67)
+520031;052023      ;;;Apreensão de mercadorias - entrada ou saída irregular do país
+520032;052024      ;3438;3603;Dos crimes contra a propriedade industrial (Art 193CP e Lei 9279/96)
+520033;052025      ;3637;3603;Crimes Previstos no Estatuto da Criança e do Adolescente
+520034;052026      ;3638;3603;Crimes contra o mercado de capitais (Lei 4728/65 e Lei 6385/76)
+520035;052027      ;;;Crimes hediondos (Lei 8072/90)
+520036;052028      ;3640;3603;Crimes de genocídio (Lei 2889/56)
+520037;052029      ;3641;3603;Sigilo Telefônico(Lei 9296/96)
+520038;052030      ;3642;3603;Crimes da Lei de licitações(Lei 8666/93)
+520039;052031      ;3643;3603;Crimes da Lei de remoção de órgãos e tecidos (Lei 9434/97)
+520040;052032      ;;;Crimes da Lei de bingos e jogos de azar (Lei 9615/98)
+520041;052033      ;;;Crimes da Lei do software (Lei 9609/98)
+520042;052034      ;;;Crimes praticados por índios (art56 da Lei 6001/73)
+520043;052035      ;3647;3603;Crimes praticados contra os índios e a cultura indígena (art58 da Lei 6001/73)
+520044;0526        ;3692;287;Contravenções Penais
+520045;052037      ;;;Pornografia Infantil via Internet (Lei 8069/90)
+520046;052038      ;3650;3603;Recusa, retardamento ou omissão de dados técnicos indispensáveis à propositura de Ação Civil Pública (art 10 da Lei 7347/85)
+520047;052039      ;3651;3603;Crimes Agrários (art 19 e 20 da Lei 4947/69)
+520049;052041      ;3653;3603;Crimes relacionados à Comissão Parlamentar de Inquérito (art 4º da Lei 1579/52)
+520050;052042      ;3654;3603;Crimes Eleitorais (Lei 4737/65)
+520051;052043      ;3655;3603;Crime de Quebra de Sigilo Financeiro (art 10º da LC 105/01)
+520052;;;;
+520053;052044      ;3656;3603;Crimes do Código Brasileiro de Telecomunicações (Lei 4117/62 - art 56, 70, 72)
+520055;052046      ;;;Crime praticado por organizações criminosas - Dec 5015/04
+520056;052047      ;3659;3603;Crimes Previstos no Estatuto do Idoso (Lei 10741/03)
+520057;052048      ;3660;3603;Parcelamento do solo urbano - Lei n 6766, de 19/12/1979 - Crime contra a Administração Pública - Legislação Extravagante - Penal
+520058;05200101    ;10991;5875;Corrupção praticada por Prefeitos e Vereadores (DL 201/67, art 1º, I e II) - Crimes de Responsabilidade
+520059;05200102    ;10990;5875;Má-gestão praticada por Prefeitos e Vereadores (DL 201/67, art 1º, III a XXIII) - Crimes de Responsabilidade
+520060;05200402    ;10987;3607;Tráfico Ilícito de Drogas praticado por Funcionário Público (Lei 11343/06, art 40, II) - Crimes Previstos na Legislação Extravagante ¿ Penal
+520061;05201001    ;10985;3603;Crimes contra a Ordem Tributária praticado por Funcionário Público (art 3º e 12,II da Lei 8137/90)
+520062;05201510    ;10986;3618;Crime contra a administração ambiental (Lei 9605/98, arts 66 e 67) - Crimes contra o Meio Ambiente (Lei 9605/98)
+520063;05201601    ;10982;3547;"""Crimes de """"Lavagem"""" ou Ocultação de Bens, Direitos ou Valores Oriundos de Corrupção (Lei 9613/98, art 1º, V e VIII)"""
+520064;05200403    ;5885;3607;Posse de drogas para consumo pessoal (Lei nº 11343/06, art 28)
+520065;05200404    ;3608;3607;Tráfico de drogas e condutas afin
+520066;05200405    ;5895;3607;Indução, instigação ou auxílio ao uso de drogas (Lei 11343/06, art 33, § 2º)
+520067;05200406    ;5896;3607;Oferecimento de drogas para consumo conjunto (Lei 11343/06, art 33, § 3º)
+520068;05200407    ;5894;3607;Fabricação de objeto destinado à produção de drogas e condutas afins (Lei 11343/06, art 34)
+520069;05200408    ;5897;3607;Associação para a produção e tráfico e condutas afins (Lei 11343/06, art 35)
+520070;05200409    ;5898;3607;Financiamento ou custeio de produção ou tráfico de drogas (Lei 11343/06, art 36)
+520071;05200410    ;5899;3607;Colaboração com grupo, organização ou associação destinados à produção ou tráfico de drogas (Lei 11343/06, art 37)
+520072;05200411    ;5900;3607;Prescrição culposa de drogas (Lei 11343/06, art 38)
+520073;05200412    ;5901;3607;Condução de embarcação ou aeronave sob efeito de drogas (Lei 11343/06, art 39)
+520074;05201511    ;10514;3618;Utilização de embrião humano em desacordo com a legislação (Lei nº 11105/05, art 24)
+520075;05201512    ;10515;3618;Prática de engenharia genética em célula germinal, zigoto ou embrião humanos (Lei nº 11105/05, art 25)
+520076;05201513    ;10516;3618;Clonagem humana (Lei nº 11105/05, art 26)
+520077;05201514    ;3626;3618;Liberação ou descarte de OGM (organismo geneticamente modificado) (Lei nº 11105/05, art 27)
+520078;05202401    ;5878;3438;Crimes contra patente de invenção (Lei 9279/96, arts 183 a 186)
+520079;05202402    ;5879;3438;Crimes contra os desenhos industriais (Lei 9279/96, arts 187 a 188)
+520080;05202403    ;5880;3438;Crimes contra as marcas (Lei 9279/96, arts 188 a 190)
+520081;05202404    ;5881;3438;Crimes cometidos por meio de marca, título de estabelecimento e sinal de propaganda (Lei 9279/96)
+520082;05202405    ;5882;3438;Crimes contra indicações geográficas e demais indicações (Lei 9279/96, arts 192 a 194)
+520083;05202406    ;5883;3438;Crimes de concorrência desleal (Lei 9279/96, art 195)
+520084;052049      ;3661;3603;Crimes falimentares
+520085;052050      ;3664;3603;Crimes militares
+520086;052051      ;5893;3603;Crimes contra a administração da Justiça - Lei da Ação de Alimentos
+520087;;11780;3618;Crimes contra o Ordenamento Urbano e o Patrimônio Cultural (Lei 9605/98, arts 62 a 65)
+520088;;55009;3603;ORGANIZAÇÃO CRIMINOSA - LEI 12.850/13
+520089;;55004;3618;TECNOLOGIAS GENÉTICAS DE RESTRIÇÃO DE USO
+520090;;55005;3618;PRODUÇÃO, ARMAZENAMENTO, TRANSPORTE E COMERCIALIZAÇÃO DE OGM
+520091;;11410;3603;CRIMES CONTRA PORTADORES DE DEFICIÊNCIA - LEI 7.853/89, ART. 8º
+522000;0522        ;5872;287;Crimes praticados por particular contra a Administração em geral
+522001;;10983;5872;Lavagem ou Ocultação de Bens, Direitos ou Valores Oriundos de Corrupção
+522002;;55012;5872;DESCAMINHO - ART. 334
+522003;;55011;5872;CONTRABANDO - ART. 334-A
+523000;0523        ;5874;287;Crimes contra a Administração da Justiça
+524000;052401      ;5876;5873;Corrupção ativa em transação comercial internacional (art 337-B)
+524001;052402      ;5877;5873;Tráfico de influência em transação comercial internacional (art 337-C)
+524002;;10984;5873;"""""""Lavagem"""" ou Ocultação de Bens, Direitos ou Valores Oriundos de Corrupção"""
+525000;052501      ;5903;5875;Contratação de Operação de Crédito (art 359-A)
+525001;052502      ;5904;5875;Inscrição de despesas não empenhadas (art 359-B)
+525002;052503      ;5905;5875;Assunção de Obrigação no último ano do Mandato ou Legislatura (art 359-C)
+525003;052504      ;5906;5875;Ordenação de despesa não autorizada (art 359-D)
+525004;052505      ;5907;5875;Prestação de garantia graciosa (art 359-E)
+525005;052506      ;5908;5875;Não cancelamento de restos a pagar (art 359-F)
+525006;052507      ;5909;5875;Aumento de despesa com pessoal no último ano de mandato ou legislatura (art 359-G)
+525007;052508      ;5910;5875;Oferta pública ou colocação de títulos no mercado (art 359-H)
+527000;0527        ;5555;287;Crime Tentado
+528000;0528        ;5865;287;Crime Culposo
+529000;0529        ;10620;287;Parte Geral
+529001;052901      ;10621;10620;Aplicação da pena
+529002;05290101    ;10633;10621;Regime inicial
+529003;05290102    ;10628;10621;Substituição da pena
+529004;052902      ;10642;10620;Efeitos da Condenação
+529005;05290201    ;10643;10642;Perda da função pública
+529006;05290202    ;10644;10642;Perda de bens e valores
+529007;052903      ;10613;10620;Excludentes
+529008;05290301    ;10617;10613;Estado de necessidade
+529009;05290302    ;10618;10613;Estrito cumprimento do dever legal
+529010;05290303    ;10619;10613;Inexigibilidade de conduta diversa
+529011;05290304    ;10616;10613;Legítima defesa
+529012;052904      ;10622;10620;Extinção da punibilidade
+529013;05290401    ;10625;10622;Anistia
+529014;05290402    ;10626;10622;Indulto
+529015;05290403    ;10627;10622;Pagamento ou parcelamento do crédito tributário
+529016;05290404    ;10624;10622;Perdão
+529017;05290405    ;10623;10622;Prescrição
+529018;052905      ;10634;10620;Suspensão condicional da pena
+529019;052906      ;10612;10620;Tipicidade
+529020;05290601    ;10614;10612;Abolitio criminis
+529021;05290602    ;10615;10612;Princípio da insignificância
+529022;0530        ;10949;287;Violência Doméstica Contra a Mulher
+529023;0531        ;10951;287;Crime/Contravenção contra Idoso
+529024;0532        ;10952;287;Fato Atípico
+529025;0533        ;10950;287;Crime/Contravenção contra Criança/Adolescente
+534000;;11414;287;Crime/Contravenção decorrente de conflito fundiário coletivo
+600000;06          ;1156;;Direito do Consumidor
+604000;0604        ;7771;1156;Contratos de consumo
+604001;060401      ;7752;7771;Bancários
+604002;060402      ;7772;7771;Cartão de Crédito
+604003;060404      ;7620;7771;Estabelecimento de Ensino
+604004;060405      ;7773;7771;Financiamento de Produto
+604005;060406      ;7761;7771;Fornecimento de água
+604006;060407      ;7760;7771;Fornecimento de energia elétrica
+604007;060408      ;6233;7771;Planos de saúde
+604008;060409      ;7621;7771;Seguro
+604009;060410      ;7775;7771;Serviços Hospitalares
+604010;060411      ;7774;7771;Serviços Profissionais
+604011;060412      ;7617;7771;Telefonia
+604012;06041201    ;7626;7617;Assinatura básica mensal
+604013;06041202    ;10598;7617;Cobrança indevida de ligações
+604014;06041203    ;7627;7617;Pulsos excedentes
+604015;060413      ;4862;7771;Transporte aéreo
+604016;06041301    ;7748;4862;Acidente aéreo
+604017;06041302    ;4829;4862;Atraso de vôo
+604018;06041303    ;4830;4862;Cancelamento de vôo
+604019;06041304    ;4832;4862;Extravio de bagagem
+604020;06041305    ;4831;4862;Overbooking
+604021;060414      ;7776;7771;Transporte terrestre
+604022;060415      ;7618;7771;Turismo
+604023;;11806;7752;Empréstimo consignado
+604024;;11807;7752;Tarifas
+604025;;11808;7771;Capitalização e Previdência Privada
+604026;;11868;1156;Combustíveis e derivados
+604027;;11867;6220;Produto Impróprio
+604028;;11809;7771;Transporte Aquaviário
+604029;;11814;7776;Transporte Ferroviário
+604030;;11815;7776;Transporte Rodoviário
+605000;0605        ;6220;1156;Responsabilidade do Fornecedor
+605001;060501      ;7769;6220;Abatimento proporcional do preço
+605002;060502      ;7780;6220;Indenização por dano material
+605003;060503      ;7779;6220;Indenização por dano moral
+605004;06050301    ;6226;7779;Inclusão indevida em cadastro de inadimplentes
+605005;06050302    ;7781;7779;Protesto indevido de título
+605006;060504      ;7770;6220;Interpretação/Revisão de contrato
+605007;060505      ;7768;6220;Rescisão do contrato e devolução do dinheiro
+605008;060506      ;7767;6220;Substituição do Produto
+605009;;11860;7771;Produto Impróprio
+606000;;11861;7771;Combustíveis e derivados
+607000;;11810;1156;Dever de Informação
+608000;;11864;1156;Irregularidade no atendimento
+609000;;11866;1156;Jogos / Sorteios / Promoções comerciais
+610000;;11812;1156;Oferta e Publicidade
+611000;;11811;1156;Práticas Abusivas
+612000;;11865;1156;Vendas casadas
+613000;;11974;1156;CLÁUSULAS ABUSIVAS
+701000;;;;
+702000;0702        ;;;Contrato Individual de Trabalho
+702003;070204      ;;;Administração Pública
+702004;070205      ;;;Inquérito Administrativo
+703000;0703        ;;;Duração do Trabalho
+703002;070302      ;;;Horas Extras
+704001;07070101    ;;;Insalubridade
+800000;08          ;8826;;Direito Processual Civil e do Trabalho
+801000;0801        ;8842;8826;Partes e Procuradores
+801003;08010       ;10999;9045;Conversão em Agravo Retido
+801004;080104      ;8867;8842;Substituição Processual
+801005;080105      ;8843;8842;Assistência Judiciária Gratuita
+801006;080106      ;9493;8842;Capacidade Processual
+801007;080107      ;9258;8842;Honorários Periciais
+801008;080108      ;8859;8842;Intervenção de Terceiros
+801009;080109      ;8865;8842;Litigância de Má-fé
+801010;080110      ;8866;8842;Litisconsórcio e Assistência
+801011;080111      ;8868;8842;Procuração/Mandato
+801012;080112      ;8873;8842;Representação em Juízo
+801013;080113      ;9494;8842;Substituição da Parte
+801014;080114      ;8874;8842;Sucumbência
+801015;;10658;8874;Custas
+801016;;10655;8874;Honorários Advocatícios
+801017;;10656;8874;Honorários Advocatícios em Execução Contra a Fazenda Pública
+801018;;10657;8874;Honorários Advocatícios em FGTS
+802000;0802        ;8893;8826;Atos Processuais
+802004;080204      ;8928;8893;Prazo
+802005;080205      ;8919;8893;Nulidade
+802006;080206      ;8934;8893;Valor da Causa
+802007;;10938;8893;Citação
+802008;;10939;8893;Intimação / Notificação
+803000;0803        ;8938;8826;Formação, Suspensão e Extinção do Processo
+803001;080301      ;8939;8938;Suspensão do Processo
+803002;080302      ;8942;8938;Extinção do Processo sem Resolução de Mérito
+803003;080303      ;8941;8938;Modificação ou Alteração do Pedido
+804000;0804        ;8828;8826;Jurisdição e Competência
+804001;080401      ;8829;8828;Competência
+804002;080402      ;8838;8828;Imunidade de Jurisdição
+805000;0805        ;9148;8826;Liquidação/Cumprimento/Execução
+805001;080501      ;9520;9148;Ato Atentatório à Dignidade da Justiça
+805002;080502      ;9519;9148;Benefício de Ordem
+805003;080503      ;9517;9148;Causas Supervenientes à Sentença
+805004;080504      ;9418;9148;Concurso de Credores
+805005;080505      ;9163;9148;Constrição/Penhora/Avaliação/Indisponibilidade de Bens
+805006;080506      ;9518;9148;Efeito Suspensivo/Impugnação/Embargos à Execução
+805007;080507      ;10683;9148;Exceção de Pré-Executividade
+805008;080508      ;9419;9148;Execução Previdenciária
+805009;080509      ;9180;9148;Expropriação de Bens
+805010;080510      ;9414;9148;Extinção da Execução
+805011;080511      ;9450;9148;Fraude à Execução
+805012;080512      ;9453;9148;Imunidade de Execução
+805013;080513      ;9178;9148;Inexigibilidade do Título
+805014;080514      ;9160;9148;Levantamento de Valor
+805015;080515      ;10686;9148;Multa Cominatória/Astreintes
+805016;080516      ;9166;9148;Multa de 10%
+805017;080517      ;10670;9148;Obrigação de Entregar
+805018;08051701    ;10677;10670;Busca e Apreensão
+805019;08051702    ;10676;10670;Imissão na Posse
+805020;080518      ;10671;9148;Obrigação de Fazer/Não Fazer
+805021;080519      ;10672;9148;Precatório
+805022;08051901    ;10680;10672;Crédito Complementar
+805023;08051902    ;10679;10672;Fracionamento
+805024;08051903    ;10678;10672;Seqüestro de Verbas Públicas
+805025;080520      ;10573;9148;Prisão Civil
+805026;080521      ;9189;9148;Remição
+805027;080522      ;10673;9148;Requisição de Pequeno Valor
+805028;080523      ;9484;9148;Sucessão
+805029;080524      ;9149;9148;Valor da Execução/Cálculo/Atualização
+805030;08052401    ;10685;9149;Correção Monetária
+805031;08052402    ;10684;9149;Juros
+805032;08052403    ;10687;9149;Taxa SELIC
+806000;0806        ;9192;8826;Medida Cautelar
+806001;080601      ;9532;9192;Caução/Contracautela
+806002;080602      ;9524;9192;Indenização do Prejuízo
+806003;080603      ;9196;9192;Liminar
+807000;0807        ;8875;8826;Ministério Público
+808000;0808        ;8883;8826;Órgãos Judiciários e Auxiliares da Justiça
+808001;080801      ;8884;8883;Do Juiz
+808002;08080101    ;10660;8884;Impedimento
+808003;08080102    ;10659;8884;Suspeição
+808004;080802      ;8888;8883;Dos Auxiliares da Justiça
+809000;0809        ;8960;8826;Processo e Procedimento
+809001;080901      ;8961;8960;Antecipação de Tutela/Tutela Específica
+809002;080902      ;8986;8960;Erro de Procedimento
+809003;080903      ;8990;8960;Provas
+809004;080904      ;9024;8960;Revelia
+809005;080905      ;9026;8960;Vícios Formais de Sentença
+809006;;10940;8990;Depoimento
+810000;0810        ;9045;8826;Recurso
+810001;081001      ;9098;9045;Cabimento
+810002;081002      ;9047;9045;Efeitos
+810003;081003      ;9050;9045;Preparo/Deserção
+810004;081004      ;10666;9045;Regularidade Formal
+810005;081005      ;9060;9045;Tempestividade
+810006;;10999;9045;CONVERSÃO EM AGRAVO RETIDO
+811000;;11781;8826;Objetos de cartas precatórias/de ordem
+811001;;11786;11781;Atos executórios
+811002;;11783;11781;Citação
+811003;;11785;11781;Diligências
+811004;;11782;11781;Intimação
+811005;;11784;11781;Oitiva
+900002;;;;
+900010;;;;
+980000;011001      ;10187;10186;MAGISTRATURA
+980001;01100106    ;10193;10187;REMOÇÃO
+980002;01110109    ;10229;10220;REMOÇÃO
+980003;01111407    ;10265;10258; INTERESSE PARTICULAR
+980004;01110208    ;10296;10288;DESCONTOS INDEVIDOS
+980005;01110207    ;10295;10288;GRATIFICAÇÃO INCORPORADA/QUINTOS
+980006;011001      ;10187;10186; MAGISTRATURA
+980007;011708      ;10428;10421;PENALIDADES
+980008;01110210    ;10298;10288;DIÁRIAS E OUTRAS INDENIZAÇÕES
+980009;011105      ;10279;10219;PROCESSO ADMINISTRATIVO DISCIPLIN
+980010;;10188;10187;REMUNERAÇÃO
+980011;01110222    ;10244;10288;ASSISTÊNCIA À SAÚDE
+980012;01110234    ;10662;10288;ABONO DE PERMANÊNCIA
+980013;01110217    ;10305;10288;GRATIFICAÇÕES DE ATIVIDADE
+980014;0103        ;9997;9985;ATOS ADMINISTRATIVOS
+980015;03020102    ;5919;5917;INCIDÊNCIA SOBRE APOSENTADORIA
+980016;03020106    ;5922;5917;RETIDO NA FONTE
+980017;01111701    ;10255;10254;INVALIDEZ PERMANENTE
+980018;010306      ;10009;9997;INQUÉRITO/PROCESSO/RECURSO ADMI
+980019;01111415    ;10273;10258;ACOMPANHAMENTO DE CÔNJUGE OU COMP
+980020;01100102    ;10189;10187;AFASTAMENTO
+980021;01110213    ;10301;10288;FÉRIAS
+980022;011708      ;10428;10421;PENALIDADES
+980023;01111801    ;10277;10276;AVERBAÇÃO/CONTAGEM DE TEMPO ESP
+980024;01110223    ;10245;10288;ASSISTÊNCIA PRÉ-ESCOLAR
+980025;01110215    ;10303;10288;ADICIONAL DE HORAS EXTRAS
+980026;011001      ;10187;10186; MAGISTRATURA
+980027;011601      ;10404;10403;CONTRIBUIÇÃO SINDICAL
+980028;0103        ;9997;9985;ATOS ADMINISTRATIVOS
+980029;01110107    ;10227;10220;DIREITO DE GREVE
+980030;01110208    ;10296;10288;DESCONTOS INDEVIDOS
+980031;011112      ;10287;10219;JORNADA DE TRABALHO
+980032;01050101    ;10090;10089;LOCAÇÃO/ PERMISSÃO DE USO
+980033;011117      ;10254;10219;APOSENTADORIA
+980034;011105      ;10279;10219;PROCESSO ADMINISTRATIVO DISCIPLIN
+980035;011410      ;10387;10385;HABILITAÇÃO/REGISTRO CADASTRAL/
+980036;01110108    ;10228;10220;TRANSFERÊNCIA
+980037;;10306;10288;AUXÍLIO-TRANSPORTE
+980038;011410      ;10387;10385;HABILITAÇÃO/REGISTRO CADASTRAL/
+980039;0103        ;9997;9985; ATOS ADMINISTRATIVOS
+980040;01111417    ;10275;10258;LICENÇA POR ACIDENTE EM SERVIÇO
+980041;01111701    ;10255;10254;INVALIDEZ PERMANENTE
+980042;01111405    ;10263;10258; TRATAMENTO DA PRÓPRIA SAÚDE
+980043;01110210    ;10298;10288;DIÁRIAS E OUTRAS INDENIZAÇÕES
+980044;011301      ;10371;10370;RESERVA DE VAGAS
+980045;03020106    ;5922;5917;RETIDO NA FONTE
+980046;01111602    ;10252;10250;CONCESSÃO
+980047;011117      ;10254;10219;APOSENTADORIA
+980048;01110113    ;10232;10220;REVERSÃO
+980049;01110215    ;10303;10288;ADICIONAL DE HORAS EXTRAS
+980050;01111603    ;10253;10250;RESTABELECIMENTO
+980051;01110503    ;10280;10279;DEMISSÃO OU EXONERAÇÃO
+980052;01110505    ;10282;10279;SUSPENSÃO
+980053;01111407    ;10265;10258; INTERESSE PARTICULAR
+980054;011407      ;10390;10385;SANÇÕES ADMINISTRATIVAS
+980055;01111409    ;10267;10258;ATIVIDADE POLÍTICA
+990000;09          ;1209;;Direito Processual Penal
+990001;0901        ;4263;1209;Ação Penal
+990002;090101      ;4264;4263;Nulidade
+990003;09010101    ;10600;4264;Impedimento
+990004;09010102    ;10599;4264;Quesitos
+990005;09010103    ;10601;4264;Suspeição
+990006;090102      ;7935;4263;Perempção
+990007;090103      ;10640;4263;Prisão Decorrente de Sentença Condenatória
+990008;090104      ;4271;4263;Suspensão
+990009;09010401    ;10602;4271;Condicional do Processo
+990010;09010402    ;10603;4271;Parcelamento de Crédito Tributário
+990011;090105      ;4272;4263;Trancamento
+990012;090106      ;10630;4263;Transação
+990013;0902        ;4368;1209;Denúncia/Queixa
+990014;090201      ;4370;4368;Recebimento
+990015;090202      ;4371;4368;Rejeição
+990016;0903        ;7942;1209;Execução Penal
+990017;090301      ;7793;7942;Medidas de Segurança
+990018;09030101    ;7795;7793;Internação
+990019;09030102    ;7794;7793;Tratamento Ambulatorial
+990020;090302      ;7792;7942;Pena de Multa
+990021;090303      ;7791;7942;Pena Privativa de Liberdade
+990022;09030301    ;10636;7791;Livramento Condicional
+990023;09030302    ;10635;7791;Progressão de Regime
+990024;0903030201  ;10864;10635;Crimes Hediondos
+990025;09030303    ;10906;7791;Regressão de Regime
+990026;09030304    ;10637;7791;Remição
+990027;09030305    ;10907;7791;Transferência de Preso
+990028;090304      ;7790;7942;Pena Restritiva de Direitos
+990029;09030401    ;7788;7790;Interdição Temporária de Direitos
+990030;09030402    ;7789;7790;Limitação de Fim de Semana
+990031;09030403    ;7786;7790;Perda de Bens e Valores
+990032;09030404    ;7787;7790;Prestação de Serviços à Comunidade
+990033;09030405    ;7785;7790;Prestação Pecuniária
+990034;0904        ;7945;1209;Falsidade
+990035;0905        ;4310;1209;Fiança
+990036;0906        ;7937;1209;Inclusão/Exclusão de Jurado
+990037;0907        ;4291;1209;Jurisdição e Competência
+990038;090701      ;10631;4291;Desaforamento
+990039;090702      ;10909;4291;Imunidade em razão de função, ofício ou profissão
+990040;0908        ;7928;1209;Liberdade Provisória
+990041;0909        ;10912;1209;Medidas Assecuratórias
+990042;090901      ;10914;10912;Busca e Apreensão de Bens
+990043;090902      ;10913;10912;Indisponibilidade/Seqüestro de Bens
+990044;0910        ;7929;1209;Prisão em Flagrante
+990045;0911        ;4355;1209;Prisão Preventiva
+990046;0912        ;4305;1209;Recurso
+990047;091201      ;7941;4305;Denegação
+990048;091202      ;7940;4305;Deserção
+990049;0903030501  ;;;Penitenciária Federal
+990050;;10935;4368;Desclassificação
+990051;;10632;1209;Prisão temporária
+990052;;10867;4264;Ausência de Fundamentação
+990053;;10866;4264;Ausência de Publicidade
+990054;;10865;4264;Cerceamento de Defesa
+990055;;10890;4264;Vício Formal do Julgamento
+990056;;10925;4263;Provas
+990057;;10926;10925;Prova Ilícita
+990058;;10691;4271;Questão Prejudicial
+990059;;10902;4263;Excesso de prazo para instrução / julgamento
+990060;;10604;1209;INVESTIGAÇÃO PENAL
+990061;;10605;1209;COMPETÊNCIA DO MP
+990062;;10606;1209;CERCEAMENTO DE DEFESA
+990063;;10607;1209;QUEBRA DO SIGILO BANCÁRIO
+990064;;10608;1209;QUEBRA DO SIGILO FISCAL
+990065;;10609;1209;QUEBRA DO SIGILO TELEFÔNICO
+990066;;10610;1209;TRANCAMENTO
+999121;;10187;10186;.

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="dummy" type="sql.jndi">
+         <Jndi/>
+      </Connection>
+      <Connection id="MarketsYears" type="mondrian.jndi">
+         <Catalog>mondrian:/SteelWheels</Catalog>
+         <Jndi>SampleData</Jndi>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" connection="dummy" id="dummy" type="sql">
+      <Name>dummy</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query/>
+   </DataAccess>
+   <DataAccess access="public" connection="MarketsYears" id="MarketsYears" type="mdx">
+      <Name>MarketsYears</Name>
+      <BandedMode>compact</BandedMode>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[select NON EMPTY Crossjoin({[Measures].[Quantity]}, [Time].[All Years].Children) ON rows,
+  NON EMPTY [Markets].[All Markets].Children ON columns
+from [SteelWheelsSales]]]></Query>
+   </DataAccess>
+</CDADescriptor>

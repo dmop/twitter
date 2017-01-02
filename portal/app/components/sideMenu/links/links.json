@@ -1,0 +1,42 @@
+[{
+	"id": "movim_gabinetes",
+	"label": "Movimentação Gabinetes",
+	"allowedRoles": [
+		"administrator",
+		"authenticated"
+	],
+	"children": [{
+		"key": "danilao",
+		"label": "Danilo",
+		"url": "/pentaho/plugin/pentaho-cdf-dd/api/renderer/getDashboard?path=/system/trf3/dashboards/danilo.wcdf",
+		"active": true
+	}, {
+		"key": "em_tramitacao",
+		"label": "Em tramitação",
+		"url": "/pentaho/plugin/pentaho-cdf-dd/api/renderer/getDashboard?path=/system/trf3/dashboards/monthly.wcdf",
+		"active": true,
+		"params" : {"monthlyType" : "tramitacao"}
+	}, {
+		"key": "pendentes",
+		"label": "Pendentes",
+		"url": "/pentaho/plugin/pentaho-cdf-dd/api/renderer/getDashboard?path=/system/trf3/dashboards/monthly.wcdf",
+		"active": true,
+		"params" : {"monthlyType" : "pendentes"}
+	}, {
+		"key": "metas",
+		"label": "Metas",
+		"url": "/pentaho/plugin/pentaho-cdf-dd/api/renderer/getDashboard?path=/system/trf3/dashboards/monthly.wcdf",
+		"active": true,
+		"params" : {"monthlyType" : "metas"}
+	}, {
+		"key": "resultado_meta",
+		"label": "Resultado Meta",
+		"url": "/pentaho/plugin/pentaho-cdf-dd/api/renderer/getDashboard?path=/system/trf3/dashboards/resumo.wcdf",
+		"active": false
+	}, {
+		"key": "produtividade",
+		"label": "Produtividade",
+		"url": "/pentaho/plugin/pentaho-cdf-dd/api/renderer/getDashboard?path=/system/trf3/dashboards/resumo.wcdf",
+		"active": false
+	}]
+}]

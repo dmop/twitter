@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin title="trf3" loader="DEFAULT">
+<overlays>
+		<overlay id="startup.trf3" resourcebundle="content/trf3/resources/lang/messages">
+			<menubar id="toolsmenu">
+	        	<menuitem id="trf3" label="${Launcher.trf3}" command="mantleXulHandler.openUrl('${Launcher.trf3}','${Launcher.trf3_TOOLTIP}','content/trf3/portal/index.html')"/>
+	      	</menubar>
+	    </overlay>
+	</overlays>
+	<lifecycle-listener class="pt.webdetails.cpk.CpkLifecycleListener"/>
+	<static-paths>
+		<static-path url="/trf3/static" localFolder="static"/>
+		<static-path url="/trf3/resources" localFolder="resources"/>
+		<static-path url="/trf3/dashboards" localFolder="dashboards"/>
+		<static-path url="/trf3/portal" localFolder="portal"/>
+	</static-paths>
+	<external-resources>
+		<file context="analyzer">content/trf3/dashboards/assets/js/AnalyzerEvents.js</file>
+    <file context="analyzer">content/trf3/static/custom/js/baselayers.js</file>
+	</external-resources>
+	<content-types>
+		<content-type>
+			<title>TRF3</title>
+			<description></description>
+			<company name="" url="" logo="@PLUGIN_COMPANY_LOGO@"></company>
+		</content-type>
+	</content-types>
+	<content-generator
+		id="trf3"
+		title="TRF3"
+		type="trf3"
+		class="pt.webdetails.cpk.CpkContentGenerator"/>
+	<!-- Menu entry -->
+	<menu-items>
+		<!--<menu-item id="trf3_main" anchor="tools-submenu" label="TRF3" command="content/trf3/" type="MENU_ITEM" how="LAST_CHILD"/>-->
+	</menu-items>
+</plugin>
